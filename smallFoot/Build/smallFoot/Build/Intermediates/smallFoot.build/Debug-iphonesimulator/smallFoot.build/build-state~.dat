@@ -1,0 +1,437 @@
+TsmallFoot
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Info.plist" smallFoot/smallFoot-Info.plist
+cProcessPCH "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch.pth" smallFoot/smallFoot-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/FirstViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/FirstViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/AppDelegate.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/AppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/SecondViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/SecondViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/main.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot" normal i386
+cGenerateDSYMFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app.dSYM" "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot"
+cCpResource smallFoot/Default.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default.png
+cCopyStringsFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/en.lproj/InfoPlist.strings" smallFoot/en.lproj/InfoPlist.strings
+cCpResource smallFoot/Default@2x.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default@2x.png
+cCpResource smallFoot/Default-568h@2x.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default-568h@2x.png
+cCompileStoryboard "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPhone.storyboard"
+cCompileStoryboard "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPad.storyboard"
+cCpResource smallFoot/first.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first.png
+cCpResource smallFoot/first@2x.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first@2x.png
+cCpResource smallFoot/second.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second.png
+cCpResource smallFoot/second@2x.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second@2x.png
+cTouch "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app"
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
+c000000005102E2D30000000000000110
+t1359143635
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000510A9BEA0000000000228FE0
+t1359649770
+s2265056
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000510A9BEB00000000003DDFA0
+t1359649771
+s4054944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c00000000510A9BEA00000000000015F7
+t1359649770
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c00000000510A9BED0000000000000E8D
+t1359649773
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000510A9BED0000000000AB6230
+t1359649773
+s11231792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/usr/include/Availability.h
+c00000000510A9BF50000000000001B73
+t1359649781
+s7027
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch.pth
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/FirstViewController.o
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/SecondViewController.o
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/smallFoot.LinkFileList
+c000000005138C6BD0000000000000306
+t1362675389
+s774
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app.dSYM
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default-568h@2x.png
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default.png
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default@2x.png
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Info.plist
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/PkgInfo
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/en.lproj/MainStoryboard_iPad.storyboardc
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/en.lproj/MainStoryboard_iPhone.storyboardc
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first.png
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first@2x.png
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second.png
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second@2x.png
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot
+t2
+s0
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/AppDelegate.m
+c000000005138C3B300000000000007E4
+t1362674611
+s2020
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/Default-568h@2x.png
+c000000005062328600000000000048A2
+t1348612742
+s18594
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/Default.png
+c0000000050623286000000000000198C
+t1348612742
+s6540
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/Default@2x.png
+c00000000506232860000000000003EEB
+t1348612742
+s16107
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/FirstViewController.m
+c000000005138C3B3000000000000020E
+t1362674611
+s526
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/SecondViewController.m
+c000000005138C3B30000000000000212
+t1362674611
+s530
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/InfoPlist.strings
+c000000005138C3B3000000000000002D
+t1362674611
+s45
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPad.storyboard
+c000000005138C6BD000000000000478B
+t1362675389
+s18315
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPhone.storyboard
+c000000005138C3B30000000000002600
+t1362674611
+s9728
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/first.png
+c000000005062328600000000000000FD
+t1348612742
+s253
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/first@2x.png
+c00000000506232860000000000000192
+t1348612742
+s402
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/main.m
+c000000005138C3B3000000000000015D
+t1362674611
+s349
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/second.png
+c00000000506232860000000000000080
+t1348612742
+s128
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/second@2x.png
+c00000000506232860000000000000082
+t1348612742
+s130
+
+N/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/smallFoot-Prefix.pch
+c000000005138C3B30000000000000141
+t1362674611
+s321
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+NsmallFoot/smallFoot-Info.plist
+c000000005138C3B3000000000000070D
+t1362674611
+s1805
+
+CBuild AST from "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/AppDelegate.m"
+r0
+
+CBuild AST from "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/FirstViewController.m"
+r0
+
+CBuild AST from "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/SecondViewController.m"
+r0
+
+CBuild AST from "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/main.m"
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies7008853dfee8b641^11abbb3dfee8b641^---0#1#0#--18"Check dependencies36"18BB07B8-A101-487C-BE45-0712DDAF7A25-
+
+CCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/AppDelegate.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/AppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384368190.929801
+e384368191.071362
+r1
+xCompileC
+xBuild/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/AppDelegate.o
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/AppDelegate.m7924ee3efee8b641^5244123ffee8b641^---0#0#0#-19%DVTDocumentLocation2@110"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/smallFoot/AppDelegate.m0000000000000000^4259"CompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/AppDelegate.o smallFoot/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-generated-files.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-own-target-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-all-target-headers.hmap" -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-project-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/DerivedSources/i386" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/DerivedSources" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator" -include "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch" -MMD -MT dependencies -MF "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/AppDelegate.d" --serialize-diagnostics "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/AppDelegate.dia" -c "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/AppDelegate.m" -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/AppDelegate.o"36"AB7F1730-F5E9-4274-8AAF-50AD9FC5C595-
+
+CCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/FirstViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/FirstViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384368190.929792
+e384368191.068761
+r1
+xCompileC
+xBuild/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/FirstViewController.o
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/FirstViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/FirstViewController.ma725ee3efee8b641^f298113ffee8b641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/smallFoot/FirstViewController.m0000000000000000^4307"CompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/FirstViewController.o smallFoot/FirstViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-generated-files.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-own-target-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-all-target-headers.hmap" -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-project-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/DerivedSources/i386" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/DerivedSources" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator" -include "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch" -MMD -MT dependencies -MF "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/FirstViewController.d" --serialize-diagnostics "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/FirstViewController.dia" -c "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/FirstViewController.m" -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/FirstViewController.o"36"A491DDF3-2CA5-4F95-9705-484DCD256382-
+
+CCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/SecondViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/SecondViewController.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384368190.929814
+e384368191.068759
+r1
+xCompileC
+xBuild/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/SecondViewController.o
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/SecondViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/SecondViewController.m5131ee3efee8b641^289c113ffee8b641^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/smallFoot/SecondViewController.m0000000000000000^4313"CompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/SecondViewController.o smallFoot/SecondViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-generated-files.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-own-target-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-all-target-headers.hmap" -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-project-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/DerivedSources/i386" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/DerivedSources" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator" -include "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch" -MMD -MT dependencies -MF "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/SecondViewController.d" --serialize-diagnostics "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/SecondViewController.dia" -c "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/SecondViewController.m" -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/SecondViewController.o"36"4BEF27A9-D186-4CAE-A446-A14CF8E6F88C-
+
+CCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/main.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384368190.929819
+e384368191.062799
+r1
+xCompileC
+xBuild/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/main.o
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/main.m6a2fee3efee8b641^4513103ffee8b641^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/smallFoot/main.m0000000000000000^4217"CompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/main.o smallFoot/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-generated-files.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-own-target-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-all-target-headers.hmap" -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-project-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/DerivedSources/i386" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/DerivedSources" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator" -include "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch" -MMD -MT dependencies -MF "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/main.d" --serialize-diagnostics "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/main.dia" -c "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/main.m" -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/main.o"36"537C4E5D-00D4-4435-A64E-854DA0287ADF-
+
+CCompileStoryboard "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPad.storyboard"
+s384368192.384177
+e384368194.228631
+r1
+xCompileStoryboard
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPad.storyboard
+o/* com.apple.ibtool.document.warnings */
+o/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPad.storyboard:P5l-sX-QKE: warning: Prototype table cells must have reuse identifiers [9]
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"CompileStoryboard smallFoot/en.lproj/MainStoryboard_iPad.storyboarda2ee6340fee8b641^b6863a42fee8b641^-227"/* com.apple.ibtool.document.warnings *//Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPad.storyboard:P5l-sX-QKE: warning: Prototype table cells must have reuse identifiers1(21%IDEActivityLogMessage2@49"Prototype table cells must have reuse identifiers-384368194#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@136"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPad.storyboard0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Unsupported Configuration--0#0#0#-19%DVTDocumentLocation4@136"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPad.storyboard0000000000000000^1080"CompileStoryboard smallFoot/en.lproj/MainStoryboard_iPad.storyboard    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/en.lproj/MainStoryboard_iPad.storyboardc" "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPad.storyboard" --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"5D0C6C2F-319D-4847-A9A5-06BBA79F2E8E-
+
+CCompileStoryboard "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPhone.storyboard"
+s384368192.384170
+e384368200.518967
+r1
+xCompileStoryboard
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPhone.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"CompileStoryboard smallFoot/en.lproj/MainStoryboard_iPhone.storyboard89ec6340fee8b641^ae9b9248fee8b641^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPhone.storyboard0000000000000000^1086"CompileStoryboard smallFoot/en.lproj/MainStoryboard_iPhone.storyboard    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/en.lproj/MainStoryboard_iPhone.storyboardc" "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPhone.storyboard" --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"AA15C8F7-80A4-4BF7-92F7-EFEFF3A4B06C-
+
+CCopyStringsFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/en.lproj/InfoPlist.strings" smallFoot/en.lproj/InfoPlist.strings
+s384368192.383707
+e384368192.424014
+r1
+xCopyStringsFile
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/en.lproj/InfoPlist.strings
+xsmallFoot/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy smallFoot/en.lproj/InfoPlist.strings20636240fee8b641^db8b6c40fee8b641^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/smallFoot/en.lproj/InfoPlist.strings0000000000000000^693"CopyStringsFile Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/en.lproj/InfoPlist.strings smallFoot/en.lproj/InfoPlist.strings    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/en.lproj" -- smallFoot/en.lproj/InfoPlist.strings36"F46EE57F-06A7-457E-BA18-F0C4B987149C-
+
+CCpResource smallFoot/Default-568h@2x.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default-568h@2x.png
+s384368192.383927
+e384368192.408929
+r1
+xCpResource
+xsmallFoot/Default-568h@2x.png
+xBuild/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Copy Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default-568h@2x.pngd1596240fee8b641^9eb46840fee8b641^---0#0#0#-19%DVTDocumentLocation2@173"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default-568h@2x.png000000000080d041^750"CpResource "smallFoot/Default-568h@2x.png" "Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default-568h@2x.png"    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/Default-568h@2x.png" "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app"36"D10E8526-DCE0-4041-8B13-589AD209AFE6-
+
+CCpResource smallFoot/Default.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default.png
+s384368192.383694
+e384368192.408946
+r1
+xCpResource
+xsmallFoot/Default.png
+xBuild/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Copy Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default.png6d556240fee8b641^0bb76840fee8b641^---0#0#0#-19%DVTDocumentLocation2@165"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default.png000000000080d041^722"CpResource smallFoot/Default.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default.png    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/Default.png" "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app"36"8AEB8E29-932F-4210-A19A-D7602A4AF61B-
+
+CCpResource smallFoot/Default@2x.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default@2x.png
+s384368192.383916
+e384368192.408954
+r1
+xCpResource
+xsmallFoot/Default@2x.png
+xBuild/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Copy Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default@2x.png71586240fee8b641^57b16840fee8b641^---0#0#0#-19%DVTDocumentLocation2@168"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default@2x.png000000000080d041^735"CpResource "smallFoot/Default@2x.png" "Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Default@2x.png"    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/Default@2x.png" "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app"36"E7CAFDD1-C31D-4C1A-BF71-1FC94B27B729-
+
+CCpResource smallFoot/first.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first.png
+s384368192.384238
+e384368192.408958
+r1
+xCpResource
+xsmallFoot/first.png
+xBuild/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Copy Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first.pnga5f56340fee8b641^c5ca6840fee8b641^---0#0#0#-19%DVTDocumentLocation2@163"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first.png000000000080d041^716"CpResource smallFoot/first.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first.png    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/first.png" "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app"36"A9BC1361-2A6E-42C8-8233-824B6CCCCD9F-
+
+CCpResource smallFoot/first@2x.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first@2x.png
+s384368192.384454
+e384368192.409028
+r1
+xCpResource
+xsmallFoot/first@2x.png
+xBuild/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Copy Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first@2x.pngdbfc6340fee8b641^87dc6840fee8b641^---0#0#0#-19%DVTDocumentLocation2@166"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first@2x.png000000000080d041^729"CpResource "smallFoot/first@2x.png" "Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/first@2x.png"    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/first@2x.png" "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app"36"8EBE1C53-06CE-4CF6-ABF0-9F6581E18436-
+
+CCpResource smallFoot/second.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second.png
+s384368192.410109
+e384368192.411951
+r1
+xCpResource
+xsmallFoot/second.png
+xBuild/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Copy Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second.png520b6940fee8b641^8a766940fee8b641^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second.png000000000080d041^719"CpResource smallFoot/second.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second.png    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/second.png" "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app"36"03D00AB4-7FF5-46E9-AB36-B6498A6CBF5A-
+
+CCpResource smallFoot/second@2x.png Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second@2x.png
+s384368192.410125
+e384368192.414415
+r1
+xCpResource
+xsmallFoot/second@2x.png
+xBuild/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Copy Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second@2x.png77126940fee8b641^c9726a40fee8b641^---0#0#0#-19%DVTDocumentLocation2@167"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second@2x.png000000000080d041^732"CpResource "smallFoot/second@2x.png" "Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/second@2x.png"    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/second@2x.png" "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app"36"D94FB684-B0DA-4DAE-959B-FDAD9B9934E3-
+
+CGenerateDSYMFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app.dSYM" "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot"
+s384368192.238503
+e384368192.372413
+r1
+xGenerateDSYMFile
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app.dSYM
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection147"Generate /Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app.dSYM2e1f3d40fee8b641^404f5f40fee8b641^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app.dSYM000000000080d041^827"GenerateDSYMFile Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app.dSYM Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot" -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app.dSYM"36"8324818D-0F35-477F-90AA-9DF00076EF6F-
+
+CLd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot" normal i386
+s384368191.078119
+e384368192.231741
+r1
+xLd
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection148"Link /Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot4513143ffee8b641^db523b40fee8b641^---0#0#0#--1441"Ld Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot normal i386    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk "-L/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator" -filelist "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/Objects-normal/i386/smallFoot.LinkFileList" -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.1 -framework UIKit -framework Foundation -framework CoreGraphics -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/smallFoot"36"F063C0DF-49CE-4CCD-BAAB-D6DD103C840F-
+
+CProcessInfoPlistFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Info.plist" smallFoot/smallFoot-Info.plist
+s384368189.771488
+e384368189.816724
+r1
+xProcessInfoPlistFile
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Info.plist
+xsmallFoot/smallFoot-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Process smallFoot/smallFoot-Info.plistffebcc3dfee8b641^4434de3dfee8b641^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/smallFoot/smallFoot-Info.plist0000000000000000^829"ProcessInfoPlistFile Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Info.plist smallFoot/smallFoot-Info.plist    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility smallFoot/smallFoot-Info.plist -genpkginfo "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app/Info.plist"36"7A9C2B17-F648-4E10-9377-30CD339FF682-
+
+CProcessPCH "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch.pth" smallFoot/smallFoot-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384368189.826466
+e384368190.922994
+r1
+xProcessPCH
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch.pth
+xsmallFoot/smallFoot-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Precompile smallFoot/smallFoot-Prefix.pch2861da3dfee8b641^9d48ec3efee8b641^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/smallFoot/smallFoot/smallFoot-Prefix.pch0000000000000000^4086"ProcessPCH Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch.pth smallFoot/smallFoot-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-generated-files.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-own-target-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-all-target-headers.hmap" -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/smallFoot-project-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/DerivedSources/i386" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphonesimulator/smallFoot.build/DerivedSources" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator" --serialize-diagnostics "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch.dia" -c "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/smallFoot/smallFoot-Prefix.pch" -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch.pth" -MMD -MT dependencies -MF "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-ehhdfaweulplffgeencrtvzfpavi/smallFoot-Prefix.pch.d"36"07D74D43-3A98-4BAE-A630-D85157F2E0D6-
+
+CProcessPCH "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Index/PrecompiledHeaders/smallFoot-Prefix-cdxbxtlqcntawgcdfceupqvqcyjf_ast/smallFoot-Prefix.pch.pth" smallFoot/smallFoot-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app"
+s384368200.527222
+e384368200.690607
+r1
+xTouch
+x/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"Touch /Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app4a0b8748fee8b641^f7cab048fee8b641^---0#0#0#--502"Touch Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/benperkins/Documents/College/Senior Year/EECS 441/smallFoot/Build/smallFoot/Build/Products/Debug-iphonesimulator/smallFoot.app"36"E3FDCD25-D9AB-4A40-B8E0-21DDBF4B27D5-
+

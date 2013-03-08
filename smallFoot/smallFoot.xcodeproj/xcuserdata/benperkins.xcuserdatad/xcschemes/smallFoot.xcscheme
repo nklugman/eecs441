@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DDA6113316D569C1007748CC"
+               BlueprintIdentifier = "DDF91DBB16E8FB3300AAE198"
                BuildableName = "smallFoot.app"
                BlueprintName = "smallFoot"
                ReferencedContainer = "container:smallFoot.xcodeproj">
@@ -28,21 +28,11 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DDA6116716D569C2007748CC"
-               BuildableName = "smallFootTests.octest"
-               BlueprintName = "smallFootTests"
-               ReferencedContainer = "container:smallFoot.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DDA6113316D569C1007748CC"
+            BlueprintIdentifier = "DDF91DBB16E8FB3300AAE198"
             BuildableName = "smallFoot.app"
             BlueprintName = "smallFoot"
             ReferencedContainer = "container:smallFoot.xcodeproj">
@@ -61,7 +51,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DDA6113316D569C1007748CC"
+            BlueprintIdentifier = "DDF91DBB16E8FB3300AAE198"
             BuildableName = "smallFoot.app"
             BlueprintName = "smallFoot"
             ReferencedContainer = "container:smallFoot.xcodeproj">
@@ -79,7 +69,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DDA6113316D569C1007748CC"
+            BlueprintIdentifier = "DDF91DBB16E8FB3300AAE198"
             BuildableName = "smallFoot.app"
             BlueprintName = "smallFoot"
             ReferencedContainer = "container:smallFoot.xcodeproj">
