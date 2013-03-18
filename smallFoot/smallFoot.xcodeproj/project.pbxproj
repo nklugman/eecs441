@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2F13A416F77D810084579C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2F13A316F77D810084579C /* ThirdViewController.m */; };
+		DD2F13A616F77F990084579C /* smallfoot.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2F13A516F77F990084579C /* smallfoot.png */; };
 		DDC1F62916E924D800BC1595 /* AddElectricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1F62816E924D800BC1595 /* AddElectricViewController.m */; };
 		DDC1F62C16E92CAA00BC1595 /* AddOffsetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1F62B16E92CAA00BC1595 /* AddOffsetViewController.m */; };
 		DDC1F62E16E9317400BC1595 /* electricLog.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDC1F62D16E9317400BC1595 /* electricLog.plist */; };
@@ -177,6 +179,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD2F13A216F77D810084579C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		DD2F13A316F77D810084579C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		DD2F13A516F77F990084579C /* smallfoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallfoot.png; sourceTree = "<group>"; };
 		DDC1F62716E924D800BC1595 /* AddElectricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddElectricViewController.h; sourceTree = "<group>"; };
 		DDC1F62816E924D800BC1595 /* AddElectricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddElectricViewController.m; sourceTree = "<group>"; };
 		DDC1F62A16E92CAA00BC1595 /* AddOffsetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOffsetViewController.h; sourceTree = "<group>"; };
@@ -530,6 +535,7 @@
 		DDF91DB316E8FB3300AAE198 = {
 			isa = PBXGroup;
 			children = (
+				DD2F13A516F77F990084579C /* smallfoot.png */,
 				DDF91DC516E8FB3300AAE198 /* smallFoot */,
 				DDF91DBE16E8FB3300AAE198 /* Frameworks */,
 				DDF91DBD16E8FB3300AAE198 /* Products */,
@@ -561,6 +567,8 @@
 				DDF91DCF16E8FB3300AAE198 /* AppDelegate.m */,
 				DDF91DD716E8FB3300AAE198 /* MainStoryboard_iPhone.storyboard */,
 				DDF91DDA16E8FB3300AAE198 /* MainStoryboard_iPad.storyboard */,
+				DD2F13A216F77D810084579C /* ThirdViewController.h */,
+				DD2F13A316F77D810084579C /* ThirdViewController.m */,
 				DDD4ED6816E9800F009A27A5 /* FootprintViewController.h */,
 				DDD4ED6916E9800F009A27A5 /* FootprintViewController.m */,
 				DDC1F63116E9320B00BC1595 /* ContributionsViewController.h */,
@@ -810,6 +818,7 @@
 				DDD4EE8416E98FD8009A27A5 /* trolley.png in Resources */,
 				DDD4EE8516E98FD8009A27A5 /* truck.png in Resources */,
 				DDD4EE8616E98FD8009A27A5 /* waste_basket.png in Resources */,
+				DD2F13A616F77F990084579C /* smallfoot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,6 +839,7 @@
 				DDC1F63316E9320B00BC1595 /* ContributionsViewController.m in Sources */,
 				DDD4ED6716E976FF009A27A5 /* CarbonCalculator.m in Sources */,
 				DDD4ED6A16E9800F009A27A5 /* FootprintViewController.m in Sources */,
+				DD2F13A416F77D810084579C /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
