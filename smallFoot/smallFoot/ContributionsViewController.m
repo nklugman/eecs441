@@ -110,7 +110,8 @@
         else
         {
             NSDateFormatter *format = [[NSDateFormatter alloc] init];
-            [format setDateFormat:@"EEEE MMMM d, yyyy 'at' h:mma"];
+            //[format setDateFormat:@"EEEE MMMM d, yyyy 'at' h:mma"]; // Includes "at *time*
+            [format setDateFormat:@"EEEE MMMM d, yyyy"]; // Just the date
             NSDate *date = [[gasLog objectForKey:@"date"] objectAtIndex:indexPath.row];
             NSString *formattedDate = [format stringFromDate:date];
             cell.textLabel.text = [NSString stringWithFormat:@"Gas: %.2f gallons", [[[gasLog objectForKey:@"gallons"] objectAtIndex:indexPath.row] doubleValue]];

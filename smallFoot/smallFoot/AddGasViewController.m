@@ -29,6 +29,7 @@
     [_gallonsTextField setText:@""];
     [_gallonsTextField setUserInteractionEnabled:YES];
     [_gallonsTextField setEnabled:YES];
+    [_gasDatePicker setMaximumDate:[NSDate date]];
 	// Do any additional setup after loading the view.
     
     // Copy gasLog.plist to Documents folder if not already present
@@ -89,7 +90,7 @@
     // Insert the most recent data
     [gallonsArray addObject:[NSNumber numberWithDouble:[[_gallonsTextField text] doubleValue]]];
     [typeArray addObject:[NSNumber numberWithInt:[_gasTypePicker selectedSegmentIndex]]];
-    [dateArray addObject:[NSDate date]];
+    [dateArray addObject:[_gasDatePicker date]];
     // Debugging stuff
     NSLog(@"Gallons: %@", gallonsArray);
     NSLog(@"type: %@", typeArray);

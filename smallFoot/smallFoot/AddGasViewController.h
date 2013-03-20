@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *gasTypePicker;
 @property (retain, nonatomic) IBOutlet UITextField *gallonsTextField;
+@property (weak, nonatomic) IBOutlet UIDatePicker *gasDatePicker;
 
 - (void)saveGas;
 

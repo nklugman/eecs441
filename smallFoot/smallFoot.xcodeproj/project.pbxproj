@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD062B0616FA1A1A0090C87E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = DD062B0516FA1A1A0090C87E /* Default-Landscape~ipad.png */; };
 		DD2F13A416F77D810084579C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2F13A316F77D810084579C /* ThirdViewController.m */; };
 		DD2F13A616F77F990084579C /* smallfoot.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2F13A516F77F990084579C /* smallfoot.png */; };
 		DDC1F62916E924D800BC1595 /* AddElectricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1F62816E924D800BC1595 /* AddElectricViewController.m */; };
@@ -179,6 +180,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD062B0516FA1A1A0090C87E /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		DD2F13A216F77D810084579C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		DD2F13A316F77D810084579C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		DD2F13A516F77F990084579C /* smallfoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallfoot.png; sourceTree = "<group>"; };
@@ -606,6 +608,7 @@
 				DDF91DD116E8FB3300AAE198 /* Default.png */,
 				DDF91DD316E8FB3300AAE198 /* Default@2x.png */,
 				DDF91DD516E8FB3300AAE198 /* Default-568h@2x.png */,
+				DD062B0516FA1A1A0090C87E /* Default-Landscape~ipad.png */,
 				DDF91DF316E9074200AAE198 /* gasLog.plist */,
 				DDC1F62D16E9317400BC1595 /* electricLog.plist */,
 				DDC1F62F16E9318C00BC1595 /* offsetLog.plist */,
@@ -819,6 +822,7 @@
 				DDD4EE8516E98FD8009A27A5 /* truck.png in Resources */,
 				DDD4EE8616E98FD8009A27A5 /* waste_basket.png in Resources */,
 				DD2F13A616F77F990084579C /* smallfoot.png in Resources */,
+				DD062B0616FA1A1A0090C87E /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

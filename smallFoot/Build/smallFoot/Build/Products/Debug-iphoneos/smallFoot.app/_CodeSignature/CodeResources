@@ -12,9 +12,13 @@
 		<data>
 		D8STS3mHDv2ya6HKCvP6jrq8eig=
 		</data>
+		<key>Default-Landscape~ipad.png</key>
+		<data>
+		+iJO9Ckn614d+VvDC0WQKf1wYKE=
+		</data>
 		<key>Default.png</key>
 		<data>
-		g4VJVUY+xKlNSVSdT4q0Ss3mj9c=
+		1c801tFr5wB1Zx60OjdwC5yN0Bg=
 		</data>
 		<key>Default@2x.png</key>
 		<data>
@@ -174,83 +178,87 @@
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/2-view-17.nib</key>
 		<data>
-		h+lncY16aKpMPhmKbPdO2IjASpY=
+		AX/6aIRL4rDVn+AurJxZgxrQ07g=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/3-view-16.nib</key>
 		<data>
-		WzdeMRKBD9VdjCofurH9CzlhCvc=
+		X5Ghk6WCSxT1ANZ3DX84F8nUjb8=
+		</data>
+		<key>en.lproj/MainStoryboard_iPad.storyboardc/33o-Xz-4tp-view-y7X-96-StK.nib</key>
+		<data>
+		6p0Og8HlXmM0Yut97g9dqgRszhk=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/8AI-uM-TUZ-view-MJk-Ku-nD8.nib</key>
 		<data>
-		Q743/NTsCl5630WJkN5qSq9mJ3c=
+		ggV9XrdvY3vm8R9FaN5cKgVkfdA=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/BMC-Y2-me3-view-Y1L-NR-q2Z.nib</key>
 		<data>
-		cMXNdDTL1KVXQzzH1LLAk7tqc2U=
+		9ePQkvFVzrGZ/E65jy1vMShYGmQ=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/GhV-xP-Ldm-view-4fj-xT-3Jc.nib</key>
 		<data>
-		tI+Cxj5OjEjp1RR/RcC/6jMnOSc=
+		4ZsU/OBOWMLhwy8bKkTmgeyDUZg=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/HU6-2h-kYD-view-sJf-Ca-D9f.nib</key>
 		<data>
-		ELzzWtj6VoqrOhJy9P336uUsxg8=
+		1WBsPi/9WOvb0N9yt5QGYuswNBo=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/IDF-sK-ebA-view-doG-nM-Foa.nib</key>
 		<data>
-		plJa3Zh+bO858ocesPQkbX7YKpQ=
+		Uj4NIlvcxlD/DVdFD5vyS6GGiRo=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/MjV-wh-l0S-view-3gU-fW-xg5.nib</key>
 		<data>
-		WlVLpc+U5L/+7a6XD1E6Gl/dNEw=
+		LwWqpr3zHITchttSRdJmG05FwiA=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-4.nib</key>
 		<data>
-		kGXhV1SPnrpu0zuphuGgvx1sI7E=
+		3pLp+dOfgXPy5loPDwVFfUzg+A8=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-8AI-uM-TUZ.nib</key>
 		<data>
-		+y8qMcZZ8W5PiKrIEvf7Hsk+4DM=
+		EgMe6Tl6iyh6//kkJJKnOLznXl4=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-BMC-Y2-me3.nib</key>
 		<data>
-		3fW622CIr63+qCLV0tVLPCQYCiw=
+		0/b9DsXZQS67vJtbWu1Xr0vhYe0=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-HU6-2h-kYD.nib</key>
 		<data>
-		63xgy8HAsDDtsPpsBaEtgG178zU=
+		i2ag9fCWac1jYIS61GNXGQqnKYk=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-IDF-sK-ebA.nib</key>
 		<data>
-		OcXxlHO26gRGs3w8b8gGZD/4OOM=
+		OKkRkRCMoMH71M0WW1dMd3PO//k=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-fhe-o3-ZIy.nib</key>
 		<data>
-		Qea2cpoCcIFA9nFRRshDqe12QVI=
+		HxAF78a9qClTR5vJSmlZOUB7Sgo=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-rCE-2t-l8k.nib</key>
 		<data>
-		JaD2Vym9QnUmYUFxinqN6CfiF88=
+		VrHK9723milaJ5IV+D3u2yG+/Xk=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/dLt-PM-IKR-view-rNP-fu-dKI.nib</key>
 		<data>
-		FguXWXaVfiFhC9NkqdpWUDBhgaI=
+		zS7Mb+ZUshxCYUNBvBNlnSSnBaQ=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/rCE-2t-l8k-view-iZs-zH-6fx.nib</key>
 		<data>
-		52hmhCgLSzPddvNwqzUPnpRYk+A=
+		ys0NDdq7mpozFluV/LeM4Ahu4tc=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/2-view-16.nib</key>
 		<data>
-		MXCBp4M2zl9epXX5ukVeRLmG1Lw=
+		qU50eSgrJQyyzZK9DLQRRUy/IRk=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/3-view-17.nib</key>
 		<data>
-		BRIJf9osiHGm+cR8uaBGUehN5lg=
+		HZtmphw8Zma9owM7XjSOYrH/90w=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-4.nib</key>
 		<data>
-		XWsnaUSaEu4GobNgaPatn/866kg=
+		p+ECsDDASA1Ya0bPoONx9KY+8I4=
 		</data>
 		<key>fast_forward.png</key>
 		<data>
@@ -643,6 +651,10 @@
 		<key>shuffle@2x.png</key>
 		<data>
 		sOqVjLxrIAQ9qmKmhq41/QKZ+L4=
+		</data>
+		<key>smallfoot.png</key>
+		<data>
+		2L+omxhBhC8lUaThWoMS3PHkyak=
 		</data>
 		<key>speaker.png</key>
 		<data>
