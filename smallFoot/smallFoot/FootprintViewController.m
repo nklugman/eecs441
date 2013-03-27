@@ -57,8 +57,8 @@
     [_electricPrintLabel setText:[NSString stringWithFormat:@"You used %0.2f pounds of carbon from electricity this month", [calculator getElectricPrint]]];
     [_totalPrintLabel setText:[NSString stringWithFormat:@"Your carbon footprint this month was %0.2f pounds", [calculator getTotalPrint]]];
     
-    [_averageGasolinePrintLabel setText:[NSString stringWithFormat:@"The average American uses %0.2f pounds of carbon from gasoline this month", [calculator getAverageGasolinePrint]]];
-    [_averageElectricPrintLabel setText:[NSString stringWithFormat:@"The average American uses %0.2f pounds of carbon from electricity this month", [calculator getAverageElectricPrint]]];
+    [_averageGasolinePrintLabel setText:[NSString stringWithFormat:@"The average American uses %0.0f pounds of carbon from gasoline per month", [calculator getAverageGasolinePrint]]];
+    [_averageElectricPrintLabel setText:[NSString stringWithFormat:@"The average American uses %0.0f pounds of carbon from electricity per month", [calculator getAverageElectricPrint]]];
     [_averageTotalPrintLabel setText:[NSString stringWithFormat:@"The average American carbon footprint is %0.2f pounds", [calculator getAverageTotalPrint]]];
     
     [_gasolineRatingLabel setText:[NSString stringWithFormat:@"%.0f/100", gasRating * 50]];
