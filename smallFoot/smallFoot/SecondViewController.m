@@ -29,14 +29,14 @@
 - (IBAction)nextMonthButtonPressed:(id)sender {
     [_nextMonthButton setEnabled:NO];
     [_lastMonthButton setEnabled:YES];
-    [_navigationTitle setTitle:@"Your Carbon Footprint - March 2013"];
+    [_navigationTitle setTitle:@"Your Carbon Footprint - April 2013"];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"loadFootprint" object:nil];
 }
 
 - (IBAction)lastMonthButtonPressed:(id)sender {
     [_nextMonthButton setEnabled:YES];
     [_lastMonthButton setEnabled:NO];
-    [_navigationTitle setTitle:@"Your Carbon Footprint - February 2013"];
+    [_navigationTitle setTitle:@"Your Carbon Footprint - March 2013"];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"loadOldFootprint" object:nil];
 }
 @end

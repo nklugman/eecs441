@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DD062B0616FA1A1A0090C87E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = DD062B0516FA1A1A0090C87E /* Default-Landscape~ipad.png */; };
+		DD20845C170F3AD90068F5A9 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD20845B170F3AD90068F5A9 /* SocialViewController.m */; };
+		DD20845F170F3AF40068F5A9 /* AutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD20845E170F3AF40068F5A9 /* AutoViewController.m */; };
 		DD2F13A416F77D810084579C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2F13A316F77D810084579C /* ThirdViewController.m */; };
 		DD2F13A616F77F990084579C /* smallfoot.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2F13A516F77F990084579C /* smallfoot.png */; };
 		DDC1F62916E924D800BC1595 /* AddElectricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1F62816E924D800BC1595 /* AddElectricViewController.m */; };
@@ -181,6 +183,10 @@
 
 /* Begin PBXFileReference section */
 		DD062B0516FA1A1A0090C87E /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		DD20845A170F3AD90068F5A9 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		DD20845B170F3AD90068F5A9 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		DD20845D170F3AF40068F5A9 /* AutoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoViewController.h; sourceTree = "<group>"; };
+		DD20845E170F3AF40068F5A9 /* AutoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoViewController.m; sourceTree = "<group>"; };
 		DD2F13A216F77D810084579C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		DD2F13A316F77D810084579C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		DD2F13A516F77F990084579C /* smallfoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallfoot.png; sourceTree = "<group>"; };
@@ -569,6 +575,10 @@
 				DDF91DCF16E8FB3300AAE198 /* AppDelegate.m */,
 				DDF91DD716E8FB3300AAE198 /* MainStoryboard_iPhone.storyboard */,
 				DDF91DDA16E8FB3300AAE198 /* MainStoryboard_iPad.storyboard */,
+				DD20845D170F3AF40068F5A9 /* AutoViewController.h */,
+				DD20845E170F3AF40068F5A9 /* AutoViewController.m */,
+				DD20845A170F3AD90068F5A9 /* SocialViewController.h */,
+				DD20845B170F3AD90068F5A9 /* SocialViewController.m */,
 				DD2F13A216F77D810084579C /* ThirdViewController.h */,
 				DD2F13A316F77D810084579C /* ThirdViewController.m */,
 				DDD4ED6816E9800F009A27A5 /* FootprintViewController.h */,
@@ -844,6 +854,8 @@
 				DDD4ED6716E976FF009A27A5 /* CarbonCalculator.m in Sources */,
 				DDD4ED6A16E9800F009A27A5 /* FootprintViewController.m in Sources */,
 				DD2F13A416F77D810084579C /* ThirdViewController.m in Sources */,
+				DD20845C170F3AD90068F5A9 /* SocialViewController.m in Sources */,
+				DD20845F170F3AF40068F5A9 /* AutoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

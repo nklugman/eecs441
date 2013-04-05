@@ -2,7 +2,7 @@
 //  SocialViewController.m
 //  smallFoot
 //
-//  Created by w on 4/1/13.
+//  Created by Ben Perkins on 4/5/13.
 //  Copyright (c) 2013 Klugman, Tsai & Perkins. All rights reserved.
 //
 
