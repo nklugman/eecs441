@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *time;
 @property (weak, nonatomic) IBOutlet UILabel *distance;
 @property (weak, nonatomic) IBOutlet UIImageView *progress;
+@property (weak, nonatomic) IBOutlet UILabel *recording;
+@property (weak, nonatomic) IBOutlet UIImageView *recordingIndicator;
 
 
 - (IBAction)startStopButtonPressed:(id)sender;

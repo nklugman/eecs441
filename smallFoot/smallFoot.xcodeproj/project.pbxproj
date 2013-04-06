@@ -15,6 +15,8 @@
 		DDBACF191710695400BE4FD4 /* AchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBACF181710695400BE4FD4 /* AchievementViewController.m */; };
 		DDBACF1B1710795C00BE4FD4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBACF1A1710795C00BE4FD4 /* MapKit.framework */; };
 		DDBFA8D0171097EF00E00973 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = DDBFA8CF171097EF00E00973 /* loading.png */; };
+		DDBFA8D31710C5A300E00973 /* recordOff.png in Resources */ = {isa = PBXBuildFile; fileRef = DDBFA8D11710C5A300E00973 /* recordOff.png */; };
+		DDBFA8D41710C5A300E00973 /* recordOn.png in Resources */ = {isa = PBXBuildFile; fileRef = DDBFA8D21710C5A300E00973 /* recordOn.png */; };
 		DDC1F62916E924D800BC1595 /* AddElectricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1F62816E924D800BC1595 /* AddElectricViewController.m */; };
 		DDC1F62C16E92CAA00BC1595 /* AddOffsetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1F62B16E92CAA00BC1595 /* AddOffsetViewController.m */; };
 		DDC1F62E16E9317400BC1595 /* electricLog.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDC1F62D16E9317400BC1595 /* electricLog.plist */; };
@@ -197,6 +199,8 @@
 		DDBACF181710695400BE4FD4 /* AchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementViewController.m; sourceTree = "<group>"; };
 		DDBACF1A1710795C00BE4FD4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DDBFA8CF171097EF00E00973 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		DDBFA8D11710C5A300E00973 /* recordOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordOff.png; sourceTree = "<group>"; };
+		DDBFA8D21710C5A300E00973 /* recordOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordOn.png; sourceTree = "<group>"; };
 		DDC1F62716E924D800BC1595 /* AddElectricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddElectricViewController.h; sourceTree = "<group>"; };
 		DDC1F62816E924D800BC1595 /* AddElectricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddElectricViewController.m; sourceTree = "<group>"; };
 		DDC1F62A16E92CAA00BC1595 /* AddOffsetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOffsetViewController.h; sourceTree = "<group>"; };
@@ -626,6 +630,8 @@
 				DDF91DC816E8FB3300AAE198 /* InfoPlist.strings */,
 				DDF91DCB16E8FB3300AAE198 /* main.m */,
 				DDF91DCD16E8FB3300AAE198 /* smallFoot-Prefix.pch */,
+				DDBFA8D11710C5A300E00973 /* recordOff.png */,
+				DDBFA8D21710C5A300E00973 /* recordOn.png */,
 				DDF91DD116E8FB3300AAE198 /* Default.png */,
 				DDF91DD316E8FB3300AAE198 /* Default@2x.png */,
 				DDF91DD516E8FB3300AAE198 /* Default-568h@2x.png */,
@@ -846,6 +852,8 @@
 				DD2F13A616F77F990084579C /* smallfoot.png in Resources */,
 				DD062B0616FA1A1A0090C87E /* Default-Landscape~ipad.png in Resources */,
 				DDBFA8D0171097EF00E00973 /* loading.png in Resources */,
+				DDBFA8D31710C5A300E00973 /* recordOff.png in Resources */,
+				DDBFA8D41710C5A300E00973 /* recordOn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

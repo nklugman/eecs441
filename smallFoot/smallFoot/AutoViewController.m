@@ -8,6 +8,8 @@
 
 #import "AutoViewController.h"
 
+const double MS2MPH = 2.23694;
+
 bool running;
 double averageSpeed;
 int speedSamples;
@@ -30,7 +32,10 @@ long startTime;
 
 - (void)viewDidLoad
 {
+    [_map setDelegate:self];
     [super viewDidLoad];
+    [_recording setHidden:YES];
+    [_recordingIndicator setHidden:YES];
     startTime = [[NSDate date] timeIntervalSince1970];
     averageSpeed = 0;
     speedSamples = 0;
@@ -48,22 +53,26 @@ long startTime;
 - (IBAction)startStopButtonPressed:(id)sender {
     if([[[_startStopButton titleLabel] text] isEqualToString:@"Start"]){
         [_startStopButton setTitle:@"Stop" forState:UIControlStateNormal];
+        [_recording setHidden:NO];
+        [_recordingIndicator setHidden:NO];
         running = YES;
         startTime = [[NSDate date] timeIntervalSince1970];
         averageSpeed = 0;
         speedSamples = 0;
         //[_progress setHidden:NO];
-        [self centerMapOnUser];
+        [self getLocation];
 
     }else{
         [_startStopButton setTitle:@"Start" forState:UIControlStateNormal];
+        [_recording setHidden:YES];
+        [_recordingIndicator setHidden:YES];
         running = NO;
         [_progress setHidden:YES];
     }
 }
 
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
-    
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{    
     [self centerMapOnUser];
 }
 
@@ -73,25 +82,27 @@ long startTime;
     
     MKUserLocation *userLocation = _map.userLocation;
     
-    double accuracy = [[userLocation location] horizontalAccuracy];
+    //double accuracy = [[userLocation location] horizontalAccuracy];
     CLLocationCoordinate2D coordinate = [[userLocation location] coordinate];
     
     
     MKCoordinateRegion region =
-    MKCoordinateRegionMakeWithDistance (coordinate, 2500, 2500);
+    MKCoordinateRegionMakeWithDistance (coordinate, 2000, 2000);
     [_map setRegion:region animated:NO];
-    
-    if(accuracy == 0) [self performSelector:@selector(centerMapOnUser) withObject:self afterDelay:0.1 ];
-    if(running) [self getLocation];
+    //if(accuracy == 0) [self performSelector:@selector(centerMapOnUser) withObject:self afterDelay:0.1 ];
+    //if(!running) [self performSelector:@selector(centerMapOnUser) withObject:self afterDelay:2];
+    //if(running) [self getLocation];
 }
 
 -(void)getLocation
 {
-    
     MKUserLocation *userLocation = _map.userLocation;
     double distance = 0;
-    double speed = [[userLocation location] speed];
+    double speed = [[userLocation location] speed] * MS2MPH;
     double time = ([[NSDate date] timeIntervalSince1970] - startTime);
+    int hours = time / 3600;
+    int minutes = (time - (hours * 3600)) / 60;
+    int seconds = (time - (hours * 3600) - (minutes * 60));
     if(speed > 0)
     {
         averageSpeed *= speedSamples;
@@ -99,13 +110,22 @@ long startTime;
         averageSpeed += speed;
         averageSpeed /= speedSamples;
     }
-    distance = averageSpeed * time;
+    distance = averageSpeed * time / 3600;
     
-    [_currentSpeed setText:[NSString stringWithFormat:@"%0.8f", speed]];
-    [_averageSpeed setText:[NSString stringWithFormat:@"%0.8f", averageSpeed]];
-    [_time setText:[NSString stringWithFormat:@"%0.1f", time]];
-    [_distance setText:[NSString stringWithFormat:@"%0.4f", distance]];
+    [_currentSpeed setText:[NSString stringWithFormat:@"%0.2fmph", speed]];
+    [_averageSpeed setText:[NSString stringWithFormat:@"%0.2fmph", averageSpeed]];
+    [_time setText:[NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds]];
+    [_distance setText:[NSString stringWithFormat:@"%0.3fmi", distance]];
     
-    if(running) [self performSelector:@selector(centerMapOnUser) withObject:self afterDelay:0.1 ];
+    if((int)time % 2 == 0)
+    {
+        [_recordingIndicator setImage:[UIImage imageNamed:@"recordOff"]];
+    }
+    else
+    {
+        [_recordingIndicator setImage:[UIImage imageNamed:@"recordOn"]];
+    }
+    
+    if(running) [self performSelector:@selector(getLocation) withObject:self afterDelay:0.5 ];
 }
 @end
