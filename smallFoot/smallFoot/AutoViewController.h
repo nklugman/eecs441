@@ -7,9 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface AutoViewController : UIViewController
+@interface AutoViewController : UIViewController <MKMapViewDelegate>
+{
+    //CLLocationManager *locationManager;
+}
+
+@property (nonatomic, retain) CLLocationManager *locationManager;
 @property (weak, nonatomic) IBOutlet UIButton *startStopButton;
+@property (strong, nonatomic) IBOutlet MKMapView *map;
+@property (weak, nonatomic) IBOutlet UILabel *currentSpeed;
+@property (weak, nonatomic) IBOutlet UILabel *averageSpeed;
+@property (weak, nonatomic) IBOutlet UILabel *time;
+@property (weak, nonatomic) IBOutlet UILabel *distance;
+@property (weak, nonatomic) IBOutlet UIImageView *progress;
+
+
 - (IBAction)startStopButtonPressed:(id)sender;
+- (void)centerMapOnUser;
+- (void)getLocation;
 
 @end
