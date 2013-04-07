@@ -6,8 +6,13 @@
 //  Copyright (c) 2013 Klugman, Tsai & Perkins. All rights reserved.
 //
 
+#import <FacebookSDK/FacebookSDK.h>
 #import <UIKit/UIKit.h>
 
-@interface SocialViewController : UIViewController
+@interface SocialViewController : UIViewController<FBLoginViewDelegate>
+
+@property (weak, nonatomic) IBOutlet FBLoginView *loginView;
+@property (unsafe_unretained, nonatomic) IBOutlet FBProfilePictureView *profilePic;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *nameLabel;
 
 @end
