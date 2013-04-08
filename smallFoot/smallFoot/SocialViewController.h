@@ -11,12 +11,18 @@
 
 @interface SocialViewController : UIViewController<FBLoginViewDelegate>
 
+// UI Controls
 @property (weak, nonatomic) IBOutlet FBLoginView *loginView;
 @property (unsafe_unretained, nonatomic) IBOutlet FBProfilePictureView *profilePic;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *footprintTotalLabel;
-@property (weak, nonatomic) IBOutlet UIButton * publishButton;
+@property (weak, nonatomic) IBOutlet UIButton *publishButton;
 
--(IBAction)publishButtonPressed:(id)sender;
+// Footprint Data
+@property (copy, nonatomic) NSString *footprintTotal;
+
+// Methods
+- (void)showTotalsForMonth:(int)month andYear:(int)year;
+- (IBAction)publishButtonPressed:(id)sender;
 
 @end

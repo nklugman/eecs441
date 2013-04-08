@@ -7,6 +7,8 @@
 //
 
 #import "SocialViewController.h"
+#import "SFOGProtocols.h"
+#import "CarbonCalculator.h"
 
 @interface SocialViewController ()
 
@@ -17,6 +19,8 @@
 @synthesize loginView;
 @synthesize profilePic;
 @synthesize nameLabel;
+
+@synthesize footprintTotal;
 @synthesize footprintTotalLabel;
 @synthesize publishButton;
 
@@ -30,10 +34,8 @@
         profilePic.translatesAutoresizingMaskIntoConstraints = NO;
         loginView.translatesAutoresizingMaskIntoConstraints = NO;
         */
-        
-         
         loginView.publishPermissions = @[@"publish_actions"];
-        loginView.defaultAudience = FBSessionDefaultAudienceFriends;
+        loginView.defaultAudience = FBSessionDefaultAudienceOnlyMe;
         
     }
     return self;
@@ -44,6 +46,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    [self showCurrentTotals];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,11 +59,15 @@
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
     NSLog(@"user is logged in");
+    
+    self.publishButton.hidden = NO;
 }
 
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
     self.profilePic.profileID = nil;
     self.nameLabel.text = @"";
+    
+    self.publishButton.hidden = YES;
 }
 
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
@@ -71,9 +78,11 @@
     self.nameLabel.text = [NSString stringWithFormat:
                                 @"Welcome, %@", user.first_name];
     
+    self.publishButton.hidden = NO;
     
     NSLog(@"Facebook id is: %@", user.id);
-    NSLog(@"Facebook access token: %@", [[FBSession activeSession] accessTokenData]);
+    NSLog(@"Facebook access token: %@", [[[FBSession activeSession] accessTokenData] accessToken]);
+    
     
 }
 
@@ -112,17 +121,152 @@
 }
 
 - (void)fbDidLogin {
+    // caching for re-initializing access tokens
+    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:[[FBSession activeSession] accessTokenData] forKey:@"FBAccessTokenKey"];
+    [defaults setObject:[[[FBSession activeSession] accessTokenData] accessToken] forKey:@"FBAccessTokenKey"];
     [defaults setObject:[[[FBSession activeSession] accessTokenData] expirationDate] forKey:@"FBExpirationDateKey"];
     [defaults synchronize];
 }
 
+/*
+- (void)sessionStateChanged:(NSNotification*)notification {
+    if (FBSession.activeSession.isOpen) {
+        self.publishButton.hidden = NO;
+        [self.authButton setTitle:@"Logout" forState:UIControlStateNormal];
+    } else {
+        self.publishButton.hidden = YES;
+        [self.authButton setTitle:@"Login" forState:UIControlStateNormal];
+    }
+}
+ */
+
+#pragma mark - UIAlertViewDelegate Methods
+
+- (void) alertView:(UIAlertView *)alertView
+didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    [[self presentingViewController]
+     dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark - SocialViewController Methods
 
--(IBAction)publishButtonPressed:(id)sender
+- (id<SFOGFootprint>)footprintObjectForFootprint:(NSString*)footprint
 {
-    NSLog(@"publish button pressed");
+    // This URL is specific to this sample, and can be used to
+    // create arbitrary OG objects for this app; your OG objects
+    // will have URLs hosted by your server.
+    bool smallfoot = NO;
+    
+    NSString *format =
+    @"https://sleepy-basin-4726.herokuapp.com/footprint.php?"
+    @"fb:app_id=158795857619338&og:type=%@&"
+    @"og:title=%@&og:description=%%22%@%%22&"
+    @"og:image=%@&"
+    @"body=%@";
+   
+    NSString *object_type = @"ktp_smallfoot:carbon_footprint";
+    NSString *img = [NSString stringWithFormat:@"http://sleepy-basin-4726.herokuapp.com/images/%@", smallfoot?@"greenfootprint.png":@"redfootprint.png"];
+
+    id<SFOGFootprint> result = (id<SFOGFootprint>)[FBGraphObject graphObject];
+    result.url = [NSString stringWithFormat:format,
+                  object_type, footprint, footprint, img, footprint];
+    return result;
 }
+
+- (void)publishStory
+{
+    
+    id<SFOGFootprint> footprintObject = [self footprintObjectForFootprint:footprintTotal];
+    
+    NSLog(@"url: %@", footprintObject.url);
+     
+    // Now create an Open Graph eat action with the meal, our location,
+    // and the people we were with.
+    id<SFOGRecordFootprintAction> action =
+    (id<SFOGRecordFootprintAction>)[FBGraphObject graphObject];
+    action.carbon_footprint = footprintObject;
+
+    [FBSettings setLoggingBehavior:[NSSet
+                                    setWithObjects:FBLoggingBehaviorFBRequests,
+                                    FBLoggingBehaviorFBURLConnections,
+                                    nil]];
+    
+    [FBRequestConnection startForPostWithGraphPath:@"me/ktp_smallfoot:record"
+                                       graphObject:action
+                                 completionHandler:
+     ^(FBRequestConnection *connection, id result, NSError *error) {
+         NSString *alertText;
+         if (!error) {
+             alertText = [NSString stringWithFormat:
+                          @"Posted Open Graph action, id: %@",
+                          [result objectForKey:@"id"]];
+         } else {
+             alertText = [NSString stringWithFormat:
+                          @"error: domain = %@, code = %d",
+                          error.domain, error.code];
+             
+             NSLog(@"Entire error message: %@", error);
+         }
+         [[[UIAlertView alloc] initWithTitle:@"Result"
+                                     message:alertText
+                                    delegate:nil
+                           cancelButtonTitle:@"Thanks!"
+                           otherButtonTitles:nil]
+          show];
+     }
+     ];
+
+     
+}
+
+- (IBAction)publishButtonPressed:(id)sender
+{
+    // Ask for publish_actions permissions in context
+    if ([FBSession.activeSession.permissions
+         indexOfObject:@"publish_actions"] == NSNotFound) {
+        // No permissions found in session, ask for it
+        [FBSession.activeSession
+         requestNewPublishPermissions:
+         [NSArray arrayWithObject:@"publish_actions"]
+         defaultAudience:FBSessionDefaultAudienceOnlyMe
+         completionHandler:^(FBSession *session, NSError *error) {
+             if (!error) {
+                 // If permissions granted, publish the story
+                 [self publishStory];
+             }
+         }];
+    } else {
+        // If permissions present, publish the story
+        [self publishStory];
+    }
+}
+
+- (void)showCurrentTotals
+{
+    NSDate           *today           = [NSDate date];
+    NSCalendar       *currentCalendar = [NSCalendar currentCalendar];
+    
+    NSDateComponents *monthComponents = [currentCalendar components:NSMonthCalendarUnit fromDate:today];
+    int currentMonth = [monthComponents month];
+    
+    NSDateComponents *yearComponents  = [currentCalendar components:NSYearCalendarUnit  fromDate:today];
+    int currentYear  = [yearComponents year];
+    [self showTotalsForMonth:currentMonth andYear:currentYear];
+}
+
+- (void)showTotalsForMonth:(int)month andYear:(int)year
+{
+    CarbonCalculator *calculator = [[CarbonCalculator alloc] init];
+    [calculator calculateForMonth:month andYear:year];
+    S
+    footprintTotal = [NSString stringWithFormat:@"%0.2f pounds of carbon", [calculator getTotalPrint]];
+    [footprintTotalLabel setText:footprintTotal];
+    [footprintTotalLabel sizeToFit];
+    
+}
+
+
 
 @end
