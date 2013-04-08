@@ -29,12 +29,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-
-        /*
-        profilePic.translatesAutoresizingMaskIntoConstraints = NO;
-        loginView.translatesAutoresizingMaskIntoConstraints = NO;
-        */
         loginView.publishPermissions = @[@"publish_actions"];
         loginView.defaultAudience = FBSessionDefaultAudienceOnlyMe;
         
