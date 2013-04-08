@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -159,13 +159,22 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQQ-tW-T7F">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="ro5-Hp-5ha">
+                                <color key="tintColor" red="0.16132156550000001" green="0.45832067729999998" blue="0.1482911408" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Offset Your Footprint" id="hP2-6r-3EW"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="UQQ-tW-T7F" firstAttribute="trailing" secondItem="y7X-96-StK" secondAttribute="trailing" type="default" id="7ak-O9-zHU"/>
-                            <constraint firstItem="UQQ-tW-T7F" firstAttribute="top" secondItem="y7X-96-StK" secondAttribute="top" type="default" id="OHT-4r-G5m"/>
+                            <constraint firstItem="ro5-Hp-5ha" firstAttribute="trailing" secondItem="y7X-96-StK" secondAttribute="trailing" type="default" id="Iv7-bc-qGW"/>
+                            <constraint firstItem="ro5-Hp-5ha" firstAttribute="leading" secondItem="y7X-96-StK" secondAttribute="leading" type="default" id="U16-AN-zKL"/>
+                            <constraint firstItem="UQQ-tW-T7F" firstAttribute="top" secondItem="ro5-Hp-5ha" secondAttribute="bottom" type="default" id="a70-ER-1hV"/>
                             <constraint firstItem="UQQ-tW-T7F" firstAttribute="leading" secondItem="y7X-96-StK" secondAttribute="leading" type="default" id="aeg-RL-BoE"/>
                             <constraint firstItem="UQQ-tW-T7F" firstAttribute="bottom" secondItem="y7X-96-StK" secondAttribute="bottom" type="default" id="vlD-fE-5V8"/>
+                            <constraint firstItem="ro5-Hp-5ha" firstAttribute="top" secondItem="y7X-96-StK" secondAttribute="top" type="default" id="ywO-4F-w7D"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Offset" image="credit_card.png" id="U7h-Jp-NV2"/>
@@ -248,25 +257,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="GRx-DA-U7b">
+                                <color key="tintColor" red="0.16132156550000001" green="0.45832067729999998" blue="0.1482911408" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Connect With Facebook" id="8ma-HZ-HKQ"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GRx-DA-U7b" firstAttribute="trailing" secondItem="gwW-iy-qeK" secondAttribute="trailing" type="default" id="0C1-36-uZS"/>
                             <constraint firstItem="1Sw-2V-jgQ" firstAttribute="leading" secondItem="MXe-cm-LxT" secondAttribute="trailing" constant="8" symbolic="YES" type="user" id="0fF-mR-dS5"/>
                             <constraint firstItem="qJR-NR-pgD" firstAttribute="top" secondItem="rEv-rV-6Kf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8Tl-tF-lAh"/>
-                            <constraint firstItem="IAu-ew-DaI" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="20" symbolic="YES" type="user" id="8ZX-QN-GM2"/>
-                            <constraint firstItem="MXe-cm-LxT" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="123" type="user" id="CUo-iB-XUc"/>
-                            <constraint firstItem="MXe-cm-LxT" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="130" type="user" id="CeD-pW-i5a"/>
-                            <constraint firstItem="IAu-ew-DaI" firstAttribute="centerX" secondItem="gwW-iy-qeK" secondAttribute="centerX" type="user" id="E2H-d2-EoZ"/>
+                            <constraint firstItem="GRx-DA-U7b" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" type="default" id="Pwk-ag-EBf"/>
+                            <constraint firstItem="MXe-cm-LxT" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="129" id="SNe-Z2-VXH"/>
                             <constraint firstItem="rEv-rV-6Kf" firstAttribute="leading" secondItem="MXe-cm-LxT" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="SfM-um-UZa"/>
-                            <constraint firstItem="IAu-ew-DaI" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="284" type="user" id="aRq-EO-nzb"/>
+                            <constraint firstItem="IAu-ew-DaI" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="283" id="T9e-pv-KE9"/>
+                            <constraint firstItem="IAu-ew-DaI" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="113" id="XG9-UM-xg8"/>
+                            <constraint firstItem="GRx-DA-U7b" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" type="default" id="bMg-RK-NyO"/>
                             <constraint firstItem="qJR-NR-pgD" firstAttribute="leading" secondItem="MXe-cm-LxT" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="eeM-0O-xaZ"/>
                             <constraint firstItem="YUm-ig-WRI" firstAttribute="leading" secondItem="MXe-cm-LxT" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="fn2-6U-KYH"/>
-                            <constraint firstItem="1Sw-2V-jgQ" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="238" type="user" id="gB6-M1-usM"/>
-                            <constraint firstAttribute="bottom" secondItem="MXe-cm-LxT" secondAttribute="bottom" constant="732" type="user" id="mmD-zQ-Yu2"/>
                             <constraint firstItem="1Sw-2V-jgQ" firstAttribute="top" secondItem="MXe-cm-LxT" secondAttribute="top" type="default" id="ndB-m6-pZZ"/>
-                            <constraint firstItem="YUm-ig-WRI" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="238" id="vUe-ae-yTe"/>
-                            <constraint firstItem="rEv-rV-6Kf" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="162" id="yeQ-PF-JuJ"/>
-                            <constraint firstAttribute="bottom" secondItem="IAu-ew-DaI" secondAttribute="bottom" constant="835" type="user" id="zxS-3W-Efq"/>
+                            <constraint firstItem="YUm-ig-WRI" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="331" id="u1r-X4-fHe"/>
+                            <constraint firstItem="MXe-cm-LxT" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="216" id="vuu-wZ-eFz"/>
+                            <constraint firstItem="rEv-rV-6Kf" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="255" id="zQT-Cc-mbh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" image="people_.png" id="H7L-BA-Nf5"/>
