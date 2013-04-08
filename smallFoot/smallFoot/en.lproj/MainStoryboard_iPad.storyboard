@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -240,7 +240,7 @@
                                     <action selector="publishButtonPressed:" destination="6oz-Eg-LMi" eventType="touchUpInside" id="FG7-rb-Uo2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your carbon footprint for April:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEv-rV-6Kf">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your carbon footprint:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEv-rV-6Kf">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="253" id="HFm-b5-Y1e"/>
                                 </constraints>
@@ -250,8 +250,8 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJR-NR-pgD">
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="424" id="Yag-3i-j6X"/>
                                     <constraint firstAttribute="height" constant="21" id="u18-yw-G2Z"/>
-                                    <constraint firstAttribute="width" constant="42" id="ufa-2R-vSa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -285,6 +285,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" image="people_.png" id="H7L-BA-Nf5"/>
                     <connections>
+                        <outlet property="footprintDescriptionLabel" destination="rEv-rV-6Kf" id="jon-Jt-7ia"/>
                         <outlet property="footprintTotalLabel" destination="qJR-NR-pgD" id="B8d-xj-ewQ"/>
                         <outlet property="loginView" destination="IAu-ew-DaI" id="NLA-eL-6Fw"/>
                         <outlet property="nameLabel" destination="1Sw-2V-jgQ" id="yFI-vd-B3B"/>
@@ -1375,6 +1376,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialViewController.h"/>
             <relationships>
                 <relationship kind="action" name="publishButtonPressed:"/>
+                <relationship kind="outlet" name="footprintDescriptionLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="footprintTotalLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="loginView" candidateClass="FBLoginView"/>
                 <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
