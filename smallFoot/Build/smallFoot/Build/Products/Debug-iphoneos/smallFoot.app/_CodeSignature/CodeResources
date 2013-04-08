@@ -24,6 +24,70 @@
 		<data>
 		f+chbalD/cg0G6RzsOPbpHUYQAg=
 		</data>
+		<key>FacebookSDKResources.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
+		<data>
+		EGEMDcYWGVz8RdmpAWubuno+VH0=
+		</data>
+		<key>FacebookSDKResources.bundle/Contents/Resources/he.lproj/Localizable.strings</key>
+		<data>
+		BrabLBnEumsE6+yKa4tqYRAcyVk=
+		</data>
+		<key>FacebookSDKResources.bundle/FBDialog/images/close.png</key>
+		<data>
+		lPlIbbW7NpLV1mLzR5iSJbYh4Do=
+		</data>
+		<key>FacebookSDKResources.bundle/FBDialog/images/close@2x.png</key>
+		<data>
+		i9lYZZOBgyVfCZZ5Vlclzb5W9II=
+		</data>
+		<key>FacebookSDKResources.bundle/FBDialog/images/fbicon.png</key>
+		<data>
+		O10PJ3vPkAdypNUGk3PgmTOlWLg=
+		</data>
+		<key>FacebookSDKResources.bundle/FBFriendPickerView/images/default.png</key>
+		<data>
+		1vfaV+nTXblvPnQYDY/1UyhoKFQ=
+		</data>
+		<key>FacebookSDKResources.bundle/FBLoginView/images/bluetint.png</key>
+		<data>
+		BIWC3V8C5xJu7te1xU/IcKauDMQ=
+		</data>
+		<key>FacebookSDKResources.bundle/FBLoginView/images/f_logo.png</key>
+		<data>
+		q5ZzbSlcisADU6ENVIbAQEQIuh4=
+		</data>
+		<key>FacebookSDKResources.bundle/FBLoginView/images/facebook.png</key>
+		<data>
+		4TuRMiMz+SihJDuSRQKvrw8Ih8k=
+		</data>
+		<key>FacebookSDKResources.bundle/FBLoginView/images/login-button-small-pressed.png</key>
+		<data>
+		9sbso4PNh1Z0KoAHph5XBnaZJkw=
+		</data>
+		<key>FacebookSDKResources.bundle/FBLoginView/images/login-button-small-pressed@2x.png</key>
+		<data>
+		eCfkxy5b02vdCe1QWUAX7AXkaq8=
+		</data>
+		<key>FacebookSDKResources.bundle/FBLoginView/images/login-button-small.png</key>
+		<data>
+		y2rFSNHSEI1JkCyI7lyl9BPX+P8=
+		</data>
+		<key>FacebookSDKResources.bundle/FBLoginView/images/login-button-small@2x.png</key>
+		<data>
+		gu818z8AxfSvFSu75e2x58h0DnQ=
+		</data>
+		<key>FacebookSDKResources.bundle/FBPlacePickerView/images/fb_generic_place.png</key>
+		<data>
+		VHmQbfvjHgmWR9lhhgbss5fm0a0=
+		</data>
+		<key>FacebookSDKResources.bundle/FBProfilePictureView/images/fb_blank_profile_portrait.png</key>
+		<data>
+		Cf3P+H4htqufzdkt4Rp3ITN43YE=
+		</data>
+		<key>FacebookSDKResources.bundle/FBProfilePictureView/images/fb_blank_profile_square.png</key>
+		<data>
+		/QFmJDPfN53Xa6/3xCgxgrYfgD8=
+		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
@@ -190,7 +254,7 @@
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/6oz-Eg-LMi-view-gwW-iy-qeK.nib</key>
 		<data>
-		0wOQrqcydTRNwfpOJ5RZeZREiSw=
+		UycZrGxbn5oNCEKpkb/1rr8Ev7c=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/8AI-uM-TUZ-view-MJk-Ku-nD8.nib</key>
 		<data>
@@ -246,7 +310,7 @@
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/b08-ZF-bv5-view-vrY-ZR-Aef.nib</key>
 		<data>
-		bpB9w++quFyrFaDQAIO+4wQGHSI=
+		yf4HSHqfxPzwjA0i3s0rm4vAJqA=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/dLt-PM-IKR-view-rNP-fu-dKI.nib</key>
 		<data>
@@ -258,83 +322,83 @@
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/3qT-Hy-Sc8-view-rQm-Pr-5xS.nib</key>
 		<data>
-		PJnbhE6W/5Vy2JtX2O5uhET6ZuE=
+		UnZRrOnJvHzck8ZCpRdGeLumjys=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/8oA-xp-eMZ-view-ZjD-09-962.nib</key>
 		<data>
-		C3tKN/CXcgzDlRGIQ0wJ4PK+FyQ=
+		AoxZcUA43OuswiSwnt2W24REDIk=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/9O7-Za-yKA-view-eqx-H7-CfU.nib</key>
 		<data>
-		Znl2574wflitDPIhIpJ+XqkGCgo=
+		RdfkL6QCdupo+lq58UxE3ZinO6Q=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/EdD-jW-fbq-view-5RD-hv-Vkp.nib</key>
 		<data>
-		MZlNAFuUkJpGUE7u+ROWr11XiSM=
+		yTP7b/y+5RY6FgzALIK8x2//dQk=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/ISi-vW-uZI-view-y9I-xT-YCo.nib</key>
 		<data>
-		qYWLruHPSEfrSpll6MCqqpYNXmw=
+		ZzrWORXxWwIv0pR1pw6/dB0NzTk=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-EdD-jW-fbq.nib</key>
 		<data>
-		p+uxLTSFCAr0qqAYfJ/dS6agElk=
+		fT9i9SL1JRHIwG8QDK/Fkqiwe+U=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-M8J-2o-vGe.nib</key>
 		<data>
-		ClDNo7VEizBaN2LVuOeRI4OUZ90=
+		K1cJJV1ulc2IBgex8EOJZjzIYtI=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-oGU-oE-dh0.nib</key>
 		<data>
-		qxuoo56I6VHeJFf8IGUOvVYRSOg=
+		S/h55IHveK9sWHV9PW3nJhuYd9I=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-plJ-Y4-TDq.nib</key>
 		<data>
-		lKceBq3uCnxNbYkqf0oB3ZTt2GM=
+		1olk7aQN//T6pYHZ2RarcUaqCYw=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-s85-go-lha.nib</key>
 		<data>
-		OF1zUWdyG+lW/DuW60Hjniogavk=
+		gTT/haeyN5npyfoo5RGj//5AAQI=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-ycO-zg-FEy.nib</key>
 		<data>
-		I2WoxfQ/IinpIgcHITCPcQXYS6w=
+		WTcAsIE/0kbeq7smi0Cq5ZE13SU=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-zW3-Qm-3v3.nib</key>
 		<data>
-		LgpCa6pSrVHlqyBUMliFm3NFfZ8=
+		D43wRi+DesNplvwvKVhnmMxbGlE=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/oGU-oE-dh0-view-3KU-e0-159.nib</key>
 		<data>
-		SPBkHmIUdbVFW+aaFjbvjqrJwpE=
+		3iZrja85Fvautc+Set4067btlr4=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/onN-tq-b4n-view-hWo-5h-7gM.nib</key>
 		<data>
-		Iv6/btjO0dWVNtscAaU2Xybr0vk=
+		Xf/6srarAmZLxmkKrgRU5Zv62L0=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/plJ-Y4-TDq-view-aaU-vy-xh5.nib</key>
 		<data>
-		xHwCo2v85++5+6P9aqctQ7GGPh8=
+		NPmQzggRKRsNqtIEJAIHJEKcq4o=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/rJW-pj-TVQ-view-d1i-rA-4O3.nib</key>
 		<data>
-		qIHlVwaWplHjijuJZYsVVdq7TUU=
+		NIIdCJ3biAFbjlGIRMoJ8nCBuAg=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/s2A-KY-ROo-view-1HK-0U-7F3.nib</key>
 		<data>
-		1tZ9rPt6k8dqqkAkyofr2oPo2xk=
+		de13HSo96lT3iRqgKM4kCNeiRz0=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/vhY-Dl-xXQ-view-S1m-6z-lCY.nib</key>
 		<data>
-		XFlcjm5vzHXG6y0N6FtV/Yd+zjU=
+		wuaT+VX7vXrWG0WudGmJB85+TOE=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/ycO-zg-FEy-view-T4p-Se-7jJ.nib</key>
 		<data>
-		vzVt9OdS+DCjEOvtOQND67wMguU=
+		Y64jaCxFuKDxa88KWCZGpZqdAgk=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/zW3-Qm-3v3-view-bmP-tc-nvj.nib</key>
 		<data>
-		xpDN2DT5QPqIrNrhjUnBslZEGkM=
+		oEbarbJ2QWBbHQnRJY0LKrHkK3o=
 		</data>
 		<key>fast_forward.png</key>
 		<data>

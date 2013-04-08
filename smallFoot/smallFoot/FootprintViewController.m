@@ -13,6 +13,9 @@
 
 @end
 
+int currentYear;
+int currentMonth;
+
 @implementation FootprintViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -26,20 +29,30 @@
 
 - (void)viewDidLoad
 {
+    
+    // Get current month and year
+    NSDate           *today           = [NSDate date];
+    NSCalendar       *currentCalendar = [NSCalendar currentCalendar];
+    
+    NSDateComponents *monthComponents = [currentCalendar components:NSMonthCalendarUnit fromDate:today];
+    currentMonth = [monthComponents month];
+    
+    NSDateComponents *yearComponents  = [currentCalendar components:NSYearCalendarUnit  fromDate:today];
+    currentYear  = [yearComponents year];
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadOldData) name:@"loadOldFootprint" object: nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadData) name:@"loadFootprint" object: nil];
-    [self showDataForMonth:3 andYear:2013];
+    [self showDataForMonth:currentMonth andYear:currentYear];
 }
 
 - (void)loadData
 {
-    [self showDataForMonth:3 andYear:2013];
+    [self showDataForMonth:currentMonth andYear:currentYear];
 }
 
 - (void)loadOldData
 {
-    [self showDataForMonth:2 andYear:2013];
+    [self showDataForMonth:(currentMonth-1) andYear:currentYear];
 }
 
 - (void)showDataForMonth: (int)month andYear:(int)year
