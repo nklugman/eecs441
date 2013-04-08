@@ -15,13 +15,23 @@
 @implementation SocialViewController
 
 @synthesize loginView;
+@synthesize profilePic;
+@synthesize nameLabel;
+@synthesize footprintTotalLabel;
+@synthesize publishButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+
+        /*
+        profilePic.translatesAutoresizingMaskIntoConstraints = NO;
+        loginView.translatesAutoresizingMaskIntoConstraints = NO;
+        */
         
+         
         loginView.publishPermissions = @[@"publish_actions"];
         loginView.defaultAudience = FBSessionDefaultAudienceFriends;
         
@@ -60,6 +70,11 @@
     self.profilePic.profileID = user.id;
     self.nameLabel.text = [NSString stringWithFormat:
                                 @"Welcome, %@", user.first_name];
+    
+    
+    NSLog(@"Facebook id is: %@", user.id);
+    NSLog(@"Facebook access token: %@", [[FBSession activeSession] accessTokenData]);
+    
 }
 
 - (void)loginView:(FBLoginView *)loginView
@@ -94,6 +109,20 @@
                           cancelButtonTitle:@"OK"
                           otherButtonTitles:nil] show];
     }
+}
+
+- (void)fbDidLogin {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[[FBSession activeSession] accessTokenData] forKey:@"FBAccessTokenKey"];
+    [defaults setObject:[[[FBSession activeSession] accessTokenData] expirationDate] forKey:@"FBExpirationDateKey"];
+    [defaults synchronize];
+}
+
+#pragma mark - SocialViewController Methods
+
+-(IBAction)publishButtonPressed:(id)sender
+{
+    NSLog(@"publish button pressed");
 }
 
 @end
