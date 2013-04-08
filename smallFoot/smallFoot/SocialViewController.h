@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet FBLoginView *loginView;
 @property (unsafe_unretained, nonatomic) IBOutlet FBProfilePictureView *profilePic;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *footprintDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *footprintTotalLabel;
 @property (weak, nonatomic) IBOutlet UIButton *publishButton;
 

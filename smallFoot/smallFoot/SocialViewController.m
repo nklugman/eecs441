@@ -22,6 +22,7 @@
 
 @synthesize footprintTotal;
 @synthesize footprintTotalLabel;
+@synthesize footprintDescriptionLabel;
 @synthesize publishButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -45,6 +46,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
     [self showCurrentTotals];
 }
@@ -260,7 +267,9 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     CarbonCalculator *calculator = [[CarbonCalculator alloc] init];
     [calculator calculateForMonth:month andYear:year];
-    S
+    
+    [footprintDescriptionLabel setText:[NSString stringWithFormat:@"Your carbon footprint for %d/%d", month, year]];
+
     footprintTotal = [NSString stringWithFormat:@"%0.2f pounds of carbon", [calculator getTotalPrint]];
     [footprintTotalLabel setText:footprintTotal];
     [footprintTotalLabel sizeToFit];
