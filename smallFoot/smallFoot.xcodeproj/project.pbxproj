@@ -49,6 +49,19 @@
 		DDA35E2B171380300021C124 /* whiteButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA35E0E171380300021C124 /* whiteButtonHighlight@2x.png */; };
 		DDA35E2E171383860021C124 /* AddressAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA35E2D171383860021C124 /* AddressAnnotation.m */; };
 		DDA35E30171387DA0021C124 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA35E2F171387DA0021C124 /* CoreLocation.framework */; };
+		DDAE4EF417146B550095646B /* awardLog.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4EF317146B550095646B /* awardLog.plist */; };
+		DDAE4F1E171472950095646B /* award_bike_bronze.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F11171472950095646B /* award_bike_bronze.png */; };
+		DDAE4F20171472950095646B /* award_bike_gold.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F13171472950095646B /* award_bike_gold.png */; };
+		DDAE4F21171472950095646B /* award_bike_silver.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F14171472950095646B /* award_bike_silver.png */; };
+		DDAE4F22171472950095646B /* award_bus_bronze.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F15171472950095646B /* award_bus_bronze.png */; };
+		DDAE4F24171472950095646B /* award_bus_gold.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F17171472950095646B /* award_bus_gold.png */; };
+		DDAE4F25171472950095646B /* award_bus_silver.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F18171472950095646B /* award_bus_silver.png */; };
+		DDAE4F26171472950095646B /* award_leaf_bronze.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F19171472950095646B /* award_leaf_bronze.png */; };
+		DDAE4F28171472950095646B /* award_leaf_gold.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F1B171472950095646B /* award_leaf_gold.png */; };
+		DDAE4F29171472950095646B /* award_leaf_silver.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F1C171472950095646B /* award_leaf_silver.png */; };
+		DDAE4F2E171475400095646B /* award_bike_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F2B171475400095646B /* award_bike_empty.png */; };
+		DDAE4F2F171475400095646B /* award_bus_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F2C171475400095646B /* award_bus_empty.png */; };
+		DDAE4F30171475400095646B /* award_leaf_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAE4F2D171475400095646B /* award_leaf_empty.png */; };
 		DDBACF191710695400BE4FD4 /* AchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBACF181710695400BE4FD4 /* AchievementViewController.m */; };
 		DDBACF1B1710795C00BE4FD4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBACF1A1710795C00BE4FD4 /* MapKit.framework */; };
 		DDBFA8D0171097EF00E00973 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = DDBFA8CF171097EF00E00973 /* loading.png */; };
@@ -270,6 +283,19 @@
 		DDA35E2C171383860021C124 /* AddressAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressAnnotation.h; sourceTree = "<group>"; };
 		DDA35E2D171383860021C124 /* AddressAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressAnnotation.m; sourceTree = "<group>"; };
 		DDA35E2F171387DA0021C124 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DDAE4EF317146B550095646B /* awardLog.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = awardLog.plist; sourceTree = "<group>"; };
+		DDAE4F11171472950095646B /* award_bike_bronze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_bike_bronze.png; sourceTree = "<group>"; };
+		DDAE4F13171472950095646B /* award_bike_gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_bike_gold.png; sourceTree = "<group>"; };
+		DDAE4F14171472950095646B /* award_bike_silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_bike_silver.png; sourceTree = "<group>"; };
+		DDAE4F15171472950095646B /* award_bus_bronze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_bus_bronze.png; sourceTree = "<group>"; };
+		DDAE4F17171472950095646B /* award_bus_gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_bus_gold.png; sourceTree = "<group>"; };
+		DDAE4F18171472950095646B /* award_bus_silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_bus_silver.png; sourceTree = "<group>"; };
+		DDAE4F19171472950095646B /* award_leaf_bronze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_leaf_bronze.png; sourceTree = "<group>"; };
+		DDAE4F1B171472950095646B /* award_leaf_gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_leaf_gold.png; sourceTree = "<group>"; };
+		DDAE4F1C171472950095646B /* award_leaf_silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_leaf_silver.png; sourceTree = "<group>"; };
+		DDAE4F2B171475400095646B /* award_bike_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_bike_empty.png; sourceTree = "<group>"; };
+		DDAE4F2C171475400095646B /* award_bus_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_bus_empty.png; sourceTree = "<group>"; };
+		DDAE4F2D171475400095646B /* award_leaf_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = award_leaf_empty.png; sourceTree = "<group>"; };
 		DDBACF171710695400BE4FD4 /* AchievementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementViewController.h; sourceTree = "<group>"; };
 		DDBACF181710695400BE4FD4 /* AchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementViewController.m; sourceTree = "<group>"; };
 		DDBACF1A1710795C00BE4FD4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -513,6 +539,26 @@
 			path = buttons;
 			sourceTree = "<group>";
 		};
+		DDAE4F10171472950095646B /* awards */ = {
+			isa = PBXGroup;
+			children = (
+				DDAE4F2B171475400095646B /* award_bike_empty.png */,
+				DDAE4F2C171475400095646B /* award_bus_empty.png */,
+				DDAE4F2D171475400095646B /* award_leaf_empty.png */,
+				DDAE4F11171472950095646B /* award_bike_bronze.png */,
+				DDAE4F13171472950095646B /* award_bike_gold.png */,
+				DDAE4F14171472950095646B /* award_bike_silver.png */,
+				DDAE4F15171472950095646B /* award_bus_bronze.png */,
+				DDAE4F17171472950095646B /* award_bus_gold.png */,
+				DDAE4F18171472950095646B /* award_bus_silver.png */,
+				DDAE4F19171472950095646B /* award_leaf_bronze.png */,
+				DDAE4F1B171472950095646B /* award_leaf_gold.png */,
+				DDAE4F1C171472950095646B /* award_leaf_silver.png */,
+			);
+			name = awards;
+			path = Awards;
+			sourceTree = "<group>";
+		};
 		DDD4ED6B16E98FD7009A27A5 /* retina */ = {
 			isa = PBXGroup;
 			children = (
@@ -749,6 +795,7 @@
 		DDF91DC616E8FB3300AAE198 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DDAE4F10171472950095646B /* awards */,
 				DDA35DF1171380300021C124 /* buttons */,
 				DDD4ED6B16E98FD7009A27A5 /* retina */,
 				DDD4EDB316E98FD8009A27A5 /* standard */,
@@ -765,6 +812,7 @@
 				DDF91DF316E9074200AAE198 /* gasLog.plist */,
 				DDC1F62D16E9317400BC1595 /* electricLog.plist */,
 				DDC1F62F16E9318C00BC1595 /* offsetLog.plist */,
+				DDAE4EF317146B550095646B /* awardLog.plist */,
 				DDBFA8CF171097EF00E00973 /* loading.png */,
 			);
 			name = "Supporting Files";
@@ -1011,6 +1059,19 @@
 				DDA35E29171380300021C124 /* whiteButton@2x.png in Resources */,
 				DDA35E2A171380300021C124 /* whiteButtonHighlight.png in Resources */,
 				DDA35E2B171380300021C124 /* whiteButtonHighlight@2x.png in Resources */,
+				DDAE4EF417146B550095646B /* awardLog.plist in Resources */,
+				DDAE4F1E171472950095646B /* award_bike_bronze.png in Resources */,
+				DDAE4F20171472950095646B /* award_bike_gold.png in Resources */,
+				DDAE4F21171472950095646B /* award_bike_silver.png in Resources */,
+				DDAE4F22171472950095646B /* award_bus_bronze.png in Resources */,
+				DDAE4F24171472950095646B /* award_bus_gold.png in Resources */,
+				DDAE4F25171472950095646B /* award_bus_silver.png in Resources */,
+				DDAE4F26171472950095646B /* award_leaf_bronze.png in Resources */,
+				DDAE4F28171472950095646B /* award_leaf_gold.png in Resources */,
+				DDAE4F29171472950095646B /* award_leaf_silver.png in Resources */,
+				DDAE4F2E171475400095646B /* award_bike_empty.png in Resources */,
+				DDAE4F2F171475400095646B /* award_bus_empty.png in Resources */,
+				DDAE4F30171475400095646B /* award_leaf_empty.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

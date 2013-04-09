@@ -48,6 +48,11 @@ CLLocationCoordinate2D stopPoint;
     running = NO;
     shouldUpdatePosition = YES;
     
+    [_reviewDistance setHidden:YES];
+    [_reviewLabelDistance setHidden:YES];
+    [_reviewLabel setHidden:YES];
+    [_reviewLabelTransportation setHidden:YES];
+    [_reviewTransportation setHidden:YES];
     // Load custom button images
 
     UIImage *buttonImage = [[UIImage imageNamed:@"greyButton.png"]
@@ -79,9 +84,8 @@ CLLocationCoordinate2D stopPoint;
         [self removeAllPins];
         [self showPin:YES];
         [self getLocation];
-
-    }else{
-        [_startStopButton setTitle:@"Start" forState:UIControlStateNormal];
+    }else if([[[_startStopButton titleLabel] text] isEqualToString:@"Stop"]){
+        [_startStopButton setTitle:@"Save" forState:UIControlStateNormal];
         [_recording setHidden:YES];
         [_recordingIndicator setHidden:YES];
         _map.showsUserLocation = NO;
@@ -90,6 +94,10 @@ CLLocationCoordinate2D stopPoint;
         [self showPin:NO];
         [self centerMapOnTrip];
         [_progress setHidden:YES];
+        [self reviewData];
+    }else if([[[_startStopButton titleLabel] text] isEqualToString:@"Save"]){
+        [_startStopButton setTitle:@"Start" forState:UIControlStateNormal];
+        [self saveData];
     }
 }
 
@@ -162,6 +170,98 @@ CLLocationCoordinate2D stopPoint;
     }
     
     if(running) [self performSelector:@selector(getLocation) withObject:self afterDelay:0.5 ];
+}
+
+- (void)reviewData
+{
+    NSString *distance = [[[_distance text] componentsSeparatedByCharactersInSet:
+                           [[NSCharacterSet characterSetWithCharactersInString:@".0123456789"]
+                            invertedSet]]
+                          componentsJoinedByString:@""];
+    float speed = [[[[_averageSpeed text] componentsSeparatedByCharactersInSet:
+                     [[NSCharacterSet characterSetWithCharactersInString:@".0123456789"]
+                      invertedSet]]
+                    componentsJoinedByString:@""] floatValue];
+    [_reviewDistance setText:distance];
+    if(speed < 7.5) [_reviewTransportation setSelectedSegmentIndex:3]; // walking & jogging
+    else if(speed < 20) [_reviewTransportation setSelectedSegmentIndex:2]; // biking
+    else if(speed < 35) [_reviewTransportation setSelectedSegmentIndex:1]; // bus - bad metric, but best I can do for now
+    else if(speed < 90) [_reviewTransportation setSelectedSegmentIndex:0]; // car
+    else [_reviewTransportation setSelectedSegmentIndex:4]; // train
+    
+    [_startStopButton setTitle:@"Save" forState:UIControlStateNormal];
+    
+    [_reviewDistance setHidden:NO];
+    [_reviewLabelDistance setHidden:NO];
+    [_reviewLabel setHidden:NO];
+    [_reviewLabelTransportation setHidden:NO];
+    [_reviewTransportation setHidden:NO];
+}
+
+- (void)saveData
+{
+    [_reviewDistance setHidden:YES];
+    [_reviewLabelDistance setHidden:YES];
+    [_reviewLabel setHidden:YES];
+    [_reviewLabelTransportation setHidden:YES];
+    [_reviewTransportation setHidden:YES];
+    
+    // Copy awardLog.plist to Documents folder if not already present
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *plistPath = [documentsDirectory stringByAppendingPathComponent:@"awardLog.plist"];
+    
+    if (![fileManager fileExistsAtPath:plistPath]) {
+        NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"awardLog" ofType:@"plist"];
+        [fileManager copyItemAtPath:resourcePath toPath:plistPath error:&error];
+        NSLog(@"%@", error);
+    }
+    
+    // Save Data
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    path = [path stringByAppendingPathComponent:@"awardLog.plist"];
+    
+    if (![fileManager fileExistsAtPath:path])
+    {
+        NSLog(@"File does not exist");
+    }
+    
+    // Read gasLog.plist to NSMutableDictionary gasLog
+    NSMutableDictionary *awardLog = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    
+    // Retrieve each of the three arrays (gallonsArray stores doubles, typeArray stores Booleans, dateArray stores dates)
+    NSMutableArray* distanceArray = [awardLog objectForKey:@"distance"];
+    NSMutableArray* typeArray = [awardLog objectForKey:@"type"];
+    NSMutableArray* dateArray = [awardLog objectForKey:@"date"];
+    
+    // If any of the arrays are empty, initialize them
+    if(distanceArray == nil) distanceArray = [[NSMutableArray alloc] init];
+    if(typeArray == nil) typeArray = [[NSMutableArray alloc] init];
+    if(dateArray == nil) dateArray = [[NSMutableArray alloc] init];
+    
+    // Insert the most recent data
+    [distanceArray addObject:[NSNumber numberWithDouble:[[_reviewDistance text] doubleValue]]];
+    [typeArray addObject:[NSNumber numberWithInt:[_reviewTransportation selectedSegmentIndex]]];
+    [dateArray addObject:[NSDate date]];
+    // Debugging stuff
+    NSLog(@"Distance: %@", distanceArray);
+    NSLog(@"type: %@", typeArray);
+    NSLog(@"Date: %@", dateArray);
+    
+    // Add these arrays back into the dictionary
+    [awardLog setObject:distanceArray forKey:@"distance"];
+    [awardLog setObject:typeArray forKey:@"type"];
+    [awardLog setObject:dateArray forKey:@"date"];
+    
+    // Write the dictionary back to the plist
+    [awardLog writeToFile:path atomically:YES];
+    
+    [_reviewDistance setText:@""];
+    [_reviewDistance setUserInteractionEnabled:YES];
+    
 }
 
 -(void)showPin:(BOOL)start

@@ -55,6 +55,7 @@ const float AVERAGE_KWH_PER_MONTH = 958;
     NSString *gasPath = [path stringByAppendingPathComponent:@"gasLog.plist"];
     NSString *electricPath = [path stringByAppendingPathComponent:@"electricLog.plist"];
     NSString *offsetPath = [path stringByAppendingPathComponent:@"offsetLog.plist"];
+    NSString *awardPath = [path stringByAppendingPathComponent:@"awardLog.plist"];
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
@@ -70,11 +71,16 @@ const float AVERAGE_KWH_PER_MONTH = 958;
     {
         NSLog(@"Offset file does not exist");
     }
+    if (![fileManager fileExistsAtPath:awardPath])
+    {
+        NSLog(@"Award file does not exist");
+    }
     
     // Read plist files to NSMutableDictionaries
     gasLog = [[NSMutableDictionary alloc] initWithContentsOfFile:gasPath];
     electricLog = [[NSMutableDictionary alloc] initWithContentsOfFile:electricPath];
     offsetLog = [[NSMutableDictionary alloc] initWithContentsOfFile:offsetPath];
+    awardLog = [[NSMutableDictionary alloc] initWithContentsOfFile:awardPath];
     
     averageElectricPrint = KWH_COAL_TO_CO2 * AVERAGE_KWH_PER_MONTH;
     averageGasPrint = GAS_87_TO_CO2 * AVERAGE_GALLONS_PER_MONTH;
@@ -164,8 +170,50 @@ const float AVERAGE_KWH_PER_MONTH = 958;
         }
     }
     
+    // Awards
+    { // Added for easy copy/paste (scope)
+        NSArray *distance = [awardLog objectForKey:@"distance"];
+        NSArray *typeArray = [awardLog objectForKey:@"type"];
+        NSArray *dateArray = [awardLog objectForKey:@"date"];
+        NSDateFormatter *yearFormat = [[NSDateFormatter alloc] init];
+        NSDateFormatter *monthFormat = [[NSDateFormatter alloc] init];
+        [yearFormat setDateFormat:@"yyyy"];
+        [monthFormat setDateFormat:@"M"];
+        bikeMiles = 0;
+        busMiles = 0;
+        
+        for (int i = 0; i < [dateArray count]; i++)
+        {
+            NSDate *date = [dateArray objectAtIndex:i];
+            int tempYear = [[yearFormat stringFromDate:date] intValue];
+            int tempMonth = [[monthFormat stringFromDate:date] intValue];
+            if(tempYear == year && tempMonth == month)
+            {
+                if([[typeArray objectAtIndex:i] intValue] == 2) bikeMiles += [[distance objectAtIndex:i] floatValue];
+                else if([[typeArray objectAtIndex:i] intValue] == 3) bikeMiles += [[distance objectAtIndex:i] floatValue]; // Bike and walk
+                
+                else if([[typeArray objectAtIndex:i] intValue] == 1) busMiles += [[distance objectAtIndex:i] floatValue];
+                else if([[typeArray objectAtIndex:i] intValue] == 4) busMiles += [[distance objectAtIndex:i] floatValue]; // Bus and train
+                
+            }
+        }
+        bikeAward = 0;
+        busAward = 0;
+        if(bikeMiles > 15) bikeAward = 3;
+        else if(bikeMiles > 5) bikeAward = 2;
+        else if(bikeMiles > 1) bikeAward = 1;
+
+        if(busMiles > 20) busAward = 3;
+        else if(busMiles > 10) busAward = 2;
+        else if(busMiles > 5) busAward = 1;
+    }
+
     // Total
     totalPrint = gasPrint + electricPrint - offset;
+    footprintAward = 0;
+    if(totalPrint < 1250) footprintAward = 3;
+    else if(totalPrint < 2000) footprintAward = 2;
+    else if(totalPrint < 2750) footprintAward = 1;
 }
 
 - (float)getGasolinePrint
@@ -201,6 +249,31 @@ const float AVERAGE_KWH_PER_MONTH = 958;
 - (float)getAverageTotalPrint
 {
     return averageTotalPrint;
+}
+
+- (int)getBikeAward
+{
+    return bikeAward;
+}
+
+- (int)getBusAward
+{
+    return busAward;
+}
+
+- (int)getFootprintAward
+{
+    return footprintAward;
+}
+
+- (float)getBikeMiles
+{
+    return bikeMiles;
+}
+
+- (float)getBusMiles
+{
+    return busMiles;
 }
 
 @end

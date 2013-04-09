@@ -10,6 +10,7 @@
 
 @interface ThirdViewController : UIViewController <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *recommendedAmount;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 - (IBAction)recommendPressed:(id)sender;
 

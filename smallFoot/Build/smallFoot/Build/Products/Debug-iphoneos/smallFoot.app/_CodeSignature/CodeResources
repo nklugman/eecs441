@@ -132,6 +132,58 @@
 		<data>
 		wYE7fTHrXMwWDiZi/s6A5693iYA=
 		</data>
+		<key>awardLog.plist</key>
+		<data>
+		zmV6UqBSo6r1NOz798vd5O4zTBA=
+		</data>
+		<key>award_bike_bronze.png</key>
+		<data>
+		Mss4UWVcIwT/k2cBV83krsAp1fc=
+		</data>
+		<key>award_bike_empty.png</key>
+		<data>
+		k+Lidax0DE+BmvAfY03OeNcv4s0=
+		</data>
+		<key>award_bike_gold.png</key>
+		<data>
+		otR953ZCLVux8OUnIgrEf5FmsW8=
+		</data>
+		<key>award_bike_silver.png</key>
+		<data>
+		6ZY4oSgeLiW/JWRKUnPR2djTG4Y=
+		</data>
+		<key>award_bus_bronze.png</key>
+		<data>
+		W0cVRTQMybL7lE+Bvas4rUhUkqw=
+		</data>
+		<key>award_bus_empty.png</key>
+		<data>
+		+blk20ryjyYYVBfCZODPHo+12ic=
+		</data>
+		<key>award_bus_gold.png</key>
+		<data>
+		AR1M5VD8QEtoZMtmUy6oqZyis+Q=
+		</data>
+		<key>award_bus_silver.png</key>
+		<data>
+		ca3651ckJixzERsFPbMk0HdN2Lk=
+		</data>
+		<key>award_leaf_bronze.png</key>
+		<data>
+		ZfqBJ+XLw1/RAGf2FDsEtLlop/0=
+		</data>
+		<key>award_leaf_empty.png</key>
+		<data>
+		vuhDKmeV3v6rls0eRYbiZqz5j9Q=
+		</data>
+		<key>award_leaf_gold.png</key>
+		<data>
+		T9y7X5bqCLW9cbBKXqtX7a/bYjU=
+		</data>
+		<key>award_leaf_silver.png</key>
+		<data>
+		i2pI/uE8W3xc706b+vmKLVQrCn0=
+		</data>
 		<key>bank.png</key>
 		<data>
 		2kaGMtbbUEDPGPFuPzCnKEseEHc=
@@ -274,83 +326,83 @@
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/2-view-17.nib</key>
 		<data>
-		N5gqMeM4hlGfQ01GsMBD8PbwzJg=
+		dFHlGNapq57bu77FX11l3HWJad4=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/3-view-16.nib</key>
 		<data>
-		SiTjZ2cyLjE2CLDZ2EqSR7WHEYM=
+		hZvQ+5mDYVKhT863xbupINfj300=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/33o-Xz-4tp-view-y7X-96-StK.nib</key>
 		<data>
-		WhkG5uktKSY6LLHRPSAdiP5wpZY=
+		UrMoocqwuI66cmbt7qIzoUCGTJ0=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/6oz-Eg-LMi-view-gwW-iy-qeK.nib</key>
 		<data>
-		cj2otNZPzNDdgcmEilnJOJWPnqw=
+		VvSA4B8ETqn/gh8DHIKoxIzw1DE=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/8AI-uM-TUZ-view-MJk-Ku-nD8.nib</key>
 		<data>
-		fT0mnYcNj7y3wPOTd8YtJKAsqx8=
+		7VbLHjUCNMX0mVlTo75qqvhh/yg=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/BMC-Y2-me3-view-Y1L-NR-q2Z.nib</key>
 		<data>
-		GsNaUQUvuQh6r6IegS5zILnKfGs=
+		8gIjdZ1RxtBZkB3KCrFJRGDvUYo=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/GhV-xP-Ldm-view-4fj-xT-3Jc.nib</key>
 		<data>
-		79KoIct0pL8X7gw45qJVtC2EqZA=
+		FYcDnI+RuFXuTGWct2vfdCU2qNA=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/HU6-2h-kYD-view-sJf-Ca-D9f.nib</key>
 		<data>
-		ZcyzcDQ6Z+MsSL8ky3yDF25J6M0=
+		sI/3oENaz+4KO0jXh9ZoaBKJNR0=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/IDF-sK-ebA-view-doG-nM-Foa.nib</key>
 		<data>
-		bELBNuPQYrfnVWgXTi0B0Hk+6Ks=
+		U2O6cankdhqiNAhbIYXDvwd15Pw=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/MjV-wh-l0S-view-3gU-fW-xg5.nib</key>
 		<data>
-		AaszLgLfZzZ/PoAkzdvIgphj9OU=
+		amierwR9WfKzLw2fUO0YUL9nsGc=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-4.nib</key>
 		<data>
-		i/gVk74e29djsE3MkBiiJeB8Qcc=
+		k8i9qVH5iWy4o/8mfWaDGNeymgg=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-8AI-uM-TUZ.nib</key>
 		<data>
-		LErGzGpsJ+vZug2LfLnq58AndJY=
+		OSO5gLjyhygczK69mQ0QfNc1wsw=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-BMC-Y2-me3.nib</key>
 		<data>
-		dziujkHQ9ECt/LnXcfZMnfe9XRs=
+		EOBY/WzU5oBU4UVfI0GBz/WoiXw=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-HU6-2h-kYD.nib</key>
 		<data>
-		GJM1lWitPcDUBHwX6Jd5Wo16wmM=
+		w1WcSS4nNv53zHlh9sEGL/eTBBg=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-IDF-sK-ebA.nib</key>
 		<data>
-		5xUzHy7IqLPHuFMNv+NBE0s2QY0=
+		Dh7WUT6OkZ0jWgYiPKH6IicADG8=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-fhe-o3-ZIy.nib</key>
 		<data>
-		s/WScUxeSebDQAXA5l6OuEMVYq0=
+		/COzPcAThU4CyksfzX8qcEPF2Vw=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-rCE-2t-l8k.nib</key>
 		<data>
-		DcTw6iq75m4M1bTO/ayalie2J38=
+		x5vGg+TyrWA+PaCM9BrcxhGe9r8=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/b08-ZF-bv5-view-vrY-ZR-Aef.nib</key>
 		<data>
-		Zt8PY2sWIg8TpgP7k//k17I2PYw=
+		xPEv73I6Guvq+bDRgLf4rwscklE=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/dLt-PM-IKR-view-rNP-fu-dKI.nib</key>
 		<data>
-		/AUwRywEDsDeZ2o/WPrpXBMF+Mc=
+		vyhtapVQSHpAW8ZNV/ONPptgAMI=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/rCE-2t-l8k-view-iZs-zH-6fx.nib</key>
 		<data>
-		N7WiS8xJ/vIROTUqiMBlTtp1rJQ=
+		01hM/iqK9fl3z/eu0LiRQBh6Crk=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/3qT-Hy-Sc8-view-rQm-Pr-5xS.nib</key>
 		<data>

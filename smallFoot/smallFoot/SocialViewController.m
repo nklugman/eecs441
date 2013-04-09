@@ -61,7 +61,7 @@
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
     NSLog(@"user is logged in");
     
-    self.publishButton.hidden = NO;
+    self.publishButton.enabled = YES;
     
     [self checkSessionDefaultAppID];
 }
@@ -70,7 +70,7 @@
     self.profilePic.profileID = nil;
     self.nameLabel.text = @"";
     
-    self.publishButton.hidden = YES;
+    self.publishButton.enabled = NO;
 }
 
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
@@ -82,7 +82,7 @@
     self.nameLabel.text = [NSString stringWithFormat:
                                 @"Welcome, %@", user.first_name];
     
-    self.publishButton.hidden = NO;
+    self.publishButton.enabled = YES;
     
     NSLog(@"Facebook id is: %@", user.id);
     NSLog(@"Facebook access token: %@", [[[FBSession activeSession] accessTokenData] accessToken]);
@@ -247,6 +247,10 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     }
 }
 
+- (IBAction)refreshButtonPressed:(id)sender {
+    [self showCurrentTotals];
+}
+
 - (void)showCurrentTotals
 {
     NSDate           *today           = [NSDate date];
@@ -269,6 +273,52 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
 
     footprintTotal = [NSString stringWithFormat:@"%0.2f pounds of carbon", [calculator getTotalPrint]];
     [footprintTotalLabel setText:footprintTotal];
+    
+    
+    [_busLabel setText:[NSString stringWithFormat:@"No award - 0.00 miles"]];
+    [_smallfootLabel setText:[NSString stringWithFormat:@"No award - 0.00 miles"]];
+    
+    if([calculator getBikeAward] == 1){
+        [_bikeAward setImage:[UIImage imageNamed:@"award_bike_bronze.png"]];
+        [_bikeLabel setText:[NSString stringWithFormat:@"Bronze - %0.2f miles", [calculator getBikeMiles]]];
+    }else if([calculator getBikeAward] == 2){
+        [_bikeAward setImage:[UIImage imageNamed:@"award_bike_silver.png"]];
+        [_bikeLabel setText:[NSString stringWithFormat:@"Silver - %0.2f miles", [calculator getBikeMiles]]];
+    }else if([calculator getBikeAward] == 3){
+        [_bikeAward setImage:[UIImage imageNamed:@"award_bike_gold.png"]];
+        [_bikeLabel setText:[NSString stringWithFormat:@"Gold - %0.2f miles", [calculator getBikeMiles]]];
+    }else{
+        [_bikeAward setImage:[UIImage imageNamed:@"award_bike_empty.png"]];
+        [_bikeLabel setText:[NSString stringWithFormat:@"No award - %0.2f miles", [calculator getBikeMiles]]];
+    }
+    
+    if([calculator getBusAward] == 1){
+        [_busAward setImage:[UIImage imageNamed:@"award_bus_bronze.png"]];
+        [_busLabel setText:[NSString stringWithFormat:@"Bronze - %0.2f miles", [calculator getBusMiles]]];
+    }else if([calculator getBusAward] == 2){
+        [_busAward setImage:[UIImage imageNamed:@"award_bus_silver.png"]];
+        [_busLabel setText:[NSString stringWithFormat:@"Silver - %0.2f miles", [calculator getBusMiles]]];
+    }else if([calculator getBusAward] == 3){
+        [_busAward setImage:[UIImage imageNamed:@"award_bus_gold.png"]];
+        [_busLabel setText:[NSString stringWithFormat:@"Gold - %0.2f miles", [calculator getBusMiles]]];
+    }else{
+        [_busAward setImage:[UIImage imageNamed:@"award_bus_empty.png"]];
+        [_busLabel setText:[NSString stringWithFormat:@"No award - %0.2f miles", [calculator getBusMiles]]];
+    }
+    
+    if([calculator getFootprintAward] == 1){
+        [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_bronze.png"]];
+        [_smallfootLabel setText:[NSString stringWithFormat:@"Bronze - %0.2f pounds", [calculator getTotalPrint]]];
+    }else if([calculator getFootprintAward] == 2){
+        [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_silver.png"]];
+        [_smallfootLabel setText:[NSString stringWithFormat:@"Silver - %0.2f pounds", [calculator getTotalPrint]]];
+    }else if([calculator getFootprintAward] == 3){
+        [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_gold.png"]];
+        [_smallfootLabel setText:[NSString stringWithFormat:@"Gold - %0.2f pounds", [calculator getTotalPrint]]];
+    }else{
+        [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_empty.png"]];
+        [_smallfootLabel setText:[NSString stringWithFormat:@"No award - %0.2f pounds", [calculator getTotalPrint]]];
+    }
     
 }
 

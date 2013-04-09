@@ -65,6 +65,9 @@ int currentMonth;
     [_gasolineProgressBar setProgress:(gasRating/2)];
     [_electricProgressBar setProgress:(electricRating/2)];
     [_totalProgressBar setProgress:(totalRating/2)];
+    _gasolineProgressBar.progressTintColor = [self getColorForRating:(gasRating/2)];
+    _electricProgressBar.progressTintColor = [self getColorForRating:(electricRating/2)];
+    _totalProgressBar.progressTintColor = [self getColorForRating:(totalRating/2)];
     
     [_gasolinePrintLabel setText:[NSString stringWithFormat:@"You used %0.2f pounds of carbon from gasoline this month", [calculator getGasolinePrint]]];
     [_electricPrintLabel setText:[NSString stringWithFormat:@"You used %0.2f pounds of carbon from electricity this month", [calculator getElectricPrint]]];
@@ -79,6 +82,14 @@ int currentMonth;
     [_totalRatingLabel setText:[NSString stringWithFormat:@"%.0f/100", totalRating * 50]];
     
     [_offsetLabel setText:[NSString stringWithFormat:@"You saved %0.2f pounds of carbon this month from the trees you've planted!", [calculator getOffset]]];
+}
+
+- (UIColor*)getColorForRating: (float)rating
+{
+    if(rating > .80) return [UIColor redColor];
+    if(rating > .60) return [UIColor orangeColor];
+    if(rating > .40) return [[UIColor alloc] initWithRed:235.0 / 255 green:225.0 / 255 blue:0.0 / 255 alpha:1.0];
+    return [[UIColor alloc] initWithRed:41.0 / 255 green:150.0 / 255 blue:38.0 / 255 alpha:1.0];
 }
 
 - (void)didReceiveMemoryWarning

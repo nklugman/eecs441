@@ -25,6 +25,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *recording;
 @property (weak, nonatomic) IBOutlet UIImageView *recordingIndicator;
 
+@property (weak, nonatomic) IBOutlet UILabel *reviewLabelTransportation;
+@property (weak, nonatomic) IBOutlet UILabel *reviewLabelDistance;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *reviewTransportation;
+@property (weak, nonatomic) IBOutlet UITextField *reviewDistance;
+@property (weak, nonatomic) IBOutlet UILabel *reviewLabel;
 
 - (IBAction)startStopButtonPressed:(id)sender;
 - (void)centerMapOnUser;
@@ -32,5 +37,7 @@
 - (void)showPin:(BOOL)start;
 - (void)centerMapOnTrip;
 - (void)removeAllPins;
+- (void)reviewData;
+- (void)saveData;
 
 @end

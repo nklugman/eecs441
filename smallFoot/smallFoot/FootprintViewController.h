@@ -30,4 +30,5 @@
 - (void)loadData;
 - (void)loadOldData;
 - (void)showDataForMonth: (int)month andYear: (int)year;
+- (UIColor*)getColorForRating: (float)rating;
 @end

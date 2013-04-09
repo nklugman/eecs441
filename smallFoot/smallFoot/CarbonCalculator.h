@@ -13,6 +13,7 @@
     NSMutableDictionary *gasLog;
     NSMutableDictionary *electricLog;
     NSMutableDictionary *offsetLog;
+    NSMutableDictionary *awardLog;
     
     float gasPrint;
     float averageGasPrint;
@@ -21,6 +22,12 @@
     float offset;
     float totalPrint;
     float averageTotalPrint;
+    
+    int bikeAward;
+    int busAward;
+    int footprintAward;
+    float bikeMiles;
+    float busMiles;
 }
 
 // Each of these constants represents the POUNDS of CO2 generated
@@ -59,5 +66,10 @@ extern const float AVERAGE_KWH_PER_MONTH;
 - (float)getOffset;
 - (float)getTotalPrint;
 - (float)getAverageTotalPrint;
+- (int)getBikeAward;
+- (int)getBusAward;
+- (int)getFootprintAward;
+- (float)getBikeMiles;
+- (float)getBusMiles;
 
 @end

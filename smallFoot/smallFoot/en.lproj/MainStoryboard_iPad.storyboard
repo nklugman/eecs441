@@ -189,6 +189,7 @@
                     <tabBarItem key="tabBarItem" title="Offset" image="credit_card.png" id="U7h-Jp-NV2"/>
                     <connections>
                         <outlet property="activityIndicator" destination="hK2-J2-2d1" id="Yh1-kn-kSD"/>
+                        <outlet property="recommendedAmount" destination="Gfw-sq-6z6" id="UUS-Nx-SeT"/>
                         <outlet property="webView" destination="UQQ-tW-T7F" id="3vh-Mp-d2y"/>
                     </connections>
                 </viewController>
@@ -234,26 +235,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUm-ig-WRI">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="aO4-BM-pyE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Publish">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="publishButtonPressed:" destination="6oz-Eg-LMi" eventType="touchUpInside" id="FG7-rb-Uo2"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your carbon footprint:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEv-rV-6Kf">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="253" id="HFm-b5-Y1e"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -270,37 +252,199 @@
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="GRx-DA-U7b">
                                 <color key="tintColor" red="0.16132156550000001" green="0.45832067729999998" blue="0.1482911408" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="Connect With Facebook" id="8ma-HZ-HKQ"/>
+                                    <navigationItem title="Connect With Facebook" id="8ma-HZ-HKQ">
+                                        <barButtonItem key="rightBarButtonItem" title="Publish" id="lQM-hD-eNU">
+                                            <connections>
+                                                <action selector="publishButtonPressed:" destination="6oz-Eg-LMi" id="AmD-j4-0OA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="award_bike_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="40x-te-jih"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Biker Award" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHB-Ip-N8o">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="LgU-eS-Bpt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="award_bus_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="sro-h2-SJ6"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="award_leaf_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qid-ZB-ohi"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="No award - 0.00 miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbd-A3-PFz">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="gof-u6-rxY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bronze: Ride or walk at least 1.00 mile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK9-zw-WcI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Silver: Ride or walk at least 5.00 miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQA-ZP-kfP">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gold: Ride or walk at least 10.00 miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAc-CE-3XJ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="No award - 0.00 miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBi-vW-ubO">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bronze: Ride at least 5.00 mile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvf-zO-2X4">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Silver: Ride at least 10.00 miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIp-eM-BiC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gold: Ride at least 15.00 miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x21-v3-vpP">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="No award - 0.00 pounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKp-fn-bJx">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bronze: Use less than 2750 pounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vB-Aw-HFQ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Silver: Use less than 2000 pounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTH-fF-dXG">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gold: Use less than 1250 pounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZf-Bz-HXA">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Earn by biking or walking instead of driving" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVf-kc-QYE">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bus Boy Award" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e66-RU-gbh">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Earn by taking public transit instead of driving" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEV-Ox-NtE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="323" id="RYX-Qa-Jq2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Smallfoot Award" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzT-ux-OLa">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Earn by reducing your carbon footprint" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwj-WK-BxN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="323" id="W5m-Is-LQS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.83529418710000003" green="0.84313732389999996" blue="0.86666673419999996" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="GRx-DA-U7b" firstAttribute="trailing" secondItem="gwW-iy-qeK" secondAttribute="trailing" type="default" id="0C1-36-uZS"/>
                             <constraint firstItem="1Sw-2V-jgQ" firstAttribute="leading" secondItem="MXe-cm-LxT" secondAttribute="trailing" constant="8" symbolic="YES" type="user" id="0fF-mR-dS5"/>
+                            <constraint firstItem="rEv-rV-6Kf" firstAttribute="leading" secondItem="MXe-cm-LxT" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="3Wy-DL-VlD"/>
+                            <constraint firstItem="Qid-ZB-ohi" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="6J3-VA-Ieb"/>
                             <constraint firstItem="qJR-NR-pgD" firstAttribute="top" secondItem="rEv-rV-6Kf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8Tl-tF-lAh"/>
-                            <constraint firstItem="GRx-DA-U7b" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" type="default" id="Pwk-ag-EBf"/>
-                            <constraint firstItem="MXe-cm-LxT" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="129" id="SNe-Z2-VXH"/>
-                            <constraint firstItem="rEv-rV-6Kf" firstAttribute="leading" secondItem="MXe-cm-LxT" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="SfM-um-UZa"/>
-                            <constraint firstItem="IAu-ew-DaI" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="283" id="T9e-pv-KE9"/>
-                            <constraint firstItem="IAu-ew-DaI" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="113" id="XG9-UM-xg8"/>
+                            <constraint firstItem="dwj-WK-BxN" firstAttribute="top" secondItem="zzT-ux-OLa" secondAttribute="top" type="default" id="9va-US-oyj"/>
+                            <constraint firstItem="Qid-ZB-ohi" firstAttribute="top" secondItem="zzT-ux-OLa" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="C1c-Im-AX6"/>
+                            <constraint firstItem="x21-v3-vpP" firstAttribute="leading" secondItem="sro-h2-SJ6" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="CRE-tE-jkC"/>
+                            <constraint firstItem="jVf-kc-QYE" firstAttribute="baseline" secondItem="wHB-Ip-N8o" secondAttribute="baseline" type="default" id="E39-P9-mdg"/>
+                            <constraint firstItem="SQA-ZP-kfP" firstAttribute="top" secondItem="JK9-zw-WcI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="EqQ-Ej-Ucv"/>
+                            <constraint firstItem="zzT-ux-OLa" firstAttribute="top" secondItem="sro-h2-SJ6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="EvP-CT-FGO"/>
+                            <constraint firstItem="uAc-CE-3XJ" firstAttribute="leading" secondItem="nEV-Ox-NtE" secondAttribute="leading" type="default" id="GFB-vi-gcW"/>
+                            <constraint firstItem="uAc-CE-3XJ" firstAttribute="top" secondItem="SQA-ZP-kfP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GKI-ZA-tZt"/>
+                            <constraint firstItem="qJR-NR-pgD" firstAttribute="leading" secondItem="MXe-cm-LxT" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="GZQ-9J-TMb"/>
+                            <constraint firstItem="wHB-Ip-N8o" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="192" id="HPH-L2-8XQ"/>
+                            <constraint firstItem="jVf-kc-QYE" firstAttribute="top" secondItem="wHB-Ip-N8o" secondAttribute="top" type="default" id="Iy1-IZ-v4v"/>
+                            <constraint firstItem="SQA-ZP-kfP" firstAttribute="leading" secondItem="40x-te-jih" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="K9e-tp-JpB"/>
+                            <constraint firstItem="1vB-Aw-HFQ" firstAttribute="centerX" secondItem="IBi-vW-ubO" secondAttribute="centerX" type="default" id="LEY-xK-nTt"/>
+                            <constraint firstItem="uAc-CE-3XJ" firstAttribute="leading" secondItem="40x-te-jih" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="LGK-j4-g9g"/>
+                            <constraint firstItem="sro-h2-SJ6" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="NAg-tt-dM8"/>
+                            <constraint firstItem="jVf-kc-QYE" firstAttribute="leading" secondItem="qJR-NR-pgD" secondAttribute="leading" type="default" id="Npo-a2-Aho"/>
+                            <constraint firstItem="JK9-zw-WcI" firstAttribute="top" secondItem="Hbd-A3-PFz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="R7d-9d-Up3"/>
+                            <constraint firstItem="UIp-eM-BiC" firstAttribute="top" secondItem="Kvf-zO-2X4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="RCK-Ig-YJX"/>
+                            <constraint firstItem="OKp-fn-bJx" firstAttribute="trailing" secondItem="Hbd-A3-PFz" secondAttribute="trailing" type="default" id="SVL-YO-mge"/>
+                            <constraint firstItem="dwj-WK-BxN" firstAttribute="baseline" secondItem="zzT-ux-OLa" secondAttribute="baseline" type="default" id="Sy1-Yj-K25"/>
+                            <constraint firstItem="JK9-zw-WcI" firstAttribute="leading" secondItem="40x-te-jih" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="TcZ-ey-QJn"/>
+                            <constraint firstItem="e66-RU-gbh" firstAttribute="top" secondItem="40x-te-jih" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Uq2-2e-Gex"/>
+                            <constraint firstItem="sro-h2-SJ6" firstAttribute="top" secondItem="e66-RU-gbh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Url-gj-3vg"/>
+                            <constraint firstItem="1Sw-2V-jgQ" firstAttribute="top" secondItem="IAu-ew-DaI" secondAttribute="top" type="default" id="V3b-W7-QHk"/>
+                            <constraint firstItem="JK9-zw-WcI" firstAttribute="trailing" secondItem="rEv-rV-6Kf" secondAttribute="trailing" type="default" id="VWy-ZN-a72"/>
+                            <constraint firstItem="Kvf-zO-2X4" firstAttribute="leading" secondItem="sro-h2-SJ6" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="XOT-3L-dKX"/>
+                            <constraint firstItem="OKp-fn-bJx" firstAttribute="top" secondItem="dwj-WK-BxN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="YB7-sm-ocx"/>
+                            <constraint firstItem="x21-v3-vpP" firstAttribute="top" secondItem="UIp-eM-BiC" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Z54-2e-z6Q"/>
+                            <constraint firstItem="nEV-Ox-NtE" firstAttribute="top" secondItem="e66-RU-gbh" secondAttribute="top" type="default" id="ZPG-vX-9PT"/>
+                            <constraint firstAttribute="trailing" secondItem="IAu-ew-DaI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="aqM-7z-voJ"/>
+                            <constraint firstItem="MXe-cm-LxT" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="awv-q5-sbs"/>
+                            <constraint firstItem="UIp-eM-BiC" firstAttribute="leading" secondItem="sro-h2-SJ6" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="bJQ-gI-zhE"/>
                             <constraint firstItem="GRx-DA-U7b" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" type="default" id="bMg-RK-NyO"/>
-                            <constraint firstItem="qJR-NR-pgD" firstAttribute="leading" secondItem="MXe-cm-LxT" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="eeM-0O-xaZ"/>
-                            <constraint firstItem="YUm-ig-WRI" firstAttribute="leading" secondItem="MXe-cm-LxT" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="fn2-6U-KYH"/>
+                            <constraint firstItem="OKp-fn-bJx" firstAttribute="leading" secondItem="Qid-ZB-ohi" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="bja-yq-vem"/>
+                            <constraint firstItem="jVf-kc-QYE" firstAttribute="centerX" secondItem="Hbd-A3-PFz" secondAttribute="centerX" type="default" id="cF2-fd-URS"/>
+                            <constraint firstItem="Hbd-A3-PFz" firstAttribute="leading" secondItem="40x-te-jih" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cmG-Nt-DPd"/>
+                            <constraint firstItem="e66-RU-gbh" firstAttribute="trailing" secondItem="wHB-Ip-N8o" secondAttribute="trailing" type="default" id="cvb-is-4f1"/>
+                            <constraint firstItem="MXe-cm-LxT" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="65" id="dTW-Pd-7hZ"/>
+                            <constraint firstItem="40x-te-jih" firstAttribute="top" secondItem="wHB-Ip-N8o" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="dhP-MQ-ef8"/>
+                            <constraint firstItem="GRx-DA-U7b" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" type="default" id="eEA-tc-QJ8"/>
+                            <constraint firstItem="wHB-Ip-N8o" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fK9-Ld-bQ6"/>
+                            <constraint firstItem="Kvf-zO-2X4" firstAttribute="top" secondItem="IBi-vW-ubO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="he5-Ee-y2e"/>
+                            <constraint firstItem="1vB-Aw-HFQ" firstAttribute="top" secondItem="OKp-fn-bJx" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="hhq-Cx-JzR"/>
+                            <constraint firstItem="40x-te-jih" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hmZ-Fy-dXt"/>
+                            <constraint firstItem="OTH-fF-dXG" firstAttribute="leading" secondItem="Qid-ZB-ohi" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="ibF-W8-dIU"/>
+                            <constraint firstItem="e66-RU-gbh" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="kaN-tN-hT8"/>
+                            <constraint firstItem="nEV-Ox-NtE" firstAttribute="baseline" secondItem="e66-RU-gbh" secondAttribute="baseline" type="default" id="kfu-7x-Tv1"/>
                             <constraint firstItem="1Sw-2V-jgQ" firstAttribute="top" secondItem="MXe-cm-LxT" secondAttribute="top" type="default" id="ndB-m6-pZZ"/>
-                            <constraint firstItem="YUm-ig-WRI" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="331" id="u1r-X4-fHe"/>
-                            <constraint firstItem="MXe-cm-LxT" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="216" id="vuu-wZ-eFz"/>
-                            <constraint firstItem="rEv-rV-6Kf" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="255" id="zQT-Cc-mbh"/>
+                            <constraint firstItem="rEv-rV-6Kf" firstAttribute="top" secondItem="gwW-iy-qeK" secondAttribute="top" constant="104" id="oVS-uY-Bkr"/>
+                            <constraint firstItem="OTH-fF-dXG" firstAttribute="top" secondItem="1vB-Aw-HFQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qSp-qm-XG8"/>
+                            <constraint firstItem="1vB-Aw-HFQ" firstAttribute="leading" secondItem="Qid-ZB-ohi" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="rnk-0k-cRL"/>
+                            <constraint firstItem="IBi-vW-ubO" firstAttribute="top" secondItem="nEV-Ox-NtE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uP7-Ym-9df"/>
+                            <constraint firstItem="Hbd-A3-PFz" firstAttribute="top" secondItem="jVf-kc-QYE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uU4-Yd-bVm"/>
+                            <constraint firstItem="dwj-WK-BxN" firstAttribute="leading" secondItem="zzT-ux-OLa" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="vwj-G1-i5h"/>
+                            <constraint firstItem="zzT-ux-OLa" firstAttribute="leading" secondItem="gwW-iy-qeK" secondAttribute="leading" constant="21" id="wcA-fg-9qP"/>
+                            <constraint firstItem="DZf-Bz-HXA" firstAttribute="leading" secondItem="Qid-ZB-ohi" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="wlj-t3-brB"/>
+                            <constraint firstItem="IBi-vW-ubO" firstAttribute="leading" secondItem="nEV-Ox-NtE" secondAttribute="leading" type="default" id="z7K-Lg-VgS"/>
+                            <constraint firstItem="DZf-Bz-HXA" firstAttribute="top" secondItem="OTH-fF-dXG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="zkt-u4-79h"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" image="people_.png" id="H7L-BA-Nf5"/>
                     <connections>
+                        <outlet property="bikeAward" destination="40x-te-jih" id="z5f-RO-88M"/>
+                        <outlet property="bikeLabel" destination="Hbd-A3-PFz" id="59T-4F-Gaz"/>
+                        <outlet property="busAward" destination="sro-h2-SJ6" id="dnP-Mb-Dzb"/>
+                        <outlet property="busLabel" destination="IBi-vW-ubO" id="k04-z8-BNq"/>
                         <outlet property="footprintDescriptionLabel" destination="rEv-rV-6Kf" id="jon-Jt-7ia"/>
                         <outlet property="footprintTotalLabel" destination="qJR-NR-pgD" id="B8d-xj-ewQ"/>
                         <outlet property="loginView" destination="IAu-ew-DaI" id="NLA-eL-6Fw"/>
                         <outlet property="nameLabel" destination="1Sw-2V-jgQ" id="yFI-vd-B3B"/>
                         <outlet property="profilePic" destination="MXe-cm-LxT" id="Pyg-qs-Bpe"/>
-                        <outlet property="publishButton" destination="YUm-ig-WRI" id="oPZ-cF-Wx8"/>
+                        <outlet property="publishButton" destination="lQM-hD-eNU" id="7cG-zW-dzy"/>
+                        <outlet property="smallfootAward" destination="Qid-ZB-ohi" id="xyJ-0T-bfv"/>
+                        <outlet property="smallfootLabel" destination="OKp-fn-bJx" id="QbA-PE-Cdz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAa-cG-oqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -353,7 +497,6 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwe-lK-Nfa">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="84" id="GD7-jC-Vvr"/>
-                                    <constraint firstAttribute="height" constant="21" id="yQw-9V-tcn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -368,7 +511,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Distance Travelled: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYe-ea-P0U">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Distance Traveled: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYe-ea-P0U">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="181" id="EIH-w6-2kr"/>
                                 </constraints>
@@ -426,6 +569,40 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ti8-bk-Vrm"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RcD-RP-Wor">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="482" id="BSV-jj-Wnm"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Car"/>
+                                    <segment title="Bus"/>
+                                    <segment title="Bike"/>
+                                    <segment title="Walking"/>
+                                    <segment title="Train"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please review and, if necessary, correct the belon information before saving it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qye-OV-2J4">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mode of transportation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rA7-Iv-e3o">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Distance (miles):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2a-tl-c3d">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MTq-J7-2Wp">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="4Xm-ch-t2b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.83529418706893921" green="0.84313732385635376" blue="0.86666673421859741" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
@@ -437,42 +614,50 @@
                             <constraint firstItem="Fwe-lK-Nfa" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="418-Rx-nA4"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EUA-dJ-S9Y" secondAttribute="trailing" constant="20" type="user" id="5Bq-pO-s6Z"/>
                             <constraint firstItem="2zK-O5-9Zp" firstAttribute="baseline" secondItem="sEx-yV-07C" secondAttribute="baseline" type="default" id="5C8-Zl-ld3"/>
-                            <constraint firstItem="dYe-ea-P0U" firstAttribute="top" secondItem="948-em-TFs" secondAttribute="top" type="default" id="5GY-im-ZUy"/>
                             <constraint firstItem="wJf-Gz-nI0" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="68c-Rb-DjY"/>
+                            <constraint firstAttribute="bottom" secondItem="qye-OV-2J4" secondAttribute="bottom" constant="445" id="6v2-S7-9dk"/>
                             <constraint firstItem="jcP-TC-2gB" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" type="default" id="78P-r4-IfM"/>
                             <constraint firstItem="egP-CU-Urt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" type="user" id="7YG-XD-t7G"/>
                             <constraint firstItem="egP-CU-Urt" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7yf-3t-Se5"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wJf-Gz-nI0" secondAttribute="trailing" constant="20" type="user" id="8YK-g3-XAb"/>
+                            <constraint firstAttribute="trailing" secondItem="qye-OV-2J4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9L6-Ze-Qzl"/>
                             <constraint firstItem="jcP-TC-2gB" firstAttribute="trailing" secondItem="vrY-ZR-Aef" secondAttribute="trailing" type="default" id="9oo-0W-gOS"/>
                             <constraint firstItem="eqw-C3-8IX" firstAttribute="trailing" secondItem="vrY-ZR-Aef" secondAttribute="trailing" type="default" id="9ur-ss-R4M"/>
+                            <constraint firstItem="I2a-tl-c3d" firstAttribute="leading" secondItem="MTq-J7-2Wp" secondAttribute="leading" type="default" id="AB6-9R-uwO"/>
                             <constraint firstItem="Fwe-lK-Nfa" firstAttribute="top" secondItem="vrY-ZR-Aef" secondAttribute="top" constant="439" id="APW-jy-cCb"/>
                             <constraint firstItem="xmS-g9-nIk" firstAttribute="top" secondItem="ti8-bk-Vrm" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Dlh-Nu-Cwu"/>
                             <constraint firstItem="bnr-eS-8h6" firstAttribute="trailing" secondItem="vrY-ZR-Aef" secondAttribute="trailing" type="default" id="FnY-fg-u4w"/>
+                            <constraint firstItem="MTq-J7-2Wp" firstAttribute="top" secondItem="I2a-tl-c3d" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="J2k-Z9-NsV"/>
                             <constraint firstItem="sEx-yV-07C" firstAttribute="leading" secondItem="egP-CU-Urt" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="J8H-zU-ZI1"/>
-                            <constraint firstItem="948-em-TFs" firstAttribute="top" secondItem="Fwe-lK-Nfa" secondAttribute="top" type="default" id="KWU-Y5-yTY"/>
                             <constraint firstItem="2zK-O5-9Zp" firstAttribute="top" secondItem="ti8-bk-Vrm" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="LC6-px-BtJ"/>
                             <constraint firstItem="xmS-g9-nIk" firstAttribute="baseline" secondItem="2zK-O5-9Zp" secondAttribute="baseline" type="default" id="LrH-fV-Gzl"/>
+                            <constraint firstItem="jcP-TC-2gB" firstAttribute="top" secondItem="eqw-C3-8IX" secondAttribute="bottom" type="default" id="M5Z-qu-PsT"/>
                             <constraint firstItem="ti8-bk-Vrm" firstAttribute="top" secondItem="vrY-ZR-Aef" secondAttribute="top" constant="353" id="Mvf-R8-sFb"/>
                             <constraint firstItem="948-em-TFs" firstAttribute="baseline" secondItem="dYe-ea-P0U" secondAttribute="baseline" type="default" id="Mwu-Rv-zV0"/>
                             <constraint firstAttribute="trailing" secondItem="EUA-dJ-S9Y" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="NmF-pZ-hHu"/>
                             <constraint firstItem="dYe-ea-P0U" firstAttribute="leading" secondItem="2zK-O5-9Zp" secondAttribute="leading" type="default" id="QBC-B7-W1P"/>
                             <constraint firstItem="Fwe-lK-Nfa" firstAttribute="baseline" secondItem="948-em-TFs" secondAttribute="baseline" type="default" id="Qmu-Cu-x4P"/>
+                            <constraint firstItem="rA7-Iv-e3o" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QyO-wA-3xo"/>
                             <constraint firstItem="eqw-C3-8IX" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" type="default" id="TNL-BK-gCD"/>
                             <constraint firstAttribute="trailing" secondItem="wJf-Gz-nI0" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UBq-LG-iNO"/>
                             <constraint firstItem="9yd-9F-Iej" firstAttribute="centerY" secondItem="1A5-8S-CRL" secondAttribute="centerY" type="default" id="Wdx-hr-YT6"/>
                             <constraint firstAttribute="trailing" secondItem="dYe-ea-P0U" secondAttribute="trailing" constant="160" id="X6q-c3-nA0"/>
                             <constraint firstItem="9yd-9F-Iej" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="XFI-Ar-2fE"/>
+                            <constraint firstAttribute="bottom" secondItem="MTq-J7-2Wp" secondAttribute="bottom" constant="365" id="XL2-ed-7n0"/>
                             <constraint firstAttribute="bottom" secondItem="wJf-Gz-nI0" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="blA-oL-ry7"/>
                             <constraint firstItem="EUA-dJ-S9Y" firstAttribute="baseline" secondItem="dYe-ea-P0U" secondAttribute="baseline" type="default" id="dJG-Vr-vUK"/>
+                            <constraint firstItem="RcD-RP-Wor" firstAttribute="top" secondItem="rA7-Iv-e3o" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="dv1-wN-erw"/>
                             <constraint firstItem="sEx-yV-07C" firstAttribute="top" secondItem="ti8-bk-Vrm" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="eDf-fT-X3W"/>
-                            <constraint firstItem="jcP-TC-2gB" firstAttribute="top" secondItem="eqw-C3-8IX" secondAttribute="bottom" type="default" id="eQq-Fj-O8I"/>
+                            <constraint firstAttribute="trailing" secondItem="MTq-J7-2Wp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="h5n-WJ-yff"/>
+                            <constraint firstItem="qye-OV-2J4" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hWb-KT-JES"/>
                             <constraint firstItem="ti8-bk-Vrm" firstAttribute="trailing" secondItem="vrY-ZR-Aef" secondAttribute="trailing" type="default" id="hkq-0R-Aw4"/>
                             <constraint firstItem="948-em-TFs" firstAttribute="trailing" secondItem="sEx-yV-07C" secondAttribute="trailing" type="default" id="iJA-5n-EwV"/>
                             <constraint firstItem="Fwe-lK-Nfa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" type="user" id="jh7-7K-E8V"/>
                             <constraint firstItem="egP-CU-Urt" firstAttribute="baseline" secondItem="sEx-yV-07C" secondAttribute="baseline" type="default" id="kD0-Zu-b46"/>
                             <constraint firstItem="ti8-bk-Vrm" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" type="default" id="nfZ-5e-ktw"/>
-                            <constraint firstItem="EUA-dJ-S9Y" firstAttribute="top" secondItem="dYe-ea-P0U" secondAttribute="top" type="default" id="pkU-ft-XxG"/>
                             <constraint firstItem="egP-CU-Urt" firstAttribute="top" secondItem="ti8-bk-Vrm" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="raP-8D-Hbe"/>
+                            <constraint firstItem="I2a-tl-c3d" firstAttribute="baseline" secondItem="rA7-Iv-e3o" secondAttribute="baseline" type="default" id="tXF-IO-dxg"/>
+                            <constraint firstItem="RcD-RP-Wor" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="v2m-6R-A9h"/>
                             <constraint firstItem="eqw-C3-8IX" firstAttribute="top" secondItem="vrY-ZR-Aef" secondAttribute="top" type="default" id="wQr-tY-zFu"/>
                             <constraint firstItem="bnr-eS-8h6" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" type="default" id="weG-hw-Rmd"/>
                             <constraint firstItem="1A5-8S-CRL" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" type="default" id="x8V-fb-qXN"/>
@@ -488,6 +673,11 @@
                         <outlet property="map" destination="jcP-TC-2gB" id="CbL-GB-T6f"/>
                         <outlet property="recording" destination="1A5-8S-CRL" id="mlC-X1-HXF"/>
                         <outlet property="recordingIndicator" destination="9yd-9F-Iej" id="miz-J7-EzJ"/>
+                        <outlet property="reviewDistance" destination="MTq-J7-2Wp" id="uEt-ts-b7Q"/>
+                        <outlet property="reviewLabel" destination="qye-OV-2J4" id="f7A-aO-sZr"/>
+                        <outlet property="reviewLabelDistance" destination="I2a-tl-c3d" id="0QZ-IP-JIf"/>
+                        <outlet property="reviewLabelTransportation" destination="rA7-Iv-e3o" id="w0R-Ib-Uox"/>
+                        <outlet property="reviewTransportation" destination="RcD-RP-Wor" id="IAe-UH-uPV"/>
                         <outlet property="startStopButton" destination="wJf-Gz-nI0" id="r1M-aJ-csb"/>
                         <outlet property="time" destination="948-em-TFs" id="rtB-JN-id7"/>
                     </connections>
@@ -1279,6 +1469,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </scene>
     </scenes>
     <resources>
+        <image name="award_bike_empty.png" width="128" height="128"/>
+        <image name="award_bus_empty.png" width="128" height="128"/>
+        <image name="award_leaf_empty.png" width="128" height="128"/>
         <image name="credit_card.png" width="26" height="26"/>
         <image name="globe.png" width="26" height="26"/>
         <image name="graph_bar.png" width="26" height="26"/>
@@ -1331,6 +1524,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="progress" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="recording" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="recordingIndicator" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="reviewDistance" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="reviewLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="reviewLabelDistance" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="reviewLabelTransportation" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="reviewTransportation" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="startStopButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="time" candidateClass="UILabel"/>
             </relationships>
@@ -1391,12 +1589,19 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialViewController.h"/>
             <relationships>
                 <relationship kind="action" name="publishButtonPressed:"/>
+                <relationship kind="action" name="refreshButtonPressed:"/>
+                <relationship kind="outlet" name="bikeAward" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bikeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="busAward" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="busLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="footprintDescriptionLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="footprintTotalLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="loginView" candidateClass="FBLoginView"/>
                 <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="profilePic" candidateClass="FBProfilePictureView"/>
-                <relationship kind="outlet" name="publishButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="publishButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="smallfootAward" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="smallfootLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="ThirdViewController" superclassName="UIViewController">
@@ -1404,6 +1609,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <relationships>
                 <relationship kind="action" name="recommendPressed:"/>
                 <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="recommendedAmount" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>

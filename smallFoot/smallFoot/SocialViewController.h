@@ -17,7 +17,13 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *footprintDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *footprintTotalLabel;
-@property (weak, nonatomic) IBOutlet UIButton *publishButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *publishButton;
+@property (weak, nonatomic) IBOutlet UILabel *bikeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *busLabel;
+@property (weak, nonatomic) IBOutlet UILabel *smallfootLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *bikeAward;
+@property (weak, nonatomic) IBOutlet UIImageView *busAward;
+@property (weak, nonatomic) IBOutlet UIImageView *smallfootAward;
 
 // Footprint Data
 @property (copy, nonatomic) NSString *footprintTotal;
