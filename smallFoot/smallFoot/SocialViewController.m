@@ -62,6 +62,8 @@
     NSLog(@"user is logged in");
     
     self.publishButton.hidden = NO;
+    
+    [self checkSessionDefaultAppID];
 }
 
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
@@ -74,6 +76,7 @@
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
                             user:(id<FBGraphUser>)user {
     NSLog(@"fetched user info");
+    [self checkSessionDefaultAppID];
     
     self.profilePic.profileID = user.id;
     self.nameLabel.text = [NSString stringWithFormat:
@@ -83,7 +86,6 @@
     
     NSLog(@"Facebook id is: %@", user.id);
     NSLog(@"Facebook access token: %@", [[[FBSession activeSession] accessTokenData] accessToken]);
-    
     
 }
 
@@ -224,6 +226,7 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
 
 - (IBAction)publishButtonPressed:(id)sender
 {
+    
     // Ask for publish_actions permissions in context
     if ([FBSession.activeSession.permissions
          indexOfObject:@"publish_actions"] == NSNotFound) {
@@ -266,10 +269,19 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
 
     footprintTotal = [NSString stringWithFormat:@"%0.2f pounds of carbon", [calculator getTotalPrint]];
     [footprintTotalLabel setText:footprintTotal];
-    [footprintTotalLabel sizeToFit];
     
 }
 
+- (void)checkSessionDefaultAppID
+{
+    if (![FBSession defaultAppID]) {
+        NSLog(@"Need to set defaultAppID");
+        [FBSession setDefaultAppID:@"158795857619338"];
+    }
+    else {
+        NSLog(@"FBSession defaultAppID: %@", [FBSession defaultAppID]);
+    }
+}
 
 
 @end
