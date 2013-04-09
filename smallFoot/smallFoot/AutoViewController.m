@@ -98,6 +98,9 @@ CLLocationCoordinate2D stopPoint;
     }else if([[[_startStopButton titleLabel] text] isEqualToString:@"Save"]){
         [_startStopButton setTitle:@"Start" forState:UIControlStateNormal];
         [self saveData];
+        shouldUpdatePosition = YES;
+        [self removeAllPins];
+        [self centerMapOnUser];
     }
 }
 

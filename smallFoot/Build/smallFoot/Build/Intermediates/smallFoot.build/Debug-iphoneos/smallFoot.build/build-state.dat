@@ -2,228 +2,228 @@ TsmallFoot
 v5
 r1
 cCheck dependencies
-cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/ResourceRules.plist
 cProcessInfoPlistFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/Info.plist" smallFoot/smallFoot-Info.plist
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/ResourceRules.plist
 cProcessPCH "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-duogtobfskjhakenesybrocmqlve/smallFoot-Prefix.pch.pth" smallFoot/smallFoot-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/CarbonCalculator.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/CarbonCalculator.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/ThirdViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/ThirdViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AppDelegate.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/SocialViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/SocialViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/SecondViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/SecondViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/FirstViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/FirstViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AddOffsetViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AddOffsetViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AchievementViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AchievementViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AutoViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/FootprintViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/FootprintViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/main.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AddGasViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AddGasViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AddElectricViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AddElectricViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/ContributionsViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/ContributionsViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AutoViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/FirstViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/FirstViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AchievementViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AchievementViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/CarbonCalculator.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/CarbonCalculator.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AppDelegate.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AddGasViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AddGasViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/ThirdViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/ThirdViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AddOffsetViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AddOffsetViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/SecondViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/SecondViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AddressAnnotation.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AddressAnnotation.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/SocialViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/SocialViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot" normal armv7
 cGenerateDSYMFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM" "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot"
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/Default.png" smallFoot/Default.png
-cCompileStoryboard "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPad.storyboard"
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/Default-568h@2x.png" smallFoot/Default-568h@2x.png
-cCompileStoryboard "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPhone.storyboard"
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/first.png" smallFoot/first.png
 cCopyStringsFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/en.lproj/InfoPlist.strings" smallFoot/en.lproj/InfoPlist.strings
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/Default@2x.png" smallFoot/Default@2x.png
+cCompileStoryboard "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPhone.storyboard"
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/Default.png" smallFoot/Default.png
+cCompileStoryboard "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/en.lproj/MainStoryboard_iPad.storyboard"
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/first.png" smallFoot/first.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/first@2x.png" smallFoot/first@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/Default-568h@2x.png" smallFoot/Default-568h@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/second@2x.png" smallFoot/second@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/second.png" smallFoot/second.png
 cCopyPlistFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/electricLog.plist" smallFoot/electricLog.plist
-cCpResource smallFoot/retina/00_License.txt Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/00_License.txt
 cCopyPlistFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/gasLog.plist" smallFoot/gasLog.plist
-cCopyPlistFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/offsetLog.plist" smallFoot/offsetLog.plist
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/alarm@2x.png" smallFoot/retina/alarm@2x.png
+cCpResource smallFoot/retina/00_License.txt Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/00_License.txt
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/arrow_down@2x.png" smallFoot/retina/arrow_down@2x.png
+cCopyPlistFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/offsetLog.plist" smallFoot/offsetLog.plist
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/arrow_left@2x.png" smallFoot/retina/arrow_left@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/bank@2x.png" smallFoot/retina/bank@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/arrow_up@2x.png" smallFoot/retina/arrow_up@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/arrow_right@2x.png" smallFoot/retina/arrow_right@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/brief_case@2x.png" smallFoot/retina/brief_case@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/calculator@2x.png" smallFoot/retina/calculator@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/clapboard@2x.png" smallFoot/retina/clapboard@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/clock@2x.png" smallFoot/retina/clock@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/bank@2x.png" smallFoot/retina/bank@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/camera@2x.png" smallFoot/retina/camera@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/cog_01@2x.png" smallFoot/retina/cog_01@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/clapboard@2x.png" smallFoot/retina/clapboard@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/calculator@2x.png" smallFoot/retina/calculator@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/clock@2x.png" smallFoot/retina/clock@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/cog_02@2x.png" smallFoot/retina/cog_02@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/crayon@2x.png" smallFoot/retina/crayon@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/cog_01@2x.png" smallFoot/retina/cog_01@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/credit_card@2x.png" smallFoot/retina/credit_card@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/eject@2x.png" smallFoot/retina/eject@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/floppy_disc@2x.png" smallFoot/retina/floppy_disc@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/fire_02@2x.png" smallFoot/retina/fire_02@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/database@2x.png" smallFoot/retina/database@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/fast_forward@2x.png" smallFoot/retina/fast_forward@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/crayon@2x.png" smallFoot/retina/crayon@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/database@2x.png" smallFoot/retina/database@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/folder@2x.png" smallFoot/retina/folder@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/forward_to_end_01@2x.png" smallFoot/retina/forward_to_end_01@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/fire_02@2x.png" smallFoot/retina/fire_02@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/floppy_disc@2x.png" smallFoot/retina/floppy_disc@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/forward_to_end_02@2x.png" smallFoot/retina/forward_to_end_02@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/funnel@2x.png" smallFoot/retina/funnel@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/globe@2x.png" smallFoot/retina/globe@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/graph_bar_trend@2x.png" smallFoot/retina/graph_bar_trend@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/game_controller@2x.png" smallFoot/retina/game_controller@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/globe@2x.png" smallFoot/retina/globe@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/forward_to_end_01@2x.png" smallFoot/retina/forward_to_end_01@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/graph_bar@2x.png" smallFoot/retina/graph_bar@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/graph_bar_trend@2x.png" smallFoot/retina/graph_bar_trend@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/house@2x.png" smallFoot/retina/house@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/heart@2x.png" smallFoot/retina/heart@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/letter_closed@2x.png" smallFoot/retina/letter_closed@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/lock@2x.png" smallFoot/retina/lock@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/letter_open@2x.png" smallFoot/retina/letter_open@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/lightbulb@2x.png" smallFoot/retina/lightbulb@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/lock@2x.png" smallFoot/retina/lock@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/letter_closed@2x.png" smallFoot/retina/letter_closed@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/magnet@2x.png" smallFoot/retina/magnet@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/house@2x.png" smallFoot/retina/house@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/medical_case@2x.png" smallFoot/retina/medical_case@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/magnifying_glass@2x.png" smallFoot/retina/magnifying_glass@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/monitor@2x.png" smallFoot/retina/monitor@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/minus@2x.png" smallFoot/retina/minus@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/network@2x.png" smallFoot/retina/network@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/newspaper@2x.png" smallFoot/retina/newspaper@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/minus@2x.png" smallFoot/retina/minus@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/page_empty@2x.png" smallFoot/retina/page_empty@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/pause@2x.png" smallFoot/retina/pause@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/pacman@2x.png" smallFoot/retina/pacman@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/magnifying_glass@2x.png" smallFoot/retina/magnifying_glass@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/monitor@2x.png" smallFoot/retina/monitor@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/page_empty@2x.png" smallFoot/retina/page_empty@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/pencil@2x.png" smallFoot/retina/pencil@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/people_@2x.png" smallFoot/retina/people_@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/people_family@2x.png" smallFoot/retina/people_family@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/play@2x.png" smallFoot/retina/play@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/piggy_bank@2x.png" smallFoot/retina/piggy_bank@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/people_woman@2x.png" smallFoot/retina/people_woman@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/people_family@2x.png" smallFoot/retina/people_family@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/pause@2x.png" smallFoot/retina/pause@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/people_@2x.png" smallFoot/retina/people_@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/photos_polaroid@2x.png" smallFoot/retina/photos_polaroid@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/plus@2x.png" smallFoot/retina/plus@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/rewind@2x.png" smallFoot/retina/rewind@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/refresh_straight_arrows@2x.png" smallFoot/retina/refresh_straight_arrows@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/repeat@2x.png" smallFoot/retina/repeat@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/piggy_bank@2x.png" smallFoot/retina/piggy_bank@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/play@2x.png" smallFoot/retina/play@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/record@2x.png" smallFoot/retina/record@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/plus@2x.png" smallFoot/retina/plus@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/refresh@2x.png" smallFoot/retina/refresh@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/refresh_straight_arrows@2x.png" smallFoot/retina/refresh_straight_arrows@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/rewind_to_start_01@2x.png" smallFoot/retina/rewind_to_start_01@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/repeat@2x.png" smallFoot/retina/repeat@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/rewind@2x.png" smallFoot/retina/rewind@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/rewind_to_start_02@2x.png" smallFoot/retina/rewind_to_start_02@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/safe@2x.png" smallFoot/retina/safe@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/rss@2x.png" smallFoot/retina/rss@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/shuffle@2x.png" smallFoot/retina/shuffle@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/speaker@2x.png" smallFoot/retina/speaker@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/scales@2x.png" smallFoot/retina/scales@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/speech_bubble@2x.png" smallFoot/retina/speech_bubble@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/star@2x.png" smallFoot/retina/star@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/safe@2x.png" smallFoot/retina/safe@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/speech_bubble_transparent@2x.png" smallFoot/retina/speech_bubble_transparent@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/speech_bubble@2x.png" smallFoot/retina/speech_bubble@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/speaker@2x.png" smallFoot/retina/speaker@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/star@2x.png" smallFoot/retina/star@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/truck@2x.png" smallFoot/retina/truck@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/waste_basket@2x.png" smallFoot/retina/waste_basket@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/trolley@2x.png" smallFoot/retina/trolley@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/alarm.png" smallFoot/standard/alarm.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/trolley@2x.png" smallFoot/retina/trolley@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/arrow_down.png" smallFoot/standard/arrow_down.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/arrow_up.png" smallFoot/standard/arrow_up.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/arrow_left.png" smallFoot/standard/arrow_left.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/arrow_right.png" smallFoot/standard/arrow_right.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/waste_basket@2x.png" smallFoot/retina/waste_basket@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/arrow_up.png" smallFoot/standard/arrow_up.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/brief_case.png" smallFoot/standard/brief_case.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/cog_01.png" smallFoot/standard/cog_01.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/bank.png" smallFoot/standard/bank.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/clapboard.png" smallFoot/standard/clapboard.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/clock.png" smallFoot/standard/clock.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/calculator.png" smallFoot/standard/calculator.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/camera.png" smallFoot/standard/camera.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/clock.png" smallFoot/standard/clock.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/cog_01.png" smallFoot/standard/cog_01.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/cog_02.png" smallFoot/standard/cog_02.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/clapboard.png" smallFoot/standard/clapboard.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/credit_card.png" smallFoot/standard/credit_card.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/crayon.png" smallFoot/standard/crayon.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/database.png" smallFoot/standard/database.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/credit_card.png" smallFoot/standard/credit_card.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/fast_forward.png" smallFoot/standard/fast_forward.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/eject.png" smallFoot/standard/eject.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/fast_forward.png" smallFoot/standard/fast_forward.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/fire_02.png" smallFoot/standard/fire_02.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/folder.png" smallFoot/standard/folder.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/floppy_disc.png" smallFoot/standard/floppy_disc.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/forward_to_end_01.png" smallFoot/standard/forward_to_end_01.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/forward_to_end_02.png" smallFoot/standard/forward_to_end_02.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/funnel.png" smallFoot/standard/funnel.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/globe.png" smallFoot/standard/globe.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/folder.png" smallFoot/standard/folder.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/game_controller.png" smallFoot/standard/game_controller.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/graph_bar.png" smallFoot/standard/graph_bar.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/globe.png" smallFoot/standard/globe.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/graph_bar_trend.png" smallFoot/standard/graph_bar_trend.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/heart.png" smallFoot/standard/heart.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/game_controller.png" smallFoot/standard/game_controller.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/house.png" smallFoot/standard/house.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/letter_closed.png" smallFoot/standard/letter_closed.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/letter_open.png" smallFoot/standard/letter_open.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/lightbulb.png" smallFoot/standard/lightbulb.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/magnet.png" smallFoot/standard/magnet.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/lock.png" smallFoot/standard/lock.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/house.png" smallFoot/standard/house.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/magnifying_glass.png" smallFoot/standard/magnifying_glass.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/lock.png" smallFoot/standard/lock.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/magnet.png" smallFoot/standard/magnet.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/medical_case.png" smallFoot/standard/medical_case.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/letter_closed.png" smallFoot/standard/letter_closed.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/monitor.png" smallFoot/standard/monitor.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/minus.png" smallFoot/standard/minus.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/pacman.png" smallFoot/standard/pacman.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/monitor.png" smallFoot/standard/monitor.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/network.png" smallFoot/standard/network.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/newspaper.png" smallFoot/standard/newspaper.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/pacman.png" smallFoot/standard/pacman.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/page_empty.png" smallFoot/standard/page_empty.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/pause.png" smallFoot/standard/pause.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/network.png" smallFoot/standard/network.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/people_.png" smallFoot/standard/people_.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/pencil.png" smallFoot/standard/pencil.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/people_family.png" smallFoot/standard/people_family.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/photos_polaroid.png" smallFoot/standard/photos_polaroid.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/people_woman.png" smallFoot/standard/people_woman.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/piggy_bank.png" smallFoot/standard/piggy_bank.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/play.png" smallFoot/standard/play.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/people_family.png" smallFoot/standard/people_family.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/plus.png" smallFoot/standard/plus.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/piggy_bank.png" smallFoot/standard/piggy_bank.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/people_.png" smallFoot/standard/people_.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/record.png" smallFoot/standard/record.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/refresh.png" smallFoot/standard/refresh.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/refresh_straight_arrows.png" smallFoot/standard/refresh_straight_arrows.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/refresh.png" smallFoot/standard/refresh.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/repeat.png" smallFoot/standard/repeat.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/rewind.png" smallFoot/standard/rewind.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/rewind_to_start_01.png" smallFoot/standard/rewind_to_start_01.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/plus.png" smallFoot/standard/plus.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/rss.png" smallFoot/standard/rss.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/safe.png" smallFoot/standard/safe.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/rewind_to_start_01.png" smallFoot/standard/rewind_to_start_01.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/rewind_to_start_02.png" smallFoot/standard/rewind_to_start_02.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/scales.png" smallFoot/standard/scales.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/shuffle.png" smallFoot/standard/shuffle.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/speaker.png" smallFoot/standard/speaker.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/speech_bubble.png" smallFoot/standard/speech_bubble.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/safe.png" smallFoot/standard/safe.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/star.png" smallFoot/standard/star.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/waste_basket.png" smallFoot/standard/waste_basket.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/truck.png" smallFoot/standard/truck.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallfoot.png" smallfoot.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/speech_bubble.png" smallFoot/standard/speech_bubble.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/trolley.png" smallFoot/standard/trolley.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/speech_bubble_transparent.png" smallFoot/standard/speech_bubble_transparent.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/speaker.png" smallFoot/standard/speaker.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/truck.png" smallFoot/standard/truck.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallfoot.png" smallfoot.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/waste_basket.png" smallFoot/standard/waste_basket.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/Default-Landscape~ipad.png" smallFoot/../Default-Landscape~ipad.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/loading.png" smallFoot/loading.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/recordOff.png" smallFoot/recordOff.png
-cCpResource FacebookSDKResources.bundle Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/FacebookSDKResources.bundle
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/recordOn.png" smallFoot/recordOn.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blackButton.png" smallFoot/buttons/blackButton.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blackButton@2x.png" smallFoot/buttons/blackButton@2x.png
+cCpResource FacebookSDKResources.bundle Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/FacebookSDKResources.bundle
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/shadow.png" smallFoot/shadow.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blueButton.png" smallFoot/buttons/blueButton.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blackButtonHighlight.png" smallFoot/buttons/blackButtonHighlight.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blueButton@2x.png" smallFoot/buttons/blueButton@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blueButtonHighlight@2x.png" smallFoot/buttons/blueButtonHighlight@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blueButtonHighlight.png" smallFoot/buttons/blueButtonHighlight.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greenButton.png" smallFoot/buttons/greenButton.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blackButton@2x.png" smallFoot/buttons/blackButton@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blackButton.png" smallFoot/buttons/blackButton.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blackButtonHighlight@2x.png" smallFoot/buttons/blackButtonHighlight@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blackButtonHighlight.png" smallFoot/buttons/blackButtonHighlight.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blueButton.png" smallFoot/buttons/blueButton.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blueButtonHighlight.png" smallFoot/buttons/blueButtonHighlight.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blueButton@2x.png" smallFoot/buttons/blueButton@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greenButton.png" smallFoot/buttons/greenButton.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/blueButtonHighlight@2x.png" smallFoot/buttons/blueButtonHighlight@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greenButton@2x.png" smallFoot/buttons/greenButton@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greenButtonHighlight.png" smallFoot/buttons/greenButtonHighlight.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greyButton.png" smallFoot/buttons/greyButton.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greenButtonHighlight@2x.png" smallFoot/buttons/greenButtonHighlight@2x.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greyButton@2x.png" smallFoot/buttons/greyButton@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greenButtonHighlight.png" smallFoot/buttons/greenButtonHighlight.png
 cCpResource smallFoot/buttons/greyButton@2xpng Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greyButton@2xpng
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greyButtonHighlight.png" smallFoot/buttons/greyButtonHighlight.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greyButton.png" smallFoot/buttons/greyButton.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/orangeButton.png" smallFoot/buttons/orangeButton.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/greyButtonHighlight@2x.png" smallFoot/buttons/greyButtonHighlight@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/tanButton.png" smallFoot/buttons/tanButton.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/orangeButton.png" smallFoot/buttons/orangeButton.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/orangeButtonHighlight.png" smallFoot/buttons/orangeButtonHighlight.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/orangeButton@2x.png" smallFoot/buttons/orangeButton@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/orangeButtonHighlight@2x.png" smallFoot/buttons/orangeButtonHighlight@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/tanButton.png" smallFoot/buttons/tanButton.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/tanButton@2x.png" smallFoot/buttons/tanButton@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/orangeButtonHighlight@2x.png" smallFoot/buttons/orangeButtonHighlight@2x.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/whiteButton.png" smallFoot/buttons/whiteButton.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/tanButtonHighlight.png" smallFoot/buttons/tanButtonHighlight.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/tanButtonHighlight@2x.png" smallFoot/buttons/tanButtonHighlight@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/whiteButton@2x.png" smallFoot/buttons/whiteButton@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/whiteButton.png" smallFoot/buttons/whiteButton.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/whiteButtonHighlight.png" smallFoot/buttons/whiteButtonHighlight.png
-cCopyPlistFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/awardLog.plist" smallFoot/awardLog.plist
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/whiteButtonHighlight@2x.png" smallFoot/buttons/whiteButtonHighlight@2x.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bike_bronze.png" smallFoot/Awards/award_bike_bronze.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/whiteButton@2x.png" smallFoot/buttons/whiteButton@2x.png
+cCopyPlistFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/awardLog.plist" smallFoot/awardLog.plist
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/whiteButtonHighlight.png" smallFoot/buttons/whiteButtonHighlight.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bike_gold.png" smallFoot/Awards/award_bike_gold.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bus_bronze.png" smallFoot/Awards/award_bus_bronze.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bike_silver.png" smallFoot/Awards/award_bike_silver.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bike_bronze.png" smallFoot/Awards/award_bike_bronze.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bus_gold.png" smallFoot/Awards/award_bus_gold.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bus_silver.png" smallFoot/Awards/award_bus_silver.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_leaf_bronze.png" smallFoot/Awards/award_leaf_bronze.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_leaf_gold.png" smallFoot/Awards/award_leaf_gold.png
+cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bus_empty.png" smallFoot/Awards/award_bus_empty.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_leaf_silver.png" smallFoot/Awards/award_leaf_silver.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bike_empty.png" smallFoot/Awards/award_bike_empty.png
-cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bus_empty.png" smallFoot/Awards/award_bus_empty.png
 cCopyPNGFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_leaf_empty.png" smallFoot/Awards/award_leaf_empty.png
 cProcessProductPackaging "/Users/benperkins/Library/MobileDevice/Provisioning Profiles/EFB0A01B-080E-4412-A0B0-CFE848F4B2D3.mobileprovision" "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/embedded.mobileprovision"
 cProcessProductPackaging "/Users/benperkins/Library/MobileDevice/Provisioning Profiles/EFB0A01B-080E-4412-A0B0-CFE848F4B2D3.mobileprovision" "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/embedded.mobileprovision"
@@ -342,12 +342,12 @@ t1365458650
 s85904
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.o
-t1365521142
-s125976
+t1365527111
+s134992
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/CarbonCalculator.o
-t1365458650
-s30972
+t1365526371
+s40816
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/ContributionsViewController.o
 t1365458650
@@ -358,20 +358,20 @@ t1365458650
 s77704
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/FootprintViewController.o
-t1365519848
-s104072
+t1365526371
+s104224
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/SecondViewController.o
 t1365458650
 s75872
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/SocialViewController.o
-t1365517322
-s119132
+t1365526371
+s141508
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/ThirdViewController.o
-t1365518152
-s91332
+t1365526371
+s91484
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/main.o
 t1365458650
@@ -452,11 +452,11 @@ t1365517322
 s414
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app
-t1365521145
-s6664
+t1365527111
+s7106
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM
-t1365521142
+t1365527111
 s102
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/00_License.txt
@@ -536,56 +536,56 @@ t1365445819
 s1891
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/awardLog.plist
-t2
-s0
+t1365526371
+s42
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bike_bronze.png
-t2
-s0
+t1365526371
+s23382
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bike_empty.png
-t2
-s0
+t1365526371
+s11327
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bike_gold.png
-t2
-s0
+t1365526371
+s23115
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bike_silver.png
-t2
-s0
+t1365526371
+s20365
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bus_bronze.png
-t2
-s0
+t1365526371
+s19003
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bus_empty.png
-t2
-s0
+t1365526371
+s9304
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bus_gold.png
-t2
-s0
+t1365526371
+s18777
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_bus_silver.png
-t2
-s0
+t1365526371
+s16918
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_leaf_bronze.png
-t2
-s0
+t1365526371
+s17952
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_leaf_empty.png
-t2
-s0
+t1365526371
+s8573
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_leaf_gold.png
-t2
-s0
+t1365526371
+s17837
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/award_leaf_silver.png
-t2
-s0
+t1365526371
+s16046
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/bank.png
 t1365445819
@@ -732,7 +732,7 @@ t1365445818
 s42
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/en.lproj/MainStoryboard_iPad.storyboardc
-t1365521145
+t1365526372
 s782
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/en.lproj/MainStoryboard_iPhone.storyboardc
@@ -1200,8 +1200,8 @@ t1365445819
 s2528
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot
-t1365521145
-s976672
+t1365527111
+s992944
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallfoot.png
 t1365445820
@@ -1496,9 +1496,9 @@ t1365520509
 s1483
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AutoViewController.m
-c00000000516446E90000000000002AC1
-t1365526249
-s10945
+c0000000051644A720000000000002B23
+t1365527154
+s11043
 
 N/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/Awards/award_bike_bronze.png
 c0000000051603F6C0000000000004979
@@ -2655,15 +2655,15 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesf4ddb1e27e14b741^44fcfbe27e14b741^---0#1#0#--18"Check dependencies36"C0AC19DA-7EF7-4712-A4A3-8A08E703483D-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies94bc2af78114b741^1fdb2ef78114b741^---0#1#0#--18"Check dependencies36"EB271D4D-08B0-4635-9508-0AE1D8F3722B-
 
 CCodeSign "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app"
-s387219172.999176
-e387219173.147684
+s387219959.609511
+e387219960.028811
 r1
 xCodeSign
 x/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"CodeSign Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app16dcffe47e14b741^07ce25e57e14b741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/0000000000000000^1057"CodeSign Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign aca4746cc53a528ef28651651c43153e64e68d5c "--resource-rules=/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/ResourceRules.plist" --entitlements "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot.xcent" "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app"36"56078A78-3BD8-40A3-9E1D-01E49A96984B-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"CodeSign Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.appa9179cf78114b741^b35f07f88114b741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/0000000000000000^1057"CodeSign Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign aca4746cc53a528ef28651651c43153e64e68d5c "--resource-rules=/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/ResourceRules.plist" --entitlements "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot.xcent" "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app"36"B4966C67-2F8A-4668-871B-C976126FD2FC-
 
 CCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AchievementViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AchievementViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s387079611.419989
@@ -2744,8 +2744,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AppDelegate.m9b7596bb5d12b741^840dcfbb5d12b741^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/eecs441/smallFoot/smallFoot/AppDelegate.m0000000000000000^4277"CompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AppDelegate.o smallFoot/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-generated-files.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-own-target-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-all-target-headers.hmap" -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-project-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/DerivedSources/armv7" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/DerivedSources" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot" -include "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-duogtobfskjhakenesybrocmqlve/smallFoot-Prefix.pch" -MMD -MT dependencies -MF "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AppDelegate.d" --serialize-diagnostics "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AppDelegate.dia" -c "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AppDelegate.m" -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AppDelegate.o"36"86DFB4E2-3D4C-4D42-AB11-6C60C70E49A6-
 
 CCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AutoViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387219171.034522
-e387219171.160236
+s387219959.203184
+e387219959.304072
 r1
 xCompileC
 xBuild/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.o
@@ -2754,7 +2754,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AutoViewController.mbfee08e37e14b741^011629e37e14b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/eecs441/smallFoot/smallFoot/AutoViewController.m0000000000000000^4319"CompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.o smallFoot/AutoViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-generated-files.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-own-target-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-all-target-headers.hmap" -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-project-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/DerivedSources/armv7" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/DerivedSources" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot" -include "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-duogtobfskjhakenesybrocmqlve/smallFoot-Prefix.pch" -MMD -MT dependencies -MF "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.d" --serialize-diagnostics "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.dia" -c "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AutoViewController.m" -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.o"36"5C9F1C4D-D4E3-45BE-89A3-8CDD7252CD1D-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AutoViewController.m5c1d34f78114b741^d0d64df78114b741^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/eecs441/smallFoot/smallFoot/AutoViewController.m0000000000000000^4319"CompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.o smallFoot/AutoViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-generated-files.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-own-target-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-all-target-headers.hmap" -iquote "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot-project-headers.hmap" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/DerivedSources/armv7" "-I/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/DerivedSources" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot" -include "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/PrecompiledHeaders/smallFoot-Prefix-duogtobfskjhakenesybrocmqlve/smallFoot-Prefix.pch" -MMD -MT dependencies -MF "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.d" --serialize-diagnostics "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.dia" -c "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/AutoViewController.m" -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/AutoViewController.o"36"D0F3CA42-1C05-4632-946F-59F0E2D24AFE-
 
 CCompileC Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/CarbonCalculator.o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/CarbonCalculator.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s387219171.032038
@@ -4907,23 +4907,23 @@ xBuild/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/00_License.txt
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/00_License.txt1d75ec7c96e9b641^8464ed7c96e9b641^---0#0#0#-19%DVTDocumentLocation2@169"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/00_License.txt000000000080d041^748"CpResource smallFoot/retina/00_License.txt Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/00_License.txt    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/smallFoot/retina/00_License.txt" "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app"36"09EB7393-EF68-4C13-BDEB-107E6FAF72A9-
 
 CGenerateDSYMFile "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM" "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot"
-s387219171.271727
-e387219171.406735
+s387219959.398617
+e387219959.508114
 r1
 xGenerateDSYMFile
 x/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM
 x/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection148"Generate /Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM684247e37e14b741^bb2668e37e14b741^---0#0#0#-19%DVTDocumentLocation2@160"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM/0000000000000000^816"GenerateDSYMFile Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot" -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM"36"2ECCD0C6-FB9C-43CB-A01F-B90FEA5D9436-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection148"Generate /Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM0d1a66f78114b741^1b1382f78114b741^---0#0#0#-19%DVTDocumentLocation2@160"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM/0000000000000000^816"GenerateDSYMFile Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot" -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app.dSYM"36"EA4423D9-E7C9-4A69-AE5D-65233E91AA29-
 
 CLd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot" normal armv7
-s387219171.167000
-e387219171.260205
+s387219959.310858
+e387219959.391830
 r1
 xLd
 x/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot
 xnormal
 xarmv7
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection149"Link /Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot2cd82ae37e14b741^78d444e37e14b741^---0#0#0#--1589"Ld Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot normal armv7    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk "-L/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot" -filelist "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/smallFoot.LinkFileList" -dead_strip -ObjC -lsqlite3.0 -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.1 -framework CoreLocation -framework Social -framework Accounts -framework AdSupport -framework MapKit -framework UIKit -framework Foundation -framework CoreGraphics -framework FacebookSDK -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot"36"EC5585EB-6D92-409C-92F5-0D398D0F83A8-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection149"Link /Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFootc2a54ff78114b741^0e4e64f78114b741^---0#0#0#--1589"Ld Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot normal armv7    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk "-L/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos" "-F/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot" -filelist "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/Objects-normal/armv7/smallFoot.LinkFileList" -dead_strip -ObjC -lsqlite3.0 -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.1 -framework CoreLocation -framework Social -framework Accounts -framework AdSupport -framework MapKit -framework UIKit -framework Foundation -framework CoreGraphics -framework FacebookSDK -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot"36"9F28AA7C-296B-41DE-815E-4AE027FAB5C4-
 
 CLd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app/smallFoot" normal armv7s
 s387157802.096934
@@ -5027,10 +5027,10 @@ x/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Buil
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection243"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot.xcente2e47a8a5b14b741^e5637b8a5b14b741^---0#0#0#-19%DVTDocumentLocation2@193"file://localhost/Users/benperkins/Documents/College/Senior%20Year/EECS%20441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot.xcent0000000000000000^878"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot.xcent    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist -entitlements -format xml -o "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Intermediates/smallFoot.build/Debug-iphoneos/smallFoot.build/smallFoot.xcent"36"316BDDB3-0702-486C-ABB7-7354C787E65F-
 
 CTouch "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app"
-s387219172.978080
-e387219172.983130
+s387219959.589512
+e387219959.594406
 r1
 xTouch
 x/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection140"Touch /Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app5472fae47e14b741^5cadfbe47e14b741^---0#0#0#--497"Touch Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app"36"2A0FC9C6-5448-4649-8D62-4E32C26FB932-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection140"Touch /Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.appa1f796f78114b741^344899f78114b741^---0#0#0#--497"Touch Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app    cd "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/benperkins/Documents/College/Senior Year/EECS 441/eecs441/smallFoot/Build/smallFoot/Build/Products/Debug-iphoneos/smallFoot.app"36"C062C6F0-09AA-4245-9C89-26CA3D519C1E-
 
