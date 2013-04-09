@@ -581,7 +581,7 @@
                                     <segment title="Train"/>
                                 </segments>
                             </segmentedControl>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please review and, if necessary, correct the belon information before saving it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qye-OV-2J4">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please review and, if necessary, correct the below information before saving it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qye-OV-2J4">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -615,7 +615,6 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EUA-dJ-S9Y" secondAttribute="trailing" constant="20" type="user" id="5Bq-pO-s6Z"/>
                             <constraint firstItem="2zK-O5-9Zp" firstAttribute="baseline" secondItem="sEx-yV-07C" secondAttribute="baseline" type="default" id="5C8-Zl-ld3"/>
                             <constraint firstItem="wJf-Gz-nI0" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="68c-Rb-DjY"/>
-                            <constraint firstAttribute="bottom" secondItem="qye-OV-2J4" secondAttribute="bottom" constant="445" id="6v2-S7-9dk"/>
                             <constraint firstItem="jcP-TC-2gB" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" type="default" id="78P-r4-IfM"/>
                             <constraint firstItem="egP-CU-Urt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" type="user" id="7YG-XD-t7G"/>
                             <constraint firstItem="egP-CU-Urt" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7yf-3t-Se5"/>
@@ -654,6 +653,7 @@
                             <constraint firstItem="948-em-TFs" firstAttribute="trailing" secondItem="sEx-yV-07C" secondAttribute="trailing" type="default" id="iJA-5n-EwV"/>
                             <constraint firstItem="Fwe-lK-Nfa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vrY-ZR-Aef" secondAttribute="leading" constant="20" type="user" id="jh7-7K-E8V"/>
                             <constraint firstItem="egP-CU-Urt" firstAttribute="baseline" secondItem="sEx-yV-07C" secondAttribute="baseline" type="default" id="kD0-Zu-b46"/>
+                            <constraint firstItem="rA7-Iv-e3o" firstAttribute="top" secondItem="qye-OV-2J4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kpS-ZH-dKq"/>
                             <constraint firstItem="ti8-bk-Vrm" firstAttribute="leading" secondItem="vrY-ZR-Aef" secondAttribute="leading" type="default" id="nfZ-5e-ktw"/>
                             <constraint firstItem="egP-CU-Urt" firstAttribute="top" secondItem="ti8-bk-Vrm" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="raP-8D-Hbe"/>
                             <constraint firstItem="I2a-tl-c3d" firstAttribute="baseline" secondItem="rA7-Iv-e3o" secondAttribute="baseline" type="default" id="tXF-IO-dxg"/>
