@@ -140,6 +140,38 @@
 		<data>
 		1YU0VrhgPcJTtn864M4iAVrlwFM=
 		</data>
+		<key>blackButton.png</key>
+		<data>
+		1eZPNZOCTJhxLMDQKsywB5HXC6U=
+		</data>
+		<key>blackButton@2x.png</key>
+		<data>
+		mIBOMTDxKFI7TGxX0M4dNjnpHCM=
+		</data>
+		<key>blackButtonHighlight.png</key>
+		<data>
+		RAFvqfIakInsjOT15A0XDX7dwzU=
+		</data>
+		<key>blackButtonHighlight@2x.png</key>
+		<data>
+		1/w7kgU+s+kzqBPMZLbLIiGfn3o=
+		</data>
+		<key>blueButton.png</key>
+		<data>
+		nR2GSKLvmlRRmz6So2z7wnpYC4s=
+		</data>
+		<key>blueButton@2x.png</key>
+		<data>
+		07Vc5tvWNW/xApAmu7H6cE5HnqA=
+		</data>
+		<key>blueButtonHighlight.png</key>
+		<data>
+		VuYM1YZu73xa1WK04M9MXmdKJ90=
+		</data>
+		<key>blueButtonHighlight@2x.png</key>
+		<data>
+		RFNssdSdqJD75OlvkQidXuzDUYc=
+		</data>
 		<key>brief_case.png</key>
 		<data>
 		QsNw/4XhezhB5yh8YaXiivS17CY=
@@ -242,163 +274,163 @@
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/2-view-17.nib</key>
 		<data>
-		bpFlSBS++l1FBcWXDR8hPUBS84o=
+		N5gqMeM4hlGfQ01GsMBD8PbwzJg=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/3-view-16.nib</key>
 		<data>
-		yRjZ12TS8uyDqQIe1Bra+s01L/Y=
+		SiTjZ2cyLjE2CLDZ2EqSR7WHEYM=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/33o-Xz-4tp-view-y7X-96-StK.nib</key>
 		<data>
-		BcZySfafxXRYT9+KdjB+4pY6QtU=
+		WhkG5uktKSY6LLHRPSAdiP5wpZY=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/6oz-Eg-LMi-view-gwW-iy-qeK.nib</key>
 		<data>
-		UycZrGxbn5oNCEKpkb/1rr8Ev7c=
+		cj2otNZPzNDdgcmEilnJOJWPnqw=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/8AI-uM-TUZ-view-MJk-Ku-nD8.nib</key>
 		<data>
-		90Rqfk33pNouvugs/qu5QWe408M=
+		fT0mnYcNj7y3wPOTd8YtJKAsqx8=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/BMC-Y2-me3-view-Y1L-NR-q2Z.nib</key>
 		<data>
-		NluaL4cYKAWGAKWTkktlHwE5CK4=
+		GsNaUQUvuQh6r6IegS5zILnKfGs=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/GhV-xP-Ldm-view-4fj-xT-3Jc.nib</key>
 		<data>
-		mxRPxm2MBToLnOkKJbkAKvaN2DM=
+		79KoIct0pL8X7gw45qJVtC2EqZA=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/HU6-2h-kYD-view-sJf-Ca-D9f.nib</key>
 		<data>
-		8AHPxX0bDq6EatG7KtTSfFfRk2s=
+		ZcyzcDQ6Z+MsSL8ky3yDF25J6M0=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/IDF-sK-ebA-view-doG-nM-Foa.nib</key>
 		<data>
-		xFcljQ0oNa+AyWpy5hU7IRoHxy4=
+		bELBNuPQYrfnVWgXTi0B0Hk+6Ks=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/MjV-wh-l0S-view-3gU-fW-xg5.nib</key>
 		<data>
-		gGJzdcAZvvjmCJLxlVGmy3fPG6E=
+		AaszLgLfZzZ/PoAkzdvIgphj9OU=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-4.nib</key>
 		<data>
-		fyEMoDn3yPoL/WpFQjiWTvpnRUo=
+		i/gVk74e29djsE3MkBiiJeB8Qcc=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-8AI-uM-TUZ.nib</key>
 		<data>
-		mmucVmptyB/s4uQBPc2LijK6/uw=
+		LErGzGpsJ+vZug2LfLnq58AndJY=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-BMC-Y2-me3.nib</key>
 		<data>
-		LMwAhaNCryAMaFMO2Mfi1Gdz4pM=
+		dziujkHQ9ECt/LnXcfZMnfe9XRs=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-HU6-2h-kYD.nib</key>
 		<data>
-		n03suJ0hVKZIeebAJ4sp9MBt9h4=
+		GJM1lWitPcDUBHwX6Jd5Wo16wmM=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-IDF-sK-ebA.nib</key>
 		<data>
-		0NwtrmeXVA2ITnGfvvAyfi+i/5Q=
+		5xUzHy7IqLPHuFMNv+NBE0s2QY0=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-fhe-o3-ZIy.nib</key>
 		<data>
-		xFk+mj1mHdq+dVuzi5xVCINhgUE=
+		s/WScUxeSebDQAXA5l6OuEMVYq0=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/UIViewController-rCE-2t-l8k.nib</key>
 		<data>
-		VBwh4tbltEQemeojLI2c6/Q3UYU=
+		DcTw6iq75m4M1bTO/ayalie2J38=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/b08-ZF-bv5-view-vrY-ZR-Aef.nib</key>
 		<data>
-		yf4HSHqfxPzwjA0i3s0rm4vAJqA=
+		Zt8PY2sWIg8TpgP7k//k17I2PYw=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/dLt-PM-IKR-view-rNP-fu-dKI.nib</key>
 		<data>
-		moJGrk01i2QN8eVaioAcmv1ZTAk=
+		/AUwRywEDsDeZ2o/WPrpXBMF+Mc=
 		</data>
 		<key>en.lproj/MainStoryboard_iPad.storyboardc/rCE-2t-l8k-view-iZs-zH-6fx.nib</key>
 		<data>
-		DSI61HUdnVadM552xLVUuPRPilY=
+		N7WiS8xJ/vIROTUqiMBlTtp1rJQ=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/3qT-Hy-Sc8-view-rQm-Pr-5xS.nib</key>
 		<data>
-		UnZRrOnJvHzck8ZCpRdGeLumjys=
+		6g+c/55s3qaMxKvYwxAVz+Q4Kn0=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/8oA-xp-eMZ-view-ZjD-09-962.nib</key>
 		<data>
-		AoxZcUA43OuswiSwnt2W24REDIk=
+		VS1oUc9cQqUCfJUYuCtTgQWJXog=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/9O7-Za-yKA-view-eqx-H7-CfU.nib</key>
 		<data>
-		RdfkL6QCdupo+lq58UxE3ZinO6Q=
+		5hFwcrQA0GamN3Pg2GMuZ3cbzOM=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/EdD-jW-fbq-view-5RD-hv-Vkp.nib</key>
 		<data>
-		yTP7b/y+5RY6FgzALIK8x2//dQk=
+		ARy/Odv1/e1jH1d1bPEN9m5B5eU=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/ISi-vW-uZI-view-y9I-xT-YCo.nib</key>
 		<data>
-		ZzrWORXxWwIv0pR1pw6/dB0NzTk=
+		pvwcVs77GKb7vA0rG5EmDeA4WBM=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-EdD-jW-fbq.nib</key>
 		<data>
-		fT9i9SL1JRHIwG8QDK/Fkqiwe+U=
+		yHK8W4h8nX3EGnd1H9390760qXo=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-M8J-2o-vGe.nib</key>
 		<data>
-		K1cJJV1ulc2IBgex8EOJZjzIYtI=
+		RLBfur8aE8htru7ruLbelnqgBT0=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-oGU-oE-dh0.nib</key>
 		<data>
-		S/h55IHveK9sWHV9PW3nJhuYd9I=
+		FcLVxH52HO2GkbXj1IrI0eSjoHs=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-plJ-Y4-TDq.nib</key>
 		<data>
-		1olk7aQN//T6pYHZ2RarcUaqCYw=
+		ORqrK7l0KjfWjWEqjjVhXN2ES/k=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-s85-go-lha.nib</key>
 		<data>
-		gTT/haeyN5npyfoo5RGj//5AAQI=
+		2hNRS4OfxYemz2yKqUdTXM/4SKc=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-ycO-zg-FEy.nib</key>
 		<data>
-		WTcAsIE/0kbeq7smi0Cq5ZE13SU=
+		hKRaeNLMv1yM1727Ha+jlyFwOcU=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/UIViewController-zW3-Qm-3v3.nib</key>
 		<data>
-		D43wRi+DesNplvwvKVhnmMxbGlE=
+		fk6fH/E8jSj7dUJwaNAQpA89OJA=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/oGU-oE-dh0-view-3KU-e0-159.nib</key>
 		<data>
-		3iZrja85Fvautc+Set4067btlr4=
+		CGVylDnbDZsE91LnrP2Sw8oikpw=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/onN-tq-b4n-view-hWo-5h-7gM.nib</key>
 		<data>
-		Xf/6srarAmZLxmkKrgRU5Zv62L0=
+		Lz0uOrZ5IIsEKyvmyI8cnokBlBg=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/plJ-Y4-TDq-view-aaU-vy-xh5.nib</key>
 		<data>
-		NPmQzggRKRsNqtIEJAIHJEKcq4o=
+		B36DhCsapGaGwnESaeQkoJWuh7U=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/rJW-pj-TVQ-view-d1i-rA-4O3.nib</key>
 		<data>
-		NIIdCJ3biAFbjlGIRMoJ8nCBuAg=
+		wWIS/twIoyrYY5WYBWIQpcCZYe0=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/s2A-KY-ROo-view-1HK-0U-7F3.nib</key>
 		<data>
-		de13HSo96lT3iRqgKM4kCNeiRz0=
+		Qhin3i+YIZJHYYMJYfQwJV12z2M=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/vhY-Dl-xXQ-view-S1m-6z-lCY.nib</key>
 		<data>
-		wuaT+VX7vXrWG0WudGmJB85+TOE=
+		kW3v/zuxpzrROdedXzM6c63cK0g=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/ycO-zg-FEy-view-T4p-Se-7jJ.nib</key>
 		<data>
-		Y64jaCxFuKDxa88KWCZGpZqdAgk=
+		YimdMT+2iMzXpdVTKLvmoqz8JbU=
 		</data>
 		<key>en.lproj/MainStoryboard_iPhone.storyboardc/zW3-Qm-3v3-view-bmP-tc-nvj.nib</key>
 		<data>
-		oEbarbJ2QWBbHQnRJY0LKrHkK3o=
+		FME2mQeU0ge+S2myoBYWBscSxkg=
 		</data>
 		<key>fast_forward.png</key>
 		<data>
@@ -499,6 +531,42 @@
 		<key>graph_bar_trend@2x.png</key>
 		<data>
 		yVGctYJXXM9mHPE3kRyHcx4g8wg=
+		</data>
+		<key>greenButton.png</key>
+		<data>
+		7s9oklq48IzW3ruZgT59GzYiYTM=
+		</data>
+		<key>greenButton@2x.png</key>
+		<data>
+		1UtANKXT9QzyD4I0Ldc7oPJwGkc=
+		</data>
+		<key>greenButtonHighlight.png</key>
+		<data>
+		e+K/qN64dHHD7c6qgTe8S3PMl/A=
+		</data>
+		<key>greenButtonHighlight@2x.png</key>
+		<data>
+		sEa9Bdctkorwq2AMp31AJ79VFIw=
+		</data>
+		<key>greyButton.png</key>
+		<data>
+		tOMs+BbbZeBvKXBGhGDR0650tGc=
+		</data>
+		<key>greyButton@2x.png</key>
+		<data>
+		QtFOG+vx8I9Kf9OvRoN5NyvpCCY=
+		</data>
+		<key>greyButton@2xpng</key>
+		<data>
+		UcuSpoKMjOrAAcdGzxUpEkDWcIE=
+		</data>
+		<key>greyButtonHighlight.png</key>
+		<data>
+		+jHTN+4NQ65MI2RPc3iZepHtwA0=
+		</data>
+		<key>greyButtonHighlight@2x.png</key>
+		<data>
+		O8j81bImoYT8Rqwv859nGPjqyBk=
 		</data>
 		<key>heart.png</key>
 		<data>
@@ -611,6 +679,22 @@
 		<key>offsetLog.plist</key>
 		<data>
 		zmV6UqBSo6r1NOz798vd5O4zTBA=
+		</data>
+		<key>orangeButton.png</key>
+		<data>
+		YEf6LpCcdWUGAqNI6qD6GkuvRmw=
+		</data>
+		<key>orangeButton@2x.png</key>
+		<data>
+		dqZIIB0l6wWSxblongCAsRbiaoI=
+		</data>
+		<key>orangeButtonHighlight.png</key>
+		<data>
+		u48wudO7l3EC3EH41tAe0M5usw4=
+		</data>
+		<key>orangeButtonHighlight@2x.png</key>
+		<data>
+		5Lj9z2riCdLj0DV06lMaYlvax2Y=
 		</data>
 		<key>pacman.png</key>
 		<data>
@@ -796,6 +880,10 @@
 		<data>
 		mktNFE37/+VH2sU3on7k+ljCRAo=
 		</data>
+		<key>shadow.png</key>
+		<data>
+		f1ar0NMCshijtreJvsn8Zmr0g1k=
+		</data>
 		<key>shuffle.png</key>
 		<data>
 		ImRGQz+ReCTW+Pzwg4QmWsG2g34=
@@ -840,6 +928,22 @@
 		<data>
 		9MkGydjzZtOsknmsc7Mf2RW/glU=
 		</data>
+		<key>tanButton.png</key>
+		<data>
+		9lv4sWDIbFAghBUdjbUHevlsXWM=
+		</data>
+		<key>tanButton@2x.png</key>
+		<data>
+		Vl5G9k6FPh45yhMrfo0YKhfmY68=
+		</data>
+		<key>tanButtonHighlight.png</key>
+		<data>
+		uMn0AqpAHJowRxDLoKl5wQfQjwg=
+		</data>
+		<key>tanButtonHighlight@2x.png</key>
+		<data>
+		JtytBGci8XStUbqNI51JuRKjLQU=
+		</data>
 		<key>trolley.png</key>
 		<data>
 		YWSj1Aoy+miflEUi6S0Lie8xIoI=
@@ -863,6 +967,22 @@
 		<key>waste_basket@2x.png</key>
 		<data>
 		VfDO/xXMV4B6exZCbzQS4jivl8w=
+		</data>
+		<key>whiteButton.png</key>
+		<data>
+		ajQiNoZHsTnf/1C3AM/qBzo/jyk=
+		</data>
+		<key>whiteButton@2x.png</key>
+		<data>
+		dkyhsE5uKDKLjiqrCQNXD9T7Ysg=
+		</data>
+		<key>whiteButtonHighlight.png</key>
+		<data>
+		lO6uYFdCbDxO9S4MrM0P5dYFAt8=
+		</data>
+		<key>whiteButtonHighlight@2x.png</key>
+		<data>
+		KDv3vGD5XbBK7/E6Ld3DAvMg/Po=
 		</data>
 	</dict>
 	<key>rules</key>

@@ -7,6 +7,8 @@
 //
 
 #import "AutoViewController.h"
+#import "AddressAnnotation.h"
+#import <CoreLocation/CoreLocation.h>
 
 const double MS2MPH = 2.23694;
 
@@ -14,6 +16,9 @@ bool running;
 double averageSpeed;
 int speedSamples;
 long startTime;
+bool shouldUpdatePosition;
+CLLocationCoordinate2D startPoint;
+CLLocationCoordinate2D stopPoint;
 
 @interface AutoViewController ()
 
@@ -41,7 +46,16 @@ long startTime;
     speedSamples = 0;
     [self centerMapOnUser];
     running = NO;
-	// Do any additional setup after loading the view.
+    shouldUpdatePosition = YES;
+    
+    // Load custom button images
+
+    UIImage *buttonImage = [[UIImage imageNamed:@"greyButton.png"]
+                            resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+    UIImage *buttonImageHighlight = [[UIImage imageNamed:@"greyButtonHighlight.png"]
+                                     resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
+    [_startStopButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [_startStopButton setBackgroundImage:buttonImageHighlight forState:UIControlStateHighlighted];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,22 +65,30 @@ long startTime;
 }
 
 - (IBAction)startStopButtonPressed:(id)sender {
-    if([[[_startStopButton titleLabel] text] isEqualToString:@"Start"]){
+    if([[[_startStopButton titleLabel] text] isEqualToString:@"Start"]){        
         [_startStopButton setTitle:@"Stop" forState:UIControlStateNormal];
         [_recording setHidden:NO];
         [_recordingIndicator setHidden:NO];
+        _map.showsUserLocation = YES;
+        shouldUpdatePosition = YES;
         running = YES;
         startTime = [[NSDate date] timeIntervalSince1970];
         averageSpeed = 0;
         speedSamples = 0;
         //[_progress setHidden:NO];
+        [self removeAllPins];
+        [self showPin:YES];
         [self getLocation];
 
     }else{
         [_startStopButton setTitle:@"Start" forState:UIControlStateNormal];
         [_recording setHidden:YES];
         [_recordingIndicator setHidden:YES];
+        _map.showsUserLocation = NO;
+        shouldUpdatePosition = NO;
         running = NO;
+        [self showPin:NO];
+        [self centerMapOnTrip];
         [_progress setHidden:YES];
     }
 }
@@ -78,6 +100,7 @@ long startTime;
 
 -(void)centerMapOnUser
 {
+    if(!shouldUpdatePosition) return;
     _map.showsUserLocation = YES;
     
     MKUserLocation *userLocation = _map.userLocation;
@@ -94,6 +117,17 @@ long startTime;
     //if(running) [self getLocation];
 }
 
+-(void)centerMapOnTrip
+{
+    CLLocationCoordinate2D middle;
+    middle.latitude = (startPoint.latitude + startPoint.latitude) / 2;
+    middle.longitude = (startPoint.longitude + startPoint.longitude) / 2;
+    CLLocationDistance d = [[[CLLocation alloc] initWithLatitude:startPoint.latitude longitude:startPoint.longitude] distanceFromLocation:[[CLLocation alloc] initWithLatitude:stopPoint.latitude longitude:stopPoint.longitude]];
+    MKCoordinateRegion region =
+    MKCoordinateRegionMakeWithDistance (middle, 3*d, 3*d);
+    [_map setRegion:region animated:YES];
+}
+
 -(void)getLocation
 {
     MKUserLocation *userLocation = _map.userLocation;
@@ -103,6 +137,7 @@ long startTime;
     int hours = time / 3600;
     int minutes = (time - (hours * 3600)) / 60;
     int seconds = (time - (hours * 3600) - (minutes * 60));
+    
     if(speed > 0)
     {
         averageSpeed *= speedSamples;
@@ -128,4 +163,35 @@ long startTime;
     
     if(running) [self performSelector:@selector(getLocation) withObject:self afterDelay:0.5 ];
 }
+
+-(void)showPin:(BOOL)start
+{
+    MKUserLocation *userLocation = _map.userLocation;
+    if(start)
+    {
+        NSLog(@"Making point...");
+        startPoint = [[userLocation location] coordinate];
+        AddressAnnotation *addAnnotation = [[AddressAnnotation alloc] initWithCoordinate:startPoint];
+        [_map addAnnotation:addAnnotation];
+    }
+    else
+    {
+        NSLog(@"Making point...");
+        stopPoint = [[userLocation location] coordinate];
+        AddressAnnotation *addAnnotation = [[AddressAnnotation alloc] initWithCoordinate:stopPoint];
+        [_map addAnnotation:addAnnotation];
+    }
+}
+
+-(void)removeAllPins
+{
+    id userLocation = [_map userLocation];
+    NSMutableArray *pins = [[NSMutableArray alloc] initWithArray:[_map annotations]];
+    if ( userLocation != nil ) {
+        [pins removeObject:userLocation]; // avoid removing user location off the map
+    }
+    
+    [_map removeAnnotations:pins];
+}
+
 @end

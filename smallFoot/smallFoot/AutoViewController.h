@@ -29,5 +29,8 @@
 - (IBAction)startStopButtonPressed:(id)sender;
 - (void)centerMapOnUser;
 - (void)getLocation;
+- (void)showPin:(BOOL)start;
+- (void)centerMapOnTrip;
+- (void)removeAllPins;
 
 @end

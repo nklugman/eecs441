@@ -207,11 +207,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXv-uv-7oi">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Start">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="startStopButtonPressed:" destination="s2A-KY-ROo" eventType="touchUpInside" id="apC-9B-s42"/>
@@ -288,10 +288,13 @@
                                     <constraint firstAttribute="height" constant="30" id="imD-3Q-4om"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="bcp-4N-ubV"/>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.82745098039215681" green="0.83921568627450982" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xjP-oQ-VNd" firstAttribute="trailing" secondItem="1HK-0U-7F3" secondAttribute="trailing" type="default" id="29Z-2Z-Qok"/>
+                            <constraint firstItem="bcp-4N-ubV" firstAttribute="leading" secondItem="1HK-0U-7F3" secondAttribute="leading" type="default" id="2H2-7g-BIW"/>
+                            <constraint firstItem="bcp-4N-ubV" firstAttribute="top" secondItem="1HK-0U-7F3" secondAttribute="top" constant="197" id="3k1-mM-ZIf"/>
                             <constraint firstItem="r3V-1Y-VYf" firstAttribute="top" secondItem="8gy-Js-8NL" secondAttribute="top" type="default" id="3mN-b8-KyM"/>
                             <constraint firstAttribute="bottom" secondItem="fXv-uv-7oi" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="5Gx-nO-ows"/>
                             <constraint firstAttribute="trailing" secondItem="hlE-KZ-fgL" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="6GV-hQ-vHF"/>
@@ -301,12 +304,13 @@
                             <constraint firstItem="fXv-uv-7oi" firstAttribute="leading" secondItem="1HK-0U-7F3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="CIt-Hn-FiB"/>
                             <constraint firstItem="r3V-1Y-VYf" firstAttribute="leading" secondItem="1HK-0U-7F3" secondAttribute="leading" type="default" id="CSA-gH-ozW"/>
                             <constraint firstItem="xjP-oQ-VNd" firstAttribute="top" secondItem="1HK-0U-7F3" secondAttribute="top" type="default" id="D9J-CB-eEe"/>
+                            <constraint firstItem="bcp-4N-ubV" firstAttribute="trailing" secondItem="1HK-0U-7F3" secondAttribute="trailing" type="default" id="GMi-YS-8P6"/>
                             <constraint firstItem="ekT-X7-0Eg" firstAttribute="centerY" secondItem="r3V-1Y-VYf" secondAttribute="centerY" type="default" id="GRd-y6-Fhc"/>
                             <constraint firstItem="qgo-Qv-iq6" firstAttribute="leading" secondItem="hlE-KZ-fgL" secondAttribute="leading" type="default" id="M9U-b0-ir2"/>
+                            <constraint firstItem="1M9-Bk-fnj" firstAttribute="top" secondItem="1HK-0U-7F3" secondAttribute="top" constant="223" id="MKU-fl-syn"/>
                             <constraint firstItem="r3V-1Y-VYf" firstAttribute="trailing" secondItem="1HK-0U-7F3" secondAttribute="trailing" type="default" id="MN1-4j-f7W"/>
                             <constraint firstItem="CPe-eY-N78" firstAttribute="leading" secondItem="1HK-0U-7F3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Oob-IR-2xe"/>
                             <constraint firstItem="ekT-X7-0Eg" firstAttribute="leading" secondItem="1HK-0U-7F3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Qc7-P3-zhx"/>
-                            <constraint firstItem="1M9-Bk-fnj" firstAttribute="top" secondItem="8gy-Js-8NL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QmP-0e-8s7"/>
                             <constraint firstItem="rJQ-2M-0uQ" firstAttribute="baseline" secondItem="1M9-Bk-fnj" secondAttribute="baseline" type="default" id="Szj-LG-edP"/>
                             <constraint firstItem="qgo-Qv-iq6" firstAttribute="leading" secondItem="5jL-Zu-QNu" secondAttribute="leading" type="default" id="VPv-Om-2dQ"/>
                             <constraint firstItem="8gy-Js-8NL" firstAttribute="top" secondItem="xjP-oQ-VNd" secondAttribute="bottom" type="default" id="bMg-tv-Ht0"/>
@@ -1172,6 +1176,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="pencil.png" width="26" height="26"/>
         <image name="people_.png" width="26" height="26"/>
         <image name="recordOn.png" width="70" height="70"/>
+        <image name="shadow.png" width="10" height="20"/>
         <image name="star.png" width="26" height="26"/>
         <image name="truck.png" width="26" height="26"/>
     </resources>
@@ -1226,6 +1231,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="contributionsTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
+        <class className="FBLoginView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FBLoginView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+        <class className="FBProfilePictureView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FBProfilePictureView.h"/>
+        </class>
         <class className="FirstViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
             <relationships>
@@ -1265,6 +1279,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </class>
         <class className="SocialViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="publishButtonPressed:"/>
+                <relationship kind="outlet" name="footprintDescriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="footprintTotalLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="loginView" candidateClass="FBLoginView"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profilePic" candidateClass="FBProfilePictureView"/>
+                <relationship kind="outlet" name="publishButton" candidateClass="UIButton"/>
+            </relationships>
         </class>
         <class className="ThirdViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
