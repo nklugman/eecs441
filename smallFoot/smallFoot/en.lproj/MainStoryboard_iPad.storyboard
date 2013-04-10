@@ -1070,6 +1070,7 @@
         <scene sceneID="15">
             <objects>
                 <tabBarController id="4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3Wr-zF-T45"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -1082,11 +1083,139 @@
                         <segue destination="33o-Xz-4tp" kind="relationship" relationship="viewControllers" id="c8P-UW-7kb"/>
                         <segue destination="6oz-Eg-LMi" kind="relationship" relationship="viewControllers" id="Nn0-wx-1FA"/>
                         <segue destination="b08-ZF-bv5" kind="relationship" relationship="viewControllers" id="Oiy-Kq-uhT"/>
+                        <segue destination="qFB-Gs-OUZ" kind="relationship" relationship="viewControllers" id="nUC-2W-DSV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2023" y="718"/>
+        </scene>
+        <!--View Controller - BlueFoot-->
+        <scene sceneID="2Zr-nV-gZQ">
+            <objects>
+                <viewController title="BlueFoot" id="qFB-Gs-OUZ" customClass="BLEViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m9Y-XH-BgO">
+                        <rect key="frame" x="0.0" y="20" width="768" height="955"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="n6Q-Ju-jWf">
+                                <color key="tintColor" red="0.16132156550000001" green="0.45832067729999998" blue="0.1482911408" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Connect Your BlueFoot" id="TiB-v5-b4Q"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQg-w3-ghC">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="AOg-s9-ZAI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Scan">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BLEUIScanForPeripheralsButton:" destination="qFB-Gs-OUZ" eventType="touchUpInside" id="NFD-J4-4zi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcy-KQ-jgO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="pS4-RA-1Jb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Start:" destination="qFB-Gs-OUZ" eventType="touchUpInside" id="SyB-dx-jC5"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="D01-bl-kyT">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="535" id="IJG-dd-cgO"/>
+                                </constraints>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="du4-9w-Pcn"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="To2-BC-jMZ"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jFv-Wg-ogd"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="X" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7Z-bN-BZD">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Y" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9I-va-mQj">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Z" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zy8-Zc-gV7">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Battery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYW-jj-CmH">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="uZI-Sl-zXU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ogm-S0-nLX"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zy8-Zc-gV7" secondAttribute="bottom" constant="214" id="0YM-Yf-Raj"/>
+                            <constraint firstItem="du4-9w-Pcn" firstAttribute="trailing" secondItem="D01-bl-kyT" secondAttribute="trailing" type="default" id="1SL-7j-bCv"/>
+                            <constraint firstItem="C9I-va-mQj" firstAttribute="centerY" secondItem="du4-9w-Pcn" secondAttribute="centerY" type="default" id="57M-sM-C3B"/>
+                            <constraint firstAttribute="bottom" secondItem="EYW-jj-CmH" secondAttribute="bottom" constant="75" id="6Jb-dS-XyA"/>
+                            <constraint firstItem="AQg-w3-ghC" firstAttribute="top" secondItem="m9Y-XH-BgO" secondAttribute="top" constant="140" id="6Ow-nC-WRo"/>
+                            <constraint firstItem="s7Z-bN-BZD" firstAttribute="centerY" secondItem="D01-bl-kyT" secondAttribute="centerY" type="default" id="7OK-RB-Yee"/>
+                            <constraint firstItem="n6Q-Ju-jWf" firstAttribute="leading" secondItem="m9Y-XH-BgO" secondAttribute="leading" type="default" id="8r4-5R-8vj"/>
+                            <constraint firstItem="n6Q-Ju-jWf" firstAttribute="trailing" secondItem="m9Y-XH-BgO" secondAttribute="trailing" type="default" id="9Jy-CB-U5D"/>
+                            <constraint firstAttribute="bottom" secondItem="C9I-va-mQj" secondAttribute="bottom" constant="270" id="9iZ-HI-jzK"/>
+                            <constraint firstItem="EYW-jj-CmH" firstAttribute="leading" secondItem="m9Y-XH-BgO" secondAttribute="leading" constant="70" id="DTy-5F-OIb"/>
+                            <constraint firstItem="Tcy-KQ-jgO" firstAttribute="centerY" secondItem="m9Y-XH-BgO" secondAttribute="centerY" type="default" id="Dec-zL-G1u"/>
+                            <constraint firstItem="jFv-Wg-ogd" firstAttribute="leading" secondItem="To2-BC-jMZ" secondAttribute="leading" type="default" id="KfD-j9-qwG"/>
+                            <constraint firstItem="n6Q-Ju-jWf" firstAttribute="top" secondItem="m9Y-XH-BgO" secondAttribute="top" type="default" id="NHT-wY-E7b"/>
+                            <constraint firstItem="AQg-w3-ghC" firstAttribute="centerX" secondItem="n6Q-Ju-jWf" secondAttribute="centerX" type="default" id="Orc-Sv-PoD"/>
+                            <constraint firstItem="C9I-va-mQj" firstAttribute="leading" secondItem="m9Y-XH-BgO" secondAttribute="leading" constant="107" id="Ovz-D1-iVc"/>
+                            <constraint firstItem="D01-bl-kyT" firstAttribute="leading" secondItem="m9Y-XH-BgO" secondAttribute="leading" constant="182" id="Tea-9C-abZ"/>
+                            <constraint firstItem="zy8-Zc-gV7" firstAttribute="centerY" secondItem="To2-BC-jMZ" secondAttribute="centerY" type="default" id="VXB-v9-6yF"/>
+                            <constraint firstItem="zy8-Zc-gV7" firstAttribute="trailing" secondItem="C9I-va-mQj" secondAttribute="trailing" type="default" id="Wew-kq-Ph2"/>
+                            <constraint firstItem="To2-BC-jMZ" firstAttribute="leading" secondItem="du4-9w-Pcn" secondAttribute="leading" type="default" id="d50-Xc-lwb"/>
+                            <constraint firstItem="AQg-w3-ghC" firstAttribute="centerX" secondItem="Ogm-S0-nLX" secondAttribute="centerX" type="default" id="dSA-3t-Zel"/>
+                            <constraint firstItem="jFv-Wg-ogd" firstAttribute="trailing" secondItem="To2-BC-jMZ" secondAttribute="trailing" type="default" id="hZb-3X-oOm"/>
+                            <constraint firstItem="EYW-jj-CmH" firstAttribute="centerY" secondItem="jFv-Wg-ogd" secondAttribute="centerY" type="default" id="j4Z-lC-3Xc"/>
+                            <constraint firstAttribute="bottom" secondItem="s7Z-bN-BZD" secondAttribute="bottom" constant="327" id="kzP-8W-eAc"/>
+                            <constraint firstItem="Tcy-KQ-jgO" firstAttribute="centerX" secondItem="Ogm-S0-nLX" secondAttribute="centerX" type="default" id="lWU-qu-9Cb"/>
+                            <constraint firstItem="du4-9w-Pcn" firstAttribute="trailing" secondItem="To2-BC-jMZ" secondAttribute="trailing" type="default" id="um2-y5-wlf"/>
+                            <constraint firstItem="du4-9w-Pcn" firstAttribute="leading" secondItem="D01-bl-kyT" secondAttribute="leading" type="default" id="uwC-11-2XG"/>
+                            <constraint firstItem="zy8-Zc-gV7" firstAttribute="leading" secondItem="s7Z-bN-BZD" secondAttribute="leading" type="default" id="vec-Wg-v1h"/>
+                            <constraint firstItem="Ogm-S0-nLX" firstAttribute="top" secondItem="AQg-w3-ghC" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="w1q-dX-uzT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="BlueFoot" image="brief_case.png" id="Xta-9R-01T"/>
+                    <connections>
+                        <outlet property="BLEUIAccelXBar" destination="D01-bl-kyT" id="wYu-Yg-6bZ"/>
+                        <outlet property="BLEUIAccelYBar" destination="du4-9w-Pcn" id="DrF-dv-UC9"/>
+                        <outlet property="BLEUIAccelZBar" destination="To2-BC-jMZ" id="mlw-Eq-ubj"/>
+                        <outlet property="BLEUIBatteryBar" destination="jFv-Wg-ogd" id="dob-wY-RbQ"/>
+                        <outlet property="BLEUIBatteryBarLabel" destination="EYW-jj-CmH" id="hVP-VZ-afa"/>
+                        <outlet property="BLEUIConnBtn" destination="AQg-w3-ghC" id="HMN-oY-rED"/>
+                        <outlet property="BLEUISpinner" destination="Ogm-S0-nLX" id="FOt-b9-bT2"/>
+                        <outlet property="Start" destination="Tcy-KQ-jgO" id="0Jz-23-yZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWj-dr-bTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023" y="1930"/>
         </scene>
         <!--View Controller - Electric Bill-->
         <scene sceneID="os3-Db-jlx">
@@ -1472,6 +1601,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="award_bike_empty.png" width="128" height="128"/>
         <image name="award_bus_empty.png" width="128" height="128"/>
         <image name="award_leaf_empty.png" width="128" height="128"/>
+        <image name="brief_case.png" width="26" height="26"/>
         <image name="credit_card.png" width="26" height="26"/>
         <image name="globe.png" width="26" height="26"/>
         <image name="graph_bar.png" width="26" height="26"/>
@@ -1533,6 +1663,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="time" candidateClass="UILabel"/>
             </relationships>
         </class>
+        <class className="BLEViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BLEViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="BLEUIScanForPeripheralsButton:"/>
+                <relationship kind="action" name="Start:"/>
+                <relationship kind="outlet" name="BLEUIAccelXBar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="BLEUIAccelYBar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="BLEUIAccelZBar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="BLEUIBatteryBar" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="BLEUIBatteryBarLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="BLEUIConnBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="BLEUISpinner" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="Start" candidateClass="UIButton"/>
+            </relationships>
+        </class>
         <class className="ContributionsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ContributionsViewController.h"/>
             <relationships>
@@ -1589,7 +1734,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialViewController.h"/>
             <relationships>
                 <relationship kind="action" name="publishButtonPressed:"/>
-                <relationship kind="action" name="refreshButtonPressed:"/>
                 <relationship kind="outlet" name="bikeAward" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="bikeLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="busAward" candidateClass="UIImageView"/>
