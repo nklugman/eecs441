@@ -92,7 +92,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTG-sP-NU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3903" y="152"/>
+            <point key="canvasLocation" x="4001" y="194"/>
         </scene>
         <!--Second View Controller - Review-->
         <scene sceneID="13">
@@ -1084,11 +1084,99 @@
                         <segue destination="6oz-Eg-LMi" kind="relationship" relationship="viewControllers" id="Nn0-wx-1FA"/>
                         <segue destination="b08-ZF-bv5" kind="relationship" relationship="viewControllers" id="Oiy-Kq-uhT"/>
                         <segue destination="qFB-Gs-OUZ" kind="relationship" relationship="viewControllers" id="nUC-2W-DSV"/>
+                        <segue destination="97U-6d-SAQ" kind="relationship" relationship="viewControllers" id="sph-GE-87p"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2023" y="718"/>
+        </scene>
+        <!--View Controller - Environmental News-->
+        <scene sceneID="1jj-SX-VEq">
+            <objects>
+                <tableViewController id="kIx-oS-UNz" customClass="RSSViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Qos-mZ-X8w">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="9b4-S5-p5l" style="IBUITableViewCellStyleDefault" id="fbK-mQ-KwH">
+                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="748" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b4-S5-p5l">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="NEd-m2-VEM" kind="push" id="LmL-Jr-fLq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kIx-oS-UNz" id="rtu-R6-9tg"/>
+                            <outlet property="delegate" destination="kIx-oS-UNz" id="zhz-sC-V6o"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Environmental News" id="epD-IZ-EbM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zqw-mf-Kqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="3628"/>
+        </scene>
+        <!--Detail View Controller - Detail-->
+        <scene sceneID="j9C-E3-I1B">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Agv-8F-ziX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Detail" id="NEd-m2-VEM" customClass="RSSDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fwq-oG-PIk">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sFa-N2-WYf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="918" id="3Q7-hq-3px"/>
+                                    <constraint firstAttribute="width" constant="773" id="DTJ-o9-tOX"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sFa-N2-WYf" firstAttribute="leading" secondItem="fwq-oG-PIk" secondAttribute="leading" type="default" id="Cra-fD-wXl"/>
+                            <constraint firstItem="sFa-N2-WYf" firstAttribute="top" secondItem="fwq-oG-PIk" secondAttribute="top" type="default" id="sIj-ge-Xt4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cx0-8y-pjo"/>
+                    <connections>
+                        <outlet property="webView" destination="sFa-N2-WYf" id="OyO-ck-Dfl"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2083" y="3594"/>
+        </scene>
+        <!--Navigation Controller - News-->
+        <scene sceneID="OQ4-Qg-XFL">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="97U-6d-SAQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="globe.png" id="qPL-sV-LWi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vn1-zH-9jf">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kIx-oS-UNz" kind="relationship" relationship="rootViewController" id="pJs-1x-QNY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6b-4N-j3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="3628"/>
         </scene>
         <!--View Controller - BlueFoot-->
         <scene sceneID="2Zr-nV-gZQ">
@@ -1171,7 +1259,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="zy8-Zc-gV7" secondAttribute="bottom" constant="214" id="0YM-Yf-Raj"/>
                             <constraint firstItem="du4-9w-Pcn" firstAttribute="trailing" secondItem="D01-bl-kyT" secondAttribute="trailing" type="default" id="1SL-7j-bCv"/>
                             <constraint firstItem="C9I-va-mQj" firstAttribute="centerY" secondItem="du4-9w-Pcn" secondAttribute="centerY" type="default" id="57M-sM-C3B"/>
                             <constraint firstAttribute="bottom" secondItem="EYW-jj-CmH" secondAttribute="bottom" constant="75" id="6Jb-dS-XyA"/>
@@ -1179,24 +1266,25 @@
                             <constraint firstItem="s7Z-bN-BZD" firstAttribute="centerY" secondItem="D01-bl-kyT" secondAttribute="centerY" type="default" id="7OK-RB-Yee"/>
                             <constraint firstItem="n6Q-Ju-jWf" firstAttribute="leading" secondItem="m9Y-XH-BgO" secondAttribute="leading" type="default" id="8r4-5R-8vj"/>
                             <constraint firstItem="n6Q-Ju-jWf" firstAttribute="trailing" secondItem="m9Y-XH-BgO" secondAttribute="trailing" type="default" id="9Jy-CB-U5D"/>
-                            <constraint firstAttribute="bottom" secondItem="C9I-va-mQj" secondAttribute="bottom" constant="270" id="9iZ-HI-jzK"/>
                             <constraint firstItem="EYW-jj-CmH" firstAttribute="leading" secondItem="m9Y-XH-BgO" secondAttribute="leading" constant="70" id="DTy-5F-OIb"/>
-                            <constraint firstItem="Tcy-KQ-jgO" firstAttribute="centerY" secondItem="m9Y-XH-BgO" secondAttribute="centerY" type="default" id="Dec-zL-G1u"/>
                             <constraint firstItem="jFv-Wg-ogd" firstAttribute="leading" secondItem="To2-BC-jMZ" secondAttribute="leading" type="default" id="KfD-j9-qwG"/>
+                            <constraint firstAttribute="bottom" secondItem="zy8-Zc-gV7" secondAttribute="bottom" constant="134" id="MRb-4d-kD8"/>
                             <constraint firstItem="n6Q-Ju-jWf" firstAttribute="top" secondItem="m9Y-XH-BgO" secondAttribute="top" type="default" id="NHT-wY-E7b"/>
+                            <constraint firstAttribute="bottom" secondItem="Tcy-KQ-jgO" secondAttribute="bottom" constant="374" id="OT1-dY-IsQ"/>
                             <constraint firstItem="AQg-w3-ghC" firstAttribute="centerX" secondItem="n6Q-Ju-jWf" secondAttribute="centerX" type="default" id="Orc-Sv-PoD"/>
                             <constraint firstItem="C9I-va-mQj" firstAttribute="leading" secondItem="m9Y-XH-BgO" secondAttribute="leading" constant="107" id="Ovz-D1-iVc"/>
                             <constraint firstItem="D01-bl-kyT" firstAttribute="leading" secondItem="m9Y-XH-BgO" secondAttribute="leading" constant="182" id="Tea-9C-abZ"/>
                             <constraint firstItem="zy8-Zc-gV7" firstAttribute="centerY" secondItem="To2-BC-jMZ" secondAttribute="centerY" type="default" id="VXB-v9-6yF"/>
                             <constraint firstItem="zy8-Zc-gV7" firstAttribute="trailing" secondItem="C9I-va-mQj" secondAttribute="trailing" type="default" id="Wew-kq-Ph2"/>
+                            <constraint firstAttribute="bottom" secondItem="C9I-va-mQj" secondAttribute="bottom" constant="190" id="Ypu-j9-ZGb"/>
                             <constraint firstItem="To2-BC-jMZ" firstAttribute="leading" secondItem="du4-9w-Pcn" secondAttribute="leading" type="default" id="d50-Xc-lwb"/>
                             <constraint firstItem="AQg-w3-ghC" firstAttribute="centerX" secondItem="Ogm-S0-nLX" secondAttribute="centerX" type="default" id="dSA-3t-Zel"/>
                             <constraint firstItem="jFv-Wg-ogd" firstAttribute="trailing" secondItem="To2-BC-jMZ" secondAttribute="trailing" type="default" id="hZb-3X-oOm"/>
                             <constraint firstItem="EYW-jj-CmH" firstAttribute="centerY" secondItem="jFv-Wg-ogd" secondAttribute="centerY" type="default" id="j4Z-lC-3Xc"/>
-                            <constraint firstAttribute="bottom" secondItem="s7Z-bN-BZD" secondAttribute="bottom" constant="327" id="kzP-8W-eAc"/>
                             <constraint firstItem="Tcy-KQ-jgO" firstAttribute="centerX" secondItem="Ogm-S0-nLX" secondAttribute="centerX" type="default" id="lWU-qu-9Cb"/>
                             <constraint firstItem="du4-9w-Pcn" firstAttribute="trailing" secondItem="To2-BC-jMZ" secondAttribute="trailing" type="default" id="um2-y5-wlf"/>
                             <constraint firstItem="du4-9w-Pcn" firstAttribute="leading" secondItem="D01-bl-kyT" secondAttribute="leading" type="default" id="uwC-11-2XG"/>
+                            <constraint firstAttribute="bottom" secondItem="s7Z-bN-BZD" secondAttribute="bottom" constant="247" id="vcQ-5r-N4O"/>
                             <constraint firstItem="zy8-Zc-gV7" firstAttribute="leading" secondItem="s7Z-bN-BZD" secondAttribute="leading" type="default" id="vec-Wg-v1h"/>
                             <constraint firstItem="Ogm-S0-nLX" firstAttribute="top" secondItem="AQg-w3-ghC" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="w1q-dX-uzT"/>
                         </constraints>
@@ -1613,151 +1701,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="star.png" width="26" height="26"/>
         <image name="truck.png" width="26" height="26"/>
     </resources>
-    <classes>
-        <class className="AddElectricViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddElectricViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="useAverageButtonPressed:"/>
-                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="electricSourcePicker" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="kwhTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="monthPicker" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="saveButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="AddGasViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddGasViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="gallonsTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="gasDatePicker" candidateClass="UIDatePicker"/>
-                <relationship kind="outlet" name="gasTypePicker" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="saveButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="AddOffsetViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddOffsetViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="saveButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="treesTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="AutoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AutoViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="startStopButtonPressed:"/>
-                <relationship kind="outlet" name="averageSpeed" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="currentSpeed" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="distance" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="progress" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="recording" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="recordingIndicator" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="reviewDistance" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="reviewLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="reviewLabelDistance" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="reviewLabelTransportation" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="reviewTransportation" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="startStopButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="time" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="BLEViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BLEViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="BLEUIScanForPeripheralsButton:"/>
-                <relationship kind="action" name="Start:"/>
-                <relationship kind="outlet" name="BLEUIAccelXBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="BLEUIAccelYBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="BLEUIAccelZBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="BLEUIBatteryBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="BLEUIBatteryBarLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="BLEUIConnBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="BLEUISpinner" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="Start" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="ContributionsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ContributionsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="contributionsTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="FBLoginView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FBLoginView.h"/>
-            <relationships>
-                <relationship kind="outlet" name="delegate"/>
-            </relationships>
-        </class>
-        <class className="FBProfilePictureView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FBProfilePictureView.h"/>
-        </class>
-        <class className="FirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="emptyButtonPressed:"/>
-            </relationships>
-        </class>
-        <class className="FootprintViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FootprintViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="averageElectricPrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="averageGasolinePrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="averageTotalPrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="electricPrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="electricProgressBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="electricRatingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="gasolinePrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="gasolineProgressBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="gasolineRatingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="offsetLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="totalPrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="totalProgressBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="totalRatingLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="lastMonthButtonPressed:"/>
-                <relationship kind="action" name="nextMonthButtonPressed:"/>
-                <relationship kind="outlet" name="lastMonthButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="navigationTitle" candidateClass="UINavigationItem"/>
-                <relationship kind="outlet" name="nextMonthButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="SocialViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="publishButtonPressed:"/>
-                <relationship kind="outlet" name="bikeAward" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="bikeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="busAward" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="busLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="footprintDescriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="footprintTotalLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="loginView" candidateClass="FBLoginView"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="profilePic" candidateClass="FBProfilePictureView"/>
-                <relationship kind="outlet" name="publishButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="smallfootAward" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="smallfootLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ThirdViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="recommendPressed:"/>
-                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="recommendedAmount" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
