@@ -15,6 +15,14 @@
 		7AC62B531714BB51003FF68E /* TIBLECBKeyfob.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC62B521714BB51003FF68E /* TIBLECBKeyfob.m */; };
 		7AC62B5A1714BC0C003FF68E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC62B591714BC0C003FF68E /* CoreBluetooth.framework */; };
 		7AC62B5D1714C045003FF68E /* BLEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC62B5C1714C045003FF68E /* BLEViewController.m */; };
+		7AEF04C31715C2BC00CA6AB2 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF04C21715C2BC00CA6AB2 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7AEF04C71715C2C300CA6AB2 /* RXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF04C61715C2C300CA6AB2 /* RXMLElement.m */; };
+		7AEF04C91715C37400CA6AB2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEF04C81715C37400CA6AB2 /* libxml2.dylib */; };
+		7AEF04CB1715C38100CA6AB2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEF04CA1715C38100CA6AB2 /* libz.dylib */; };
+		7AEF05061715E9D000CA6AB2 /* RSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF05051715E9D000CA6AB2 /* RSSViewController.m */; };
+		7AEF05121715F2F300CA6AB2 /* RSSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF05111715F2F300CA6AB2 /* RSSDetailViewController.m */; };
+		7AEF051D17164B4D00CA6AB2 /* RSSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF051A17164B4C00CA6AB2 /* RSSItem.m */; };
+		7AEF051E17164B4D00CA6AB2 /* RSSLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF051C17164B4D00CA6AB2 /* RSSLoader.m */; };
 		DD062B0616FA1A1A0090C87E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = DD062B0516FA1A1A0090C87E /* Default-Landscape~ipad.png */; };
 		DD20845C170F3AD90068F5A9 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD20845B170F3AD90068F5A9 /* SocialViewController.m */; };
 		DD20845F170F3AF40068F5A9 /* AutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD20845E170F3AF40068F5A9 /* AutoViewController.m */; };
@@ -251,6 +259,20 @@
 		7AC62B591714BC0C003FF68E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		7AC62B5B1714C045003FF68E /* BLEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEViewController.h; sourceTree = "<group>"; };
 		7AC62B5C1714C045003FF68E /* BLEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEViewController.m; sourceTree = "<group>"; };
+		7AEF04C11715C2BC00CA6AB2 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		7AEF04C21715C2BC00CA6AB2 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		7AEF04C51715C2C300CA6AB2 /* RXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXMLElement.h; sourceTree = "<group>"; };
+		7AEF04C61715C2C300CA6AB2 /* RXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXMLElement.m; sourceTree = "<group>"; };
+		7AEF04C81715C37400CA6AB2 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		7AEF04CA1715C38100CA6AB2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7AEF05041715E9D000CA6AB2 /* RSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSViewController.h; sourceTree = "<group>"; };
+		7AEF05051715E9D000CA6AB2 /* RSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSViewController.m; sourceTree = "<group>"; };
+		7AEF05101715F2F300CA6AB2 /* RSSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSDetailViewController.h; sourceTree = "<group>"; };
+		7AEF05111715F2F300CA6AB2 /* RSSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSDetailViewController.m; sourceTree = "<group>"; };
+		7AEF051917164B4C00CA6AB2 /* RSSItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSItem.h; sourceTree = "<group>"; };
+		7AEF051A17164B4C00CA6AB2 /* RSSItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSItem.m; sourceTree = "<group>"; };
+		7AEF051B17164B4C00CA6AB2 /* RSSLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSLoader.h; sourceTree = "<group>"; };
+		7AEF051C17164B4D00CA6AB2 /* RSSLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSLoader.m; sourceTree = "<group>"; };
 		DD062B0516FA1A1A0090C87E /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		DD20845A170F3AD90068F5A9 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
 		DD20845B170F3AD90068F5A9 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
@@ -497,6 +519,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AEF04CB1715C38100CA6AB2 /* libz.dylib in Frameworks */,
+				7AEF04C91715C37400CA6AB2 /* libxml2.dylib in Frameworks */,
 				7AC62B5A1714BC0C003FF68E /* CoreBluetooth.framework in Frameworks */,
 				DDA35E30171387DA0021C124 /* CoreLocation.framework in Frameworks */,
 				784EBCBF1711D13E00E73B4B /* Social.framework in Frameworks */,
@@ -513,6 +537,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AEF04C01715C2BC00CA6AB2 /* GTMNSString+HTML */ = {
+			isa = PBXGroup;
+			children = (
+				7AEF04C11715C2BC00CA6AB2 /* GTMNSString+HTML.h */,
+				7AEF04C21715C2BC00CA6AB2 /* GTMNSString+HTML.m */,
+			);
+			path = "GTMNSString+HTML";
+			sourceTree = "<group>";
+		};
+		7AEF04C41715C2C300CA6AB2 /* RaptureXML */ = {
+			isa = PBXGroup;
+			children = (
+				7AEF04C51715C2C300CA6AB2 /* RXMLElement.h */,
+				7AEF04C61715C2C300CA6AB2 /* RXMLElement.m */,
+			);
+			path = RaptureXML;
+			sourceTree = "<group>";
+		};
 		DDA35DF1171380300021C124 /* buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -727,8 +769,12 @@
 		DDF91DB316E8FB3300AAE198 = {
 			isa = PBXGroup;
 			children = (
+				7AEF04CA1715C38100CA6AB2 /* libz.dylib */,
+				7AEF04C81715C37400CA6AB2 /* libxml2.dylib */,
 				7AC62B591714BC0C003FF68E /* CoreBluetooth.framework */,
 				DD2F13A516F77F990084579C /* smallfoot.png */,
+				7AEF04C41715C2C300CA6AB2 /* RaptureXML */,
+				7AEF04C01715C2BC00CA6AB2 /* GTMNSString+HTML */,
 				DDF91DC516E8FB3300AAE198 /* smallFoot */,
 				DDF91DBE16E8FB3300AAE198 /* Frameworks */,
 				DDF91DBD16E8FB3300AAE198 /* Products */,
@@ -763,6 +809,10 @@
 		DDF91DC516E8FB3300AAE198 /* smallFoot */ = {
 			isa = PBXGroup;
 			children = (
+				7AEF051917164B4C00CA6AB2 /* RSSItem.h */,
+				7AEF051A17164B4C00CA6AB2 /* RSSItem.m */,
+				7AEF051B17164B4C00CA6AB2 /* RSSLoader.h */,
+				7AEF051C17164B4D00CA6AB2 /* RSSLoader.m */,
 				7AC62B541714BB59003FF68E /* TIBLECBKeyfobDefines.h */,
 				7AC62B4E1714BB30003FF68E /* TIBLECBKeyfob.h */,
 				7AC62B521714BB51003FF68E /* TIBLECBKeyfob.m */,
@@ -770,6 +820,10 @@
 				DDF91DCF16E8FB3300AAE198 /* AppDelegate.m */,
 				DDF91DD716E8FB3300AAE198 /* MainStoryboard_iPhone.storyboard */,
 				DDF91DDA16E8FB3300AAE198 /* MainStoryboard_iPad.storyboard */,
+				7AEF05041715E9D000CA6AB2 /* RSSViewController.h */,
+				7AEF05051715E9D000CA6AB2 /* RSSViewController.m */,
+				7AEF05101715F2F300CA6AB2 /* RSSDetailViewController.h */,
+				7AEF05111715F2F300CA6AB2 /* RSSDetailViewController.m */,
 				7AC62B5B1714C045003FF68E /* BLEViewController.h */,
 				7AC62B5C1714C045003FF68E /* BLEViewController.m */,
 				DDBACF171710695400BE4FD4 /* AchievementViewController.h */,
@@ -1115,6 +1169,12 @@
 				DDA35E2E171383860021C124 /* AddressAnnotation.m in Sources */,
 				7AC62B531714BB51003FF68E /* TIBLECBKeyfob.m in Sources */,
 				7AC62B5D1714C045003FF68E /* BLEViewController.m in Sources */,
+				7AEF04C31715C2BC00CA6AB2 /* GTMNSString+HTML.m in Sources */,
+				7AEF04C71715C2C300CA6AB2 /* RXMLElement.m in Sources */,
+				7AEF05061715E9D000CA6AB2 /* RSSViewController.m in Sources */,
+				7AEF05121715F2F300CA6AB2 /* RSSDetailViewController.m in Sources */,
+				7AEF051D17164B4D00CA6AB2 /* RSSItem.m in Sources */,
+				7AEF051E17164B4D00CA6AB2 /* RSSLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1215,6 +1275,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "smallFoot/smallFoot-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "smallFoot/smallFoot-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1234,6 +1295,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "smallFoot/smallFoot-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "smallFoot/smallFoot-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
