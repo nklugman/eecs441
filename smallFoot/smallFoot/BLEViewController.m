@@ -7,6 +7,7 @@
 //
 
 #import "BLEViewController.h"
+#import "AutoViewController.h"
 
 @interface BLEViewController ()
 
@@ -91,6 +92,7 @@
     printf("Key values updated ! \r\n");
     if (sw & 0x1) {
         NSLog(@"BUTTON 1 ON");
+        
         [Start setTitle:(@"Stop") forState:UIControlStateNormal];
     }
     if (sw & 0x2) {

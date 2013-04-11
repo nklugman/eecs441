@@ -22,9 +22,12 @@
 
 @implementation RSSViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
     
     //configuration
     self.title = @"News";
@@ -116,5 +119,7 @@
         [[segue destinationViewController] setDetailItem:object];
     //}
 }
+
+
 
 @end

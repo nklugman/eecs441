@@ -1,5 +1,5 @@
 //
-//  RSSViewController.h
+//  RSSTableHeaderView.h
 //  smallFoot
 //
 //  Created by Noah Klugman on 4/10/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RSSViewController : UITableViewController
-@property (weak, nonatomic) IBOutlet UINavigationItem *NavBar;
-
+@interface TableHeaderView : UIImageView
+- (id)initWithText:(NSString*)text;
+- (void)setText:(NSString*)text;
 @end

@@ -1123,10 +1123,12 @@
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="kIx-oS-UNz" id="rtu-R6-9tg"/>
-                            <outlet property="delegate" destination="kIx-oS-UNz" id="zhz-sC-V6o"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Environmental News" id="epD-IZ-EbM"/>
+                    <connections>
+                        <outlet property="NavBar" destination="epD-IZ-EbM" id="RnJ-Oy-SoA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqw-mf-Kqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
