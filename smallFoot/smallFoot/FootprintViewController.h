@@ -27,6 +27,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *offsetLabel;
 
+
 - (void)loadData;
 - (void)loadOldData;
 - (void)showDataForMonth: (int)month andYear: (int)year;

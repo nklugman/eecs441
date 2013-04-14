@@ -7,6 +7,7 @@
 //
 
 #import "FootprintViewController.h"
+#import "GraphViewController.h"
 #import "CarbonCalculator.h"
 
 @interface FootprintViewController ()
@@ -15,6 +16,7 @@
 
 int currentYear;
 int currentMonth;
+bool isShowingLandscapeView;
 
 @implementation FootprintViewController
 
@@ -26,6 +28,35 @@ int currentMonth;
     }
     return self;
 }
+
+- (void)awakeFromNib
+{
+    isShowingLandscapeView = NO;
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(orientationChanged:)
+                                                 name:UIDeviceOrientationDidChangeNotification
+                                               object:nil];
+}
+
+- (void)orientationChanged:(NSNotification *)notification
+{
+    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+    if (UIDeviceOrientationIsLandscape(deviceOrientation) &&
+        !isShowingLandscapeView)
+    {
+      
+        //[self performSegueWithIdentifier:@"graph" sender:self];
+        isShowingLandscapeView = YES;
+    }
+    else if (UIDeviceOrientationIsPortrait(deviceOrientation) &&
+             isShowingLandscapeView)
+    {
+        //[self dismissViewControllerAnimated:YES completion:nil];
+        isShowingLandscapeView = NO;
+    }
+}
+
 
 - (void)viewDidLoad
 {

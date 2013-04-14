@@ -12,6 +12,10 @@
 		784EBCBB1711D13400E73B4B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784EBCBA1711D13400E73B4B /* AdSupport.framework */; };
 		784EBCBD1711D13A00E73B4B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784EBCBC1711D13A00E73B4B /* Accounts.framework */; };
 		784EBCBF1711D13E00E73B4B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784EBCBE1711D13E00E73B4B /* Social.framework */; };
+		7A02D5F8171B278E005484E0 /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A02D5F7171B278E005484E0 /* GraphViewController.m */; };
+		7A02D650171B495B005484E0 /* CPDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A02D64D171B495A005484E0 /* CPDConstants.m */; };
+		7A02D651171B495B005484E0 /* CPDStockPriceStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A02D64F171B495A005484E0 /* CPDStockPriceStore.m */; };
+		7A02D6FD171B4E30005484E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A02D6FB171B4DD0005484E0 /* QuartzCore.framework */; };
 		7AC62B531714BB51003FF68E /* TIBLECBKeyfob.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC62B521714BB51003FF68E /* TIBLECBKeyfob.m */; };
 		7AC62B5A1714BC0C003FF68E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC62B591714BC0C003FF68E /* CoreBluetooth.framework */; };
 		7AC62B5D1714C045003FF68E /* BLEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC62B5C1714C045003FF68E /* BLEViewController.m */; };
@@ -253,6 +257,13 @@
 		784EBCBA1711D13400E73B4B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		784EBCBC1711D13A00E73B4B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		784EBCBE1711D13E00E73B4B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7A02D5F6171B278E005484E0 /* GraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphViewController.h; sourceTree = "<group>"; };
+		7A02D5F7171B278E005484E0 /* GraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphViewController.m; sourceTree = "<group>"; };
+		7A02D64C171B495A005484E0 /* CPDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDConstants.h; sourceTree = "<group>"; };
+		7A02D64D171B495A005484E0 /* CPDConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDConstants.m; sourceTree = "<group>"; };
+		7A02D64E171B495A005484E0 /* CPDStockPriceStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDStockPriceStore.h; sourceTree = "<group>"; };
+		7A02D64F171B495A005484E0 /* CPDStockPriceStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDStockPriceStore.m; sourceTree = "<group>"; };
+		7A02D6FB171B4DD0005484E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7AC62B4E1714BB30003FF68E /* TIBLECBKeyfob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIBLECBKeyfob.h; sourceTree = "<group>"; };
 		7AC62B521714BB51003FF68E /* TIBLECBKeyfob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIBLECBKeyfob.m; sourceTree = "<group>"; };
 		7AC62B541714BB59003FF68E /* TIBLECBKeyfobDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIBLECBKeyfobDefines.h; sourceTree = "<group>"; };
@@ -271,7 +282,7 @@
 		7AEF05111715F2F300CA6AB2 /* RSSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSDetailViewController.m; sourceTree = "<group>"; };
 		7AEF051917164B4C00CA6AB2 /* RSSItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSItem.h; sourceTree = "<group>"; };
 		7AEF051A17164B4C00CA6AB2 /* RSSItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSItem.m; sourceTree = "<group>"; };
-		7AEF051B17164B4C00CA6AB2 /* RSSLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSLoader.h; sourceTree = "<group>"; };
+		7AEF051B17164B4C00CA6AB2 /* RSSLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSLoader.h; path = ../smallFoot/RSSLoader.h; sourceTree = "<group>"; };
 		7AEF051C17164B4D00CA6AB2 /* RSSLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSLoader.m; sourceTree = "<group>"; };
 		DD062B0516FA1A1A0090C87E /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		DD20845A170F3AD90068F5A9 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
@@ -280,7 +291,7 @@
 		DD20845E170F3AF40068F5A9 /* AutoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoViewController.m; sourceTree = "<group>"; };
 		DD2F13A216F77D810084579C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		DD2F13A316F77D810084579C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		DD2F13A516F77F990084579C /* smallfoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallfoot.png; sourceTree = "<group>"; };
+		DD2F13A516F77F990084579C /* smallfoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallfoot.png; path = ../smallfoot.png; sourceTree = "<group>"; };
 		DDA35DEB171379100021C124 /* shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow.png; sourceTree = "<group>"; };
 		DDA35DF2171380300021C124 /* blackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackButton.png; sourceTree = "<group>"; };
 		DDA35DF3171380300021C124 /* blackButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackButton@2x.png"; sourceTree = "<group>"; };
@@ -519,6 +530,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A02D6FD171B4E30005484E0 /* QuartzCore.framework in Frameworks */,
 				7AEF04CB1715C38100CA6AB2 /* libz.dylib in Frameworks */,
 				7AEF04C91715C37400CA6AB2 /* libxml2.dylib in Frameworks */,
 				7AC62B5A1714BC0C003FF68E /* CoreBluetooth.framework in Frameworks */,
@@ -537,13 +549,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A02D652171B4961005484E0 /* Starter Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A02D64C171B495A005484E0 /* CPDConstants.h */,
+				7A02D64D171B495A005484E0 /* CPDConstants.m */,
+				7A02D64E171B495A005484E0 /* CPDStockPriceStore.h */,
+				7A02D64F171B495A005484E0 /* CPDStockPriceStore.m */,
+			);
+			name = "Starter Files";
+			path = smallFoot;
+			sourceTree = "<group>";
+		};
+		7A02D657171B4AE1005484E0 /* RSS Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AEF04CA1715C38100CA6AB2 /* libz.dylib */,
+				7AEF04C81715C37400CA6AB2 /* libxml2.dylib */,
+				7AEF04C41715C2C300CA6AB2 /* RaptureXML */,
+				7AEF04C01715C2BC00CA6AB2 /* GTMNSString+HTML */,
+				7AEF051917164B4C00CA6AB2 /* RSSItem.h */,
+				7AEF051A17164B4C00CA6AB2 /* RSSItem.m */,
+				7AEF051C17164B4D00CA6AB2 /* RSSLoader.m */,
+				7AEF05041715E9D000CA6AB2 /* RSSViewController.h */,
+				7AEF05051715E9D000CA6AB2 /* RSSViewController.m */,
+				7AEF05101715F2F300CA6AB2 /* RSSDetailViewController.h */,
+				7AEF05111715F2F300CA6AB2 /* RSSDetailViewController.m */,
+			);
+			name = "RSS Files";
+			sourceTree = "<group>";
+		};
+		7A02D658171B4B08005484E0 /* BLE Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AC62B541714BB59003FF68E /* TIBLECBKeyfobDefines.h */,
+				7AC62B4E1714BB30003FF68E /* TIBLECBKeyfob.h */,
+				7AC62B521714BB51003FF68E /* TIBLECBKeyfob.m */,
+				7AC62B5B1714C045003FF68E /* BLEViewController.h */,
+				7AC62B5C1714C045003FF68E /* BLEViewController.m */,
+			);
+			name = "BLE Files";
+			sourceTree = "<group>";
+		};
+		7A02D659171B4B19005484E0 /* Graph Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A02D5F6171B278E005484E0 /* GraphViewController.h */,
+				7A02D5F7171B278E005484E0 /* GraphViewController.m */,
+			);
+			name = "Graph Files";
+			sourceTree = "<group>";
+		};
 		7AEF04C01715C2BC00CA6AB2 /* GTMNSString+HTML */ = {
 			isa = PBXGroup;
 			children = (
+				7AEF051B17164B4C00CA6AB2 /* RSSLoader.h */,
 				7AEF04C11715C2BC00CA6AB2 /* GTMNSString+HTML.h */,
 				7AEF04C21715C2BC00CA6AB2 /* GTMNSString+HTML.m */,
 			);
-			path = "GTMNSString+HTML";
+			name = "GTMNSString+HTML";
+			path = "../GTMNSString+HTML";
 			sourceTree = "<group>";
 		};
 		7AEF04C41715C2C300CA6AB2 /* RaptureXML */ = {
@@ -552,7 +617,8 @@
 				7AEF04C51715C2C300CA6AB2 /* RXMLElement.h */,
 				7AEF04C61715C2C300CA6AB2 /* RXMLElement.m */,
 			);
-			path = RaptureXML;
+			name = RaptureXML;
+			path = ../RaptureXML;
 			sourceTree = "<group>";
 		};
 		DDA35DF1171380300021C124 /* buttons */ = {
@@ -769,12 +835,8 @@
 		DDF91DB316E8FB3300AAE198 = {
 			isa = PBXGroup;
 			children = (
-				7AEF04CA1715C38100CA6AB2 /* libz.dylib */,
-				7AEF04C81715C37400CA6AB2 /* libxml2.dylib */,
-				7AC62B591714BC0C003FF68E /* CoreBluetooth.framework */,
-				DD2F13A516F77F990084579C /* smallfoot.png */,
-				7AEF04C41715C2C300CA6AB2 /* RaptureXML */,
-				7AEF04C01715C2BC00CA6AB2 /* GTMNSString+HTML */,
+				7A02D6FB171B4DD0005484E0 /* QuartzCore.framework */,
+				7A02D652171B4961005484E0 /* Starter Files */,
 				DDF91DC516E8FB3300AAE198 /* smallFoot */,
 				DDF91DBE16E8FB3300AAE198 /* Frameworks */,
 				DDF91DBD16E8FB3300AAE198 /* Products */,
@@ -792,6 +854,7 @@
 		DDF91DBE16E8FB3300AAE198 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AC62B591714BC0C003FF68E /* CoreBluetooth.framework */,
 				DDA35E2F171387DA0021C124 /* CoreLocation.framework */,
 				784EBCBE1711D13E00E73B4B /* Social.framework */,
 				784EBCBC1711D13A00E73B4B /* Accounts.framework */,
@@ -809,23 +872,13 @@
 		DDF91DC516E8FB3300AAE198 /* smallFoot */ = {
 			isa = PBXGroup;
 			children = (
-				7AEF051917164B4C00CA6AB2 /* RSSItem.h */,
-				7AEF051A17164B4C00CA6AB2 /* RSSItem.m */,
-				7AEF051B17164B4C00CA6AB2 /* RSSLoader.h */,
-				7AEF051C17164B4D00CA6AB2 /* RSSLoader.m */,
-				7AC62B541714BB59003FF68E /* TIBLECBKeyfobDefines.h */,
-				7AC62B4E1714BB30003FF68E /* TIBLECBKeyfob.h */,
-				7AC62B521714BB51003FF68E /* TIBLECBKeyfob.m */,
 				DDF91DCE16E8FB3300AAE198 /* AppDelegate.h */,
 				DDF91DCF16E8FB3300AAE198 /* AppDelegate.m */,
 				DDF91DD716E8FB3300AAE198 /* MainStoryboard_iPhone.storyboard */,
 				DDF91DDA16E8FB3300AAE198 /* MainStoryboard_iPad.storyboard */,
-				7AEF05041715E9D000CA6AB2 /* RSSViewController.h */,
-				7AEF05051715E9D000CA6AB2 /* RSSViewController.m */,
-				7AEF05101715F2F300CA6AB2 /* RSSDetailViewController.h */,
-				7AEF05111715F2F300CA6AB2 /* RSSDetailViewController.m */,
-				7AC62B5B1714C045003FF68E /* BLEViewController.h */,
-				7AC62B5C1714C045003FF68E /* BLEViewController.m */,
+				7A02D659171B4B19005484E0 /* Graph Files */,
+				7A02D657171B4AE1005484E0 /* RSS Files */,
+				7A02D658171B4B08005484E0 /* BLE Files */,
 				DDBACF171710695400BE4FD4 /* AchievementViewController.h */,
 				DDBACF181710695400BE4FD4 /* AchievementViewController.m */,
 				DD20845D170F3AF40068F5A9 /* AutoViewController.h */,
@@ -850,13 +903,8 @@
 				DDD4ED6616E976FF009A27A5 /* CarbonCalculator.m */,
 				DDF91DDD16E8FB3300AAE198 /* FirstViewController.h */,
 				DDF91DDE16E8FB3300AAE198 /* FirstViewController.m */,
-				DDF91DE016E8FB3300AAE198 /* first.png */,
-				DDF91DE216E8FB3300AAE198 /* first@2x.png */,
 				DDF91DE416E8FB3300AAE198 /* SecondViewController.h */,
 				DDF91DE516E8FB3300AAE198 /* SecondViewController.m */,
-				DDF91DE716E8FB3300AAE198 /* second.png */,
-				DDF91DE916E8FB3300AAE198 /* second@2x.png */,
-				DDA35DEB171379100021C124 /* shadow.png */,
 				DDF91DC616E8FB3300AAE198 /* Supporting Files */,
 			);
 			path = smallFoot;
@@ -865,6 +913,12 @@
 		DDF91DC616E8FB3300AAE198 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD2F13A516F77F990084579C /* smallfoot.png */,
+				DDF91DE016E8FB3300AAE198 /* first.png */,
+				DDF91DE216E8FB3300AAE198 /* first@2x.png */,
+				DDF91DE716E8FB3300AAE198 /* second.png */,
+				DDF91DE916E8FB3300AAE198 /* second@2x.png */,
+				DDA35DEB171379100021C124 /* shadow.png */,
 				DDAE4F10171472950095646B /* awards */,
 				DDA35DF1171380300021C124 /* buttons */,
 				DDD4ED6B16E98FD7009A27A5 /* retina */,
@@ -1175,6 +1229,9 @@
 				7AEF05121715F2F300CA6AB2 /* RSSDetailViewController.m in Sources */,
 				7AEF051D17164B4D00CA6AB2 /* RSSItem.m in Sources */,
 				7AEF051E17164B4D00CA6AB2 /* RSSLoader.m in Sources */,
+				7A02D5F8171B278E005484E0 /* GraphViewController.m in Sources */,
+				7A02D650171B495B005484E0 /* CPDConstants.m in Sources */,
+				7A02D651171B495B005484E0 /* CPDStockPriceStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1277,6 +1334,11 @@
 				GCC_PREFIX_HEADER = "smallFoot/smallFoot-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "smallFoot/smallFoot-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/smallFoot\"",
+					"\"$(SRCROOT)/../../../../Downloads/CorePlot_1.2/Binaries/iOS\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lsqlite3.0",
@@ -1297,6 +1359,11 @@
 				GCC_PREFIX_HEADER = "smallFoot/smallFoot-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "smallFoot/smallFoot-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/smallFoot\"",
+					"\"$(SRCROOT)/../../../../Downloads/CorePlot_1.2/Binaries/iOS\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lsqlite3.0",
