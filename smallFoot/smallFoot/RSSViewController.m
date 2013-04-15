@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     
-    
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:41.0/255 green:117.0/255 blue:38.0/255 alpha:1];
     
     //configuration
     self.title = @"News";
