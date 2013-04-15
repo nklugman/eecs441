@@ -9,6 +9,12 @@
 #import "SocialViewController.h"
 #import "SFOGProtocols.h"
 #import "CarbonCalculator.h"
+#import "LeaderboardTableViewCell.h"
+
+static NSString *CellIdentifier = @"LeaderboardTableItem";
+
+static NSString *loggedOutMsg = @"Login to Facebook to compete with friends!";
+static NSString *loggedInMsg = @"Your carbon footprint for April 2013";
 
 @interface SocialViewController ()
 
@@ -41,6 +47,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    
+    tableData = [NSArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"Noah K", @"name", @"300.00", @"footprintTotal", nil], [NSDictionary dictionaryWithObjectsAndKeys:@"Ben P", @"name", @"500.00", @"footprintTotal", nil], nil];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -68,7 +77,7 @@
 
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
     self.profilePic.profileID = nil;
-    self.nameLabel.text = @"";
+    self.nameLabel.text = loggedOutMsg;
     
     self.publishButton.enabled = NO;
 }
@@ -79,14 +88,14 @@
     [self checkSessionDefaultAppID];
     
     self.profilePic.profileID = user.id;
-    self.nameLabel.text = [NSString stringWithFormat:
-                                @"Welcome, %@", user.first_name];
+    self.nameLabel.text = user.name;
     
     self.publishButton.enabled = YES;
     
+    /*
     NSLog(@"Facebook id is: %@", user.id);
     NSLog(@"Facebook access token: %@", [[[FBSession activeSession] accessTokenData] accessToken]);
-    
+    */
 }
 
 - (void)loginView:(FBLoginView *)loginView
@@ -333,5 +342,47 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     }
 }
 
+
+#pragma mark - UITableViewDelegate and DataSource Methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 2;
+}
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NO;
+}
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NO;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LeaderboardTableViewCell *cell = (LeaderboardTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if(cell == nil) {
+        cell = [[LeaderboardTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    // Configure Cell    
+    [cell.name setText:[[tableData objectAtIndex:[indexPath row]] objectForKey:@"name"]];
+    [cell.footprintTotal setText:[[tableData objectAtIndex:[indexPath row]] objectForKey:@"footprintTotal"]];
+    
+    // cell.profPic.profileID = [[tableData objectAtIndex:[indexPath row]] objectForKey:@"facebookID"];
+    
+    
+    return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if(section == 0) {
+        return @"Leaderboard for April";
+    }
+    else {
+        return @"";
+    }
+}
 
 @end

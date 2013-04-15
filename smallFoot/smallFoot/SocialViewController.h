@@ -9,7 +9,9 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import <UIKit/UIKit.h>
 
-@interface SocialViewController : UIViewController<FBLoginViewDelegate>
+@interface SocialViewController : UIViewController<FBLoginViewDelegate, UITableViewDataSource, UITableViewDataSource> {
+    NSArray *tableData; // sample leaderboard data
+}
 
 // UI Controls
 @property (weak, nonatomic) IBOutlet FBLoginView *loginView;
@@ -18,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *footprintDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *footprintTotalLabel;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *publishButton;
+
+// - Achievements
 @property (weak, nonatomic) IBOutlet UILabel *bikeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *busLabel;
 @property (weak, nonatomic) IBOutlet UILabel *smallfootLabel;
