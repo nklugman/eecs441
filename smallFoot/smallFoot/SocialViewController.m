@@ -90,7 +90,7 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     if(fptotal != 0) {
         if(fptotal < 1500) rank = 1;
         else if(fptotal < 2500) rank = 2;
-        else if(fptotal < 3000) rank = 3;
+        else rank = 3;
     }
     NSString *rankStr;
     if(rank == -1) rankStr = @"NA";
