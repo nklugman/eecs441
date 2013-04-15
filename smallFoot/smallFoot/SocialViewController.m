@@ -49,7 +49,7 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    tableData = [NSMutableArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", @"1200.00", @"footprintTotal", nil], [NSDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", @"2500.00", @"footprintTotal", nil], nil];
+    tableData = [NSMutableArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", @"1200.00", @"footprintTotal", @"1232310304", @"fid", nil], [NSDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", @"2500.00", @"footprintTotal", @"605156012", @"fid", nil], nil];
     
     /*
     for(int i = 1; i < 10; i++) {
@@ -390,7 +390,7 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     [cell.footprintTotal setText:[[tableData objectAtIndex:[indexPath row]] objectForKey:@"footprintTotal"]];
     [cell.rankLabel setText:[NSString stringWithFormat:@"%d", [indexPath row]+1]];
     
-    // cell.profPic.profileID = [[tableData objectAtIndex:[indexPath row]] objectForKey:@"facebookID"];
+    cell.profPic.profileID = [[tableData objectAtIndex:[indexPath row]] objectForKey:@"fid"];
     
     
     return cell;
