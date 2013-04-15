@@ -38,6 +38,8 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
         loginView.publishPermissions = @[@"publish_actions"];
         loginView.defaultAudience = FBSessionDefaultAudienceOnlyMe;
         
+        fptotal = 0;
+        
     }
     return self;
 }
@@ -48,6 +50,14 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
 	// Do any additional setup after loading the view.
     
     tableData = [NSMutableArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", @"1200.00", @"footprintTotal", nil], [NSDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", @"2500.00", @"footprintTotal", nil], nil];
+    
+    /*
+    for(int i = 1; i < 10; i++) {
+        NSDictionary *newDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"User %d", i], @"name", [NSString stringWithFormat:@"%0.2f", 20000+i*333.5] , @"footprintTotal", nil];
+        [tableData insertObject:newDict atIndex:[tableData count]];
+        
+    }
+     */
     
 }
 
@@ -378,6 +388,7 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     // Configure Cell    
     [cell.name setText:[[tableData objectAtIndex:[indexPath row]] objectForKey:@"name"]];
     [cell.footprintTotal setText:[[tableData objectAtIndex:[indexPath row]] objectForKey:@"footprintTotal"]];
+    [cell.rankLabel setText:[NSString stringWithFormat:@"%d", [indexPath row]+1]];
     
     // cell.profPic.profileID = [[tableData objectAtIndex:[indexPath row]] objectForKey:@"facebookID"];
     

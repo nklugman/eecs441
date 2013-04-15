@@ -486,45 +486,81 @@
                                     <constraint firstItem="1Sw-2V-jgQ" firstAttribute="top" secondItem="aBr-zv-ldX" secondAttribute="top" constant="20" symbolic="YES" type="default" id="wOy-pt-Vwg"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="X42-ht-5p2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="76" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="X42-ht-5p2">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="519" id="8ep-lt-ld6"/>
                                     <constraint firstAttribute="width" constant="320" id="Lrj-93-4ez"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LeaderboardTableItem" textLabel="Qjb-3v-lz0" detailTextLabel="aM0-nT-KyU" imageView="cqm-tk-pyK" style="IBUITableViewCellStyleValue1" id="lav-44-YjS" customClass="LeaderboardTableViewCell">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LeaderboardTableItem" rowHeight="76" id="lav-44-YjS" customClass="LeaderboardTableViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qjb-3v-lz0">
-                                                    <rect key="frame" x="44" y="11" width="35" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HqQ-3V-Ri2" customClass="FBProfilePictureView">
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </view>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Firstname Last" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0n-Q8-kHX">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="8cd-W8-srT"/>
+                                                        <constraint firstAttribute="width" constant="141" id="Qt4-xV-Q3Y"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aM0-nT-KyU">
-                                                    <rect key="frame" x="266" y="11" width="44" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="4000.54 lbs CO2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liQ-G8-eFG">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="mJK-Yd-9Je"/>
+                                                        <constraint firstAttribute="width" constant="118" id="ncc-An-U5h"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="globe.png" id="cqm-tk-pyK">
-                                                    <rect key="frame" x="8" y="8" width="26" height="26"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2 out of 3 achievements" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pud-8h-uPC">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="9S4-le-OKZ"/>
+                                                        <constraint firstAttribute="width" constant="159" id="ZFS-IX-36M"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vO-q6-6KQ">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="QgF-83-UtF"/>
+                                                        <constraint firstAttribute="width" constant="45" id="d6j-ou-33p"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="liQ-G8-eFG" firstAttribute="leading" secondItem="HqQ-3V-Ri2" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="2BT-Sy-xD4"/>
+                                            <constraint firstItem="HqQ-3V-Ri2" firstAttribute="centerY" secondItem="lav-44-YjS" secondAttribute="centerY" type="default" id="8Br-BU-hIq"/>
+                                            <constraint firstAttribute="trailing" secondItem="4vO-q6-6KQ" secondAttribute="trailing" constant="14" id="Acl-nW-I9Y"/>
+                                            <constraint firstItem="g0n-Q8-kHX" firstAttribute="leading" secondItem="lav-44-YjS" secondAttribute="leading" constant="79" id="Cus-jN-n59"/>
+                                            <constraint firstItem="HqQ-3V-Ri2" firstAttribute="leading" secondItem="lav-44-YjS" secondAttribute="leading" constant="9" id="MAq-SG-BQ1"/>
+                                            <constraint firstItem="g0n-Q8-kHX" firstAttribute="top" secondItem="HqQ-3V-Ri2" secondAttribute="top" type="default" id="Qup-ew-3qa"/>
+                                            <constraint firstItem="liQ-G8-eFG" firstAttribute="centerY" secondItem="HqQ-3V-Ri2" secondAttribute="centerY" type="default" id="Wqa-Ql-I1v"/>
+                                            <constraint firstItem="g0n-Q8-kHX" firstAttribute="leading" secondItem="HqQ-3V-Ri2" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="et2-PZ-PMf"/>
+                                            <constraint firstItem="HqQ-3V-Ri2" firstAttribute="top" secondItem="lav-44-YjS" secondAttribute="top" constant="7" id="m0i-iY-Vq2"/>
+                                            <constraint firstItem="4vO-q6-6KQ" firstAttribute="top" secondItem="lav-44-YjS" secondAttribute="top" constant="20" type="default" id="oAf-in-nnI"/>
+                                            <constraint firstItem="Pud-8h-uPC" firstAttribute="leading" secondItem="HqQ-3V-Ri2" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="uNJ-NX-g3k"/>
+                                            <constraint firstItem="Pud-8h-uPC" firstAttribute="bottom" secondItem="HqQ-3V-Ri2" secondAttribute="bottom" type="default" id="xIF-Kr-xiZ"/>
+                                        </constraints>
                                         <connections>
-                                            <outlet property="footprintTotal" destination="aM0-nT-KyU" id="dKr-uj-JdY"/>
-                                            <outlet property="name" destination="Qjb-3v-lz0" id="TyT-zw-nLy"/>
-                                            <outlet property="profPic" destination="cqm-tk-pyK" id="6Ks-FA-N9o"/>
+                                            <outlet property="achievementsLabel" destination="Pud-8h-uPC" id="fS4-1T-z9s"/>
+                                            <outlet property="footprintTotal" destination="liQ-G8-eFG" id="LeR-ZD-sJl"/>
+                                            <outlet property="name" destination="g0n-Q8-kHX" id="jaL-aU-WAP"/>
+                                            <outlet property="profPic" destination="HqQ-3V-Ri2" id="6d8-0C-oIX"/>
+                                            <outlet property="rankLabel" destination="4vO-q6-6KQ" id="gZw-tT-cGk"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1826,172 +1862,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="star.png" width="26" height="26"/>
         <image name="truck.png" width="26" height="26"/>
     </resources>
-    <classes>
-        <class className="AddElectricViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddElectricViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="useAverageButtonPressed:"/>
-                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="electricSourcePicker" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="kwhTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="monthPicker" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="saveButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="AddGasViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddGasViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="gallonsTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="gasDatePicker" candidateClass="UIDatePicker"/>
-                <relationship kind="outlet" name="gasTypePicker" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="saveButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="AddOffsetViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddOffsetViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="saveButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="treesTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="AutoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AutoViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="startStopButtonPressed:"/>
-                <relationship kind="outlet" name="averageSpeed" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="currentSpeed" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="distance" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="progress" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="recording" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="recordingIndicator" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="reviewDistance" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="reviewLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="reviewLabelDistance" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="reviewLabelTransportation" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="reviewTransportation" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="startStopButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="time" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="BLEViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BLEViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="BLEUIScanForPeripheralsButton:"/>
-                <relationship kind="action" name="Start:"/>
-                <relationship kind="outlet" name="BLEUIAccelXBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="BLEUIAccelYBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="BLEUIAccelZBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="BLEUIBatteryBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="BLEUIBatteryBarLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="BLEUIConnBtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="BLEUISpinner" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="Start" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="ContributionsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ContributionsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="contributionsTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="FBLoginView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FBLoginView.h"/>
-            <relationships>
-                <relationship kind="outlet" name="delegate"/>
-            </relationships>
-        </class>
-        <class className="FBProfilePictureView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FBProfilePictureView.h"/>
-        </class>
-        <class className="FirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="emptyButtonPressed:"/>
-            </relationships>
-        </class>
-        <class className="FootprintViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FootprintViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="averageElectricPrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="averageGasolinePrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="averageTotalPrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="electricPrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="electricProgressBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="electricRatingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="gasolinePrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="gasolineProgressBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="gasolineRatingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="offsetLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="totalPrintLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="totalProgressBar" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="totalRatingLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="LeaderboardTableViewCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeaderboardTableViewCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="footprintTotal" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="profPic" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="RSSDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RSSDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="RSSViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RSSViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="NavBar" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="SecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="lastMonthButtonPressed:"/>
-                <relationship kind="action" name="nextMonthButtonPressed:"/>
-                <relationship kind="outlet" name="lastMonthButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="navigationTitle" candidateClass="UINavigationItem"/>
-                <relationship kind="outlet" name="nextMonthButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="SocialViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="publishButtonPressed:"/>
-                <relationship kind="outlet" name="bikeAward" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="bikeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="busAward" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="busLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="footprintDescriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="footprintTotalLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="loginView" candidateClass="FBLoginView"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="profilePic" candidateClass="FBProfilePictureView"/>
-                <relationship kind="outlet" name="publishButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="smallfootAward" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="smallfootLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ThirdViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ThirdViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="recommendPressed:"/>
-                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
-                <relationship kind="outlet" name="recommendedAmount" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
