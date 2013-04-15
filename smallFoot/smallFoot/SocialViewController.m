@@ -14,7 +14,7 @@
 static NSString *CellIdentifier = @"LeaderboardTableItem";
 
 static NSString *loggedOutMsg = @"Login to Facebook to compete with friends!";
-static NSString *loggedInMsg = @"Your carbon footprint for April 2013";
+static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
 
 @interface SocialViewController ()
 
@@ -47,8 +47,7 @@ static NSString *loggedInMsg = @"Your carbon footprint for April 2013";
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    
-    tableData = [NSArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"Noah K", @"name", @"300.00", @"footprintTotal", nil], [NSDictionary dictionaryWithObjectsAndKeys:@"Ben P", @"name", @"500.00", @"footprintTotal", nil], nil];
+    tableData = [NSMutableArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", @"1200.00", @"footprintTotal", nil], [NSDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", @"2500.00", @"footprintTotal", nil], nil];
     
 }
 
@@ -87,8 +86,18 @@ static NSString *loggedInMsg = @"Your carbon footprint for April 2013";
     NSLog(@"fetched user info");
     [self checkSessionDefaultAppID];
     
+    int rank = -1;
+    if(fptotal != 0) {
+        if(fptotal < 1500) rank = 1;
+        else if(fptotal < 2500) rank = 2;
+        else if(fptotal < 3000) rank = 3;
+    }
+    NSString *rankStr;
+    if(rank == -1) rankStr = @"NA";
+    else rankStr = [NSString stringWithFormat:@"%d", rank];
+    
     self.profilePic.profileID = user.id;
-    self.nameLabel.text = user.name;
+    self.nameLabel.text = [NSString stringWithFormat:loggedInMsg, user.name, rankStr, [tableData count]+1];
     
     self.publishButton.enabled = YES;
     
@@ -280,7 +289,8 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     
     [footprintDescriptionLabel setText:[NSString stringWithFormat:@"Your carbon footprint for %d/%d", month, year]];
 
-    footprintTotal = [NSString stringWithFormat:@"%0.2f pounds of carbon", [calculator getTotalPrint]];
+    fptotal = [calculator getTotalPrint];
+    footprintTotal = [NSString stringWithFormat:@"%0.2f pounds of carbon", fptotal];
     [footprintTotalLabel setText:footprintTotal];
     
     
@@ -349,7 +359,7 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return [tableData count];
 }
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return NO;

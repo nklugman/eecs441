@@ -10,7 +10,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SocialViewController : UIViewController<FBLoginViewDelegate, UITableViewDataSource, UITableViewDataSource> {
-    NSArray *tableData; // sample leaderboard data
+    NSMutableArray *tableData; // sample leaderboard data
+    float fptotal;
 }
 
 // UI Controls
