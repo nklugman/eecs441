@@ -12,6 +12,7 @@
 @interface SocialViewController : UIViewController<FBLoginViewDelegate, UITableViewDataSource, UITableViewDataSource> {
     NSMutableArray *tableData; // sample leaderboard data
     float fptotal;
+    id<FBGraphUser> userData;
 }
 
 // UI Controls
@@ -21,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *footprintDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *footprintTotalLabel;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *publishButton;
+
+@property (weak, nonatomic) IBOutlet UITableView *leaderboardTableView;
 
 // - Achievements
 @property (weak, nonatomic) IBOutlet UILabel *bikeLabel;
@@ -32,6 +35,7 @@
 
 // Footprint Data
 @property (copy, nonatomic) NSString *footprintTotal;
+
 
 // Methods
 - (void)showTotalsForMonth:(int)month andYear:(int)year;
