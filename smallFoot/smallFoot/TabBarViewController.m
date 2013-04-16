@@ -14,6 +14,8 @@
 
 @implementation TabBarViewController
 
+bool hasLaunched = false;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -41,12 +43,16 @@
     if(news != nil && [news isEqualToString:@"0"]) [vcs removeObjectAtIndex:6];
     if(bt != nil && [news isEqualToString:@"0"]) [vcs removeObjectAtIndex:5];
     if(social != nil && [social isEqualToString:@"0"]) [vcs removeObjectAtIndex:3];
-    if(primary != nil && [primary isEqualToString:@"2"]) [self setSelectedIndex:1];
-    if(primary != nil && [primary isEqualToString:@"3"]) [self setSelectedIndex:4];
     
+    if(!hasLaunched)
+    {
+        if(primary != nil && [primary isEqualToString:@"2"]) [self setSelectedIndex:1];
+        if(primary != nil && [primary isEqualToString:@"3"]) [self setSelectedIndex:4];
+        hasLaunched = true;
+    }
 	
 	[self setViewControllers:vcs];
-	// Do any additional setup after loading the view.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

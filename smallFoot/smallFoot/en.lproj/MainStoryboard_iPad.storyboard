@@ -1196,6 +1196,42 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="H99-t2-NAM">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7sw-BQ-Gxa">
+                                        <rect key="frame" x="0.0" y="786" width="768" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="45" y="1" width="678" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBS-Ph-9cX">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="672" id="SAx-Nm-Wpx"/>
+                                                        <constraint firstAttribute="height" constant="38" id="lbm-dL-SCn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                                    <state key="normal" title="View Graph of Usage">
+                                                        <color key="titleColor" name="windowFrameTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="graphButtonPressed:" destination="rCE-2t-l8k" eventType="touchUpInside" id="5Et-wd-Gag"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="KBS-Ph-9cX" firstAttribute="centerY" secondItem="7sw-BQ-Gxa" secondAttribute="centerY" type="default" id="doJ-Lr-Mar"/>
+                                            <constraint firstItem="KBS-Ph-9cX" firstAttribute="centerX" secondItem="7sw-BQ-Gxa" secondAttribute="centerX" type="default" id="fy6-fJ-Fvx"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="rCE-2t-l8k" id="GJN-lY-WY3"/>
@@ -1212,7 +1248,9 @@
                         <outlet property="gasolinePrintLabel" destination="LsH-kD-1pK" id="x1g-AK-zso"/>
                         <outlet property="gasolineProgressBar" destination="x69-mS-JhP" id="A6c-bR-KeL"/>
                         <outlet property="gasolineRatingLabel" destination="15z-X3-vVt" id="Q5h-hm-bmk"/>
+                        <outlet property="graphButton" destination="KBS-Ph-9cX" id="1HV-pL-G5e"/>
                         <outlet property="offsetLabel" destination="qia-3u-cDi" id="CQh-Nz-0Ty"/>
+                        <outlet property="table" destination="iZs-zH-6fx" id="uCy-oN-jux"/>
                         <outlet property="totalPrintLabel" destination="3T4-H6-c6q" id="IsG-lO-G5j"/>
                         <outlet property="totalProgressBar" destination="pIg-C7-z8f" id="C1e-nf-Upi"/>
                         <outlet property="totalRatingLabel" destination="tHg-9w-Hbd" id="1bz-7l-grF"/>
@@ -1952,6 +1990,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="FootprintViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FootprintViewController.h"/>
             <relationships>
+                <relationship kind="action" name="graphButtonPressed:"/>
                 <relationship kind="outlet" name="averageElectricPrintLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="averageGasolinePrintLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="averageTotalPrintLabel" candidateClass="UILabel"/>
@@ -1961,7 +2000,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="gasolinePrintLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="gasolineProgressBar" candidateClass="UIProgressView"/>
                 <relationship kind="outlet" name="gasolineRatingLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="graphButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="offsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="totalPrintLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="totalProgressBar" candidateClass="UIProgressView"/>
                 <relationship kind="outlet" name="totalRatingLabel" candidateClass="UILabel"/>

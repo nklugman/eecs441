@@ -74,6 +74,7 @@ bool isShowingLandscapeView;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadOldData) name:@"loadOldFootprint" object: nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadData) name:@"loadFootprint" object: nil];
     [self showDataForMonth:currentMonth andYear:currentYear];
+    
 }
 
 - (void)loadData
@@ -108,11 +109,17 @@ bool isShowingLandscapeView;
     [_averageElectricPrintLabel setText:[NSString stringWithFormat:@"The average American uses %0.0f pounds of carbon from electricity per month", [calculator getAverageElectricPrint]]];
     [_averageTotalPrintLabel setText:[NSString stringWithFormat:@"The average American carbon footprint is %0.2f pounds", [calculator getAverageTotalPrint]]];
     
-    [_gasolineRatingLabel setText:[NSString stringWithFormat:@"%.0f/100", gasRating * 50]];
-    [_electricRatingLabel setText:[NSString stringWithFormat:@"%.0f/100", electricRating * 50]];
-    [_totalRatingLabel setText:[NSString stringWithFormat:@"%.0f/100", totalRating * 50]];
+    
+    [_gasolineRatingLabel setText:[NSString stringWithFormat:@"You used %.0f%% %@ than the average American", (gasRating < 1)?(100 - gasRating * 100):((gasRating - 1)*100), (gasRating < 1)?@"less":@"more"]];
+    [_electricRatingLabel setText:[NSString stringWithFormat:@"You used %.0f%% %@ than the average American", (electricRating < 1)?(100 - electricRating * 100):((electricRating - 1)*100), (electricRating < 1)?@"less":@"more"]];
+    [_totalRatingLabel setText:[NSString stringWithFormat:@"You used %.0f%% %@ than the average American", (totalRating < 1)?(100 - totalRating * 100):((totalRating - 1)*100), (totalRating < 1)?@"less":@"more"]];
+    
     
     [_offsetLabel setText:[NSString stringWithFormat:@"You saved %0.2f pounds of carbon this month from the trees you've planted!", [calculator getOffset]]];
+}
+
+- (IBAction)graphButtonPressed:(id)sender {
+    
 }
 
 - (UIColor*)getColorForRating: (float)rating

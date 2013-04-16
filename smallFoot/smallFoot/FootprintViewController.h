@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface FootprintViewController : UITableViewController
+@property (strong, nonatomic) IBOutlet UITableView *table;
+
 @property (weak, nonatomic) IBOutlet UIProgressView *gasolineProgressBar;
 @property (weak, nonatomic) IBOutlet UIProgressView *electricProgressBar;
 @property (weak, nonatomic) IBOutlet UIProgressView *totalProgressBar;
@@ -27,9 +29,12 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *offsetLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *graphButton;
+
 
 - (void)loadData;
 - (void)loadOldData;
 - (void)showDataForMonth: (int)month andYear: (int)year;
+- (IBAction)graphButtonPressed:(id)sender;
 - (UIColor*)getColorForRating: (float)rating;
 @end
