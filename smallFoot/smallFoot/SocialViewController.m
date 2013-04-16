@@ -31,6 +31,8 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
 @synthesize footprintDescriptionLabel;
 @synthesize publishButton;
 
+@synthesize leaderboardTableView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -49,15 +51,9 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    tableData = [NSMutableArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", @"1200.00", @"footprintTotal", @"1232310304", @"fid", nil], [NSDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", @"2500.00", @"footprintTotal", @"605156012", @"fid", nil], nil];
+    [[UITableViewHeaderFooterView appearance] setTintColor:[UIColor darkGrayColor]];
     
-    /*
-    for(int i = 1; i < 10; i++) {
-        NSDictionary *newDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"User %d", i], @"name", [NSString stringWithFormat:@"%0.2f", 20000+i*333.5] , @"footprintTotal", nil];
-        [tableData insertObject:newDict atIndex:[tableData count]];
-        
-    }
-     */
+    tableData = [NSMutableArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", [NSNumber numberWithFloat:1500.00], @"footprintTotal", @"1232310304", @"fid", nil], [NSDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", [NSNumber numberWithFloat:2500.00], @"footprintTotal", @"605156012", @"fid", nil], nil];
     
 }
 
@@ -66,6 +62,11 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     [super viewWillAppear:animated];
     
     [self showCurrentTotals];
+    
+    
+    
+    [leaderboardTableView reloadData];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,6 +97,8 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     NSLog(@"fetched user info");
     [self checkSessionDefaultAppID];
     
+    userData = user;
+    
     int rank = -1;
     if(fptotal != 0) {
         if(fptotal < 1500) rank = 1;
@@ -110,6 +113,7 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     self.nameLabel.text = [NSString stringWithFormat:loggedInMsg, user.name, rankStr, [tableData count]+1];
     
     self.publishButton.enabled = YES;
+    
     
     /*
     NSLog(@"Facebook id is: %@", user.id);
@@ -230,9 +234,12 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
      ^(FBRequestConnection *connection, id result, NSError *error) {
          NSString *alertText;
          if (!error) {
+             /*
              alertText = [NSString stringWithFormat:
                           @"Posted Open Graph action, id: %@",
                           [result objectForKey:@"id"]];
+            */
+            alertText = [NSString stringWithFormat:@"Successfully published your carbon footprint of %0.2f lbs", fptotal];
          } else {
              alertText = [NSString stringWithFormat:
                           @"error: domain = %@, code = %d",
@@ -387,7 +394,7 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     
     // Configure Cell    
     [cell.name setText:[[tableData objectAtIndex:[indexPath row]] objectForKey:@"name"]];
-    [cell.footprintTotal setText:[[tableData objectAtIndex:[indexPath row]] objectForKey:@"footprintTotal"]];
+    [cell.footprintTotal setText:[NSString stringWithFormat:@"%@", [[tableData objectAtIndex:[indexPath row]] objectForKey:@"footprintTotal"]]];
     [cell.rankLabel setText:[NSString stringWithFormat:@"%d", [indexPath row]+1]];
     
     cell.profPic.profileID = [[tableData objectAtIndex:[indexPath row]] objectForKey:@"fid"];

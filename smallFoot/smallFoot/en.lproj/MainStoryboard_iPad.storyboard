@@ -594,6 +594,7 @@
                         <outlet property="busLabel" destination="IBi-vW-ubO" id="k04-z8-BNq"/>
                         <outlet property="footprintDescriptionLabel" destination="rEv-rV-6Kf" id="jon-Jt-7ia"/>
                         <outlet property="footprintTotalLabel" destination="qJR-NR-pgD" id="B8d-xj-ewQ"/>
+                        <outlet property="leaderboardTableView" destination="X42-ht-5p2" id="b7c-aK-MEg"/>
                         <outlet property="loginView" destination="IAu-ew-DaI" id="NLA-eL-6Fw"/>
                         <outlet property="nameLabel" destination="1Sw-2V-jgQ" id="yFI-vd-B3B"/>
                         <outlet property="profilePic" destination="MXe-cm-LxT" id="Pyg-qs-Bpe"/>
@@ -2013,6 +2014,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="busLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="footprintDescriptionLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="footprintTotalLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="leaderboardTableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="loginView" candidateClass="FBLoginView"/>
                 <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="profilePic" candidateClass="FBProfilePictureView"/>
