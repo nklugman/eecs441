@@ -12,6 +12,7 @@
 @interface SocialViewController : UIViewController<FBLoginViewDelegate, UITableViewDataSource, UITableViewDataSource> {
     NSMutableArray *tableData; // sample leaderboard data
     float fptotal;
+    int numAchievements;
     bool finishedLoadingFootprint;
     bool finishedLoadingFacebook;
 }

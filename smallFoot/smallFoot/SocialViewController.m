@@ -43,6 +43,7 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
         loginView.publishPermissions = @[@"publish_actions"];
         loginView.defaultAudience = FBSessionDefaultAudienceOnlyMe;
         
+        numAchievements = 0;
         fptotal = 0;
         finishedLoadingFacebook = NO;
         finishedLoadingFootprint = NO;
@@ -58,7 +59,7 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     
     [[UITableViewHeaderFooterView appearance] setTintColor:[UIColor darkGrayColor]];
     
-    tableData = [NSMutableArray arrayWithObjects:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", [NSNumber numberWithFloat:1500.00], @"footprintTotal", @"1232310304", @"fid", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", [NSNumber numberWithFloat:2500.00], @"footprintTotal", @"605156012", @"fid", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Winnie Tsai", @"name", [NSNumber numberWithFloat:2544.00], @"footprintTotal", @"1265130262", @"fid", nil], nil];
+    tableData = [NSMutableArray arrayWithObjects:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", [NSNumber numberWithFloat:1500.00], @"footprintTotal", @"1232310304", @"fid", [NSNumber numberWithInt:1], @"achivements", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", [NSNumber numberWithFloat:2500.00], @"footprintTotal", @"605156012", @"fid", [NSNumber numberWithInt:2], @"achivements", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Winnie Tsai", @"name", [NSNumber numberWithFloat:2544.00], @"footprintTotal", @"1265130262", @"fid", [NSNumber numberWithInt:1], @"achivements", nil], nil];
 
 }
 
@@ -317,15 +318,20 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     [_busLabel setText:[NSString stringWithFormat:@"No award - 0.00 miles"]];
     [_smallfootLabel setText:[NSString stringWithFormat:@"No award - 0.00 miles"]];
     
+    numAchievements = 0;
+    
     if([calculator getBikeAward] == 1){
         [_bikeAward setImage:[UIImage imageNamed:@"award_bike_bronze.png"]];
         [_bikeLabel setText:[NSString stringWithFormat:@"Bronze - %0.2f miles", [calculator getBikeMiles]]];
+        numAchievements++;
     }else if([calculator getBikeAward] == 2){
         [_bikeAward setImage:[UIImage imageNamed:@"award_bike_silver.png"]];
         [_bikeLabel setText:[NSString stringWithFormat:@"Silver - %0.2f miles", [calculator getBikeMiles]]];
+        numAchievements++;
     }else if([calculator getBikeAward] == 3){
         [_bikeAward setImage:[UIImage imageNamed:@"award_bike_gold.png"]];
         [_bikeLabel setText:[NSString stringWithFormat:@"Gold - %0.2f miles", [calculator getBikeMiles]]];
+        numAchievements++;
     }else{
         [_bikeAward setImage:[UIImage imageNamed:@"award_bike_empty.png"]];
         [_bikeLabel setText:[NSString stringWithFormat:@"No award - %0.2f miles", [calculator getBikeMiles]]];
@@ -334,12 +340,15 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     if([calculator getBusAward] == 1){
         [_busAward setImage:[UIImage imageNamed:@"award_bus_bronze.png"]];
         [_busLabel setText:[NSString stringWithFormat:@"Bronze - %0.2f miles", [calculator getBusMiles]]];
+        numAchievements++;
     }else if([calculator getBusAward] == 2){
         [_busAward setImage:[UIImage imageNamed:@"award_bus_silver.png"]];
         [_busLabel setText:[NSString stringWithFormat:@"Silver - %0.2f miles", [calculator getBusMiles]]];
+        numAchievements++;
     }else if([calculator getBusAward] == 3){
         [_busAward setImage:[UIImage imageNamed:@"award_bus_gold.png"]];
         [_busLabel setText:[NSString stringWithFormat:@"Gold - %0.2f miles", [calculator getBusMiles]]];
+        numAchievements++;
     }else{
         [_busAward setImage:[UIImage imageNamed:@"award_bus_empty.png"]];
         [_busLabel setText:[NSString stringWithFormat:@"No award - %0.2f miles", [calculator getBusMiles]]];
@@ -348,12 +357,15 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     if([calculator getFootprintAward] == 1){
         [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_bronze.png"]];
         [_smallfootLabel setText:[NSString stringWithFormat:@"Bronze - %0.2f pounds", [calculator getTotalPrint]]];
+        numAchievements++;
     }else if([calculator getFootprintAward] == 2){
         [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_silver.png"]];
         [_smallfootLabel setText:[NSString stringWithFormat:@"Silver - %0.2f pounds", [calculator getTotalPrint]]];
+        numAchievements++;
     }else if([calculator getFootprintAward] == 3){
         [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_gold.png"]];
         [_smallfootLabel setText:[NSString stringWithFormat:@"Gold - %0.2f pounds", [calculator getTotalPrint]]];
+        numAchievements++;
     }else{
         [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_empty.png"]];
         [_smallfootLabel setText:[NSString stringWithFormat:@"No award - %0.2f pounds", [calculator getTotalPrint]]];
@@ -380,12 +392,14 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     
         NSMutableDictionary *selfDict = [tableData objectAtIndex:[self indexOfObjectWithFID:[self facebookID] inArray:tableData]];
         [selfDict setObject:[NSNumber numberWithFloat:fptotal] forKey:@"footprintTotal"];
+        [selfDict setObject:[NSNumber numberWithInt:numAchievements] forKey:@"achievements"];
         
         NSSortDescriptor *aSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"footprintTotal" ascending:YES];
         [tableData sortUsingDescriptors:[NSArray arrayWithObject:aSortDescriptor]];
         
         [leaderboardTableView reloadData];
         self.nameLabel.text = [NSString stringWithFormat:loggedInMsg, [self facebookName], [NSString stringWithFormat:@"%d", 1+[self indexOfObjectWithFID:[self facebookID] inArray:tableData]], [tableData count]];
+        
     }
 }
 
@@ -412,16 +426,7 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     return NO;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    /*
-    LeaderboardTableViewCell *cell = (LeaderboardTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if(cell == nil) {
-        cell = [[LeaderboardTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    */
-    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {   
     LeaderboardTableViewCell *cell = (LeaderboardTableViewCell *)[tableView
                               dequeueReusableCellWithIdentifier:CellIdentifier
                               forIndexPath:indexPath];
@@ -430,6 +435,7 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     [cell.name setText:[[tableData objectAtIndex:[indexPath row]] objectForKey:@"name"]];
     [cell.footprintTotal setText:[NSString stringWithFormat:@"%@", [[tableData objectAtIndex:[indexPath row]] objectForKey:@"footprintTotal"]]];
     [cell.rankLabel setText:[NSString stringWithFormat:@"%d", [indexPath row]+1]];
+    [cell.achievementsLabel setText:[NSString stringWithFormat:@"%@ out of 3 achievements", [[tableData objectAtIndex:[indexPath row]] objectForKey:@"achievements"]]];
     
     cell.profPic.profileID = [[tableData objectAtIndex:[indexPath row]] objectForKey:@"fid"];
     
