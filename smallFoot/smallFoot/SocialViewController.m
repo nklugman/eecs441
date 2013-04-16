@@ -13,7 +13,7 @@
 
 static NSString *CellIdentifier = @"LeaderboardTableItem";
 
-static NSString *loggedOutMsg = @"Login to Facebook to compete with friends!";
+static NSString *loggedOutMsg = @"Login to compete with friends!";
 static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
 
 @interface SocialViewController ()
@@ -25,6 +25,9 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
 @synthesize loginView;
 @synthesize profilePic;
 @synthesize nameLabel;
+
+@synthesize facebookID;
+@synthesize facebookName;
 
 @synthesize footprintTotal;
 @synthesize footprintTotalLabel;
@@ -41,6 +44,8 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
         loginView.defaultAudience = FBSessionDefaultAudienceOnlyMe;
         
         fptotal = 0;
+        finishedLoadingFacebook = NO;
+        finishedLoadingFootprint = NO;
         
     }
     return self;
@@ -53,8 +58,8 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     
     [[UITableViewHeaderFooterView appearance] setTintColor:[UIColor darkGrayColor]];
     
-    tableData = [NSMutableArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", [NSNumber numberWithFloat:1500.00], @"footprintTotal", @"1232310304", @"fid", nil], [NSDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", [NSNumber numberWithFloat:2500.00], @"footprintTotal", @"605156012", @"fid", nil], nil];
-    
+    tableData = [NSMutableArray arrayWithObjects:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", [NSNumber numberWithFloat:1500.00], @"footprintTotal", @"1232310304", @"fid", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", [NSNumber numberWithFloat:2500.00], @"footprintTotal", @"605156012", @"fid", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Winnie Tsai", @"name", [NSNumber numberWithFloat:2544.00], @"footprintTotal", @"1265130262", @"fid", nil], nil];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -63,7 +68,7 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     
     [self showCurrentTotals];
     
-    
+    [self addSelfToLeaderboard];
     
     [leaderboardTableView reloadData];
 
@@ -97,7 +102,8 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     NSLog(@"fetched user info");
     [self checkSessionDefaultAppID];
     
-    userData = user;
+    facebookID = user.id;
+    facebookName = user.name;
     
     int rank = -1;
     if(fptotal != 0) {
@@ -110,15 +116,12 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     else rankStr = [NSString stringWithFormat:@"%d", rank];
     
     self.profilePic.profileID = user.id;
-    self.nameLabel.text = [NSString stringWithFormat:loggedInMsg, user.name, rankStr, [tableData count]+1];
+    self.nameLabel.text = [NSString stringWithFormat:loggedInMsg, user.name, rankStr, [tableData count]];
     
     self.publishButton.enabled = YES;
     
-    
-    /*
-    NSLog(@"Facebook id is: %@", user.id);
-    NSLog(@"Facebook access token: %@", [[[FBSession activeSession] accessTokenData] accessToken]);
-    */
+    finishedLoadingFacebook = YES;
+    [self addSelfToLeaderboard];
 }
 
 - (void)loginView:(FBLoginView *)loginView
@@ -356,19 +359,43 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
         [_smallfootLabel setText:[NSString stringWithFormat:@"No award - %0.2f pounds", [calculator getTotalPrint]]];
     }
     
+    
+    finishedLoadingFootprint = YES;
 }
 
 - (void)checkSessionDefaultAppID
 {
     if (![FBSession defaultAppID]) {
-        NSLog(@"Need to set defaultAppID");
+        //NSLog(@"Need to set defaultAppID");
         [FBSession setDefaultAppID:@"158795857619338"];
     }
     else {
-        NSLog(@"FBSession defaultAppID: %@", [FBSession defaultAppID]);
+        //NSLog(@"FBSession defaultAppID: %@", [FBSession defaultAppID]);
     }
 }
 
+- (void)addSelfToLeaderboard
+{
+    if(finishedLoadingFootprint && finishedLoadingFacebook) {
+    
+        NSMutableDictionary *selfDict = [tableData objectAtIndex:[self indexOfObjectWithFID:[self facebookID] inArray:tableData]];
+        [selfDict setObject:[NSNumber numberWithFloat:fptotal] forKey:@"footprintTotal"];
+        
+        NSSortDescriptor *aSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"footprintTotal" ascending:YES];
+        [tableData sortUsingDescriptors:[NSArray arrayWithObject:aSortDescriptor]];
+        
+        [leaderboardTableView reloadData];
+        self.nameLabel.text = [NSString stringWithFormat:loggedInMsg, [self facebookName], [NSString stringWithFormat:@"%d", 1+[self indexOfObjectWithFID:[self facebookID] inArray:tableData]], [tableData count]];
+    }
+}
+
+- (NSUInteger)indexOfObjectWithFID: (NSString*)fid inArray: (NSArray*)array
+{
+    return [array indexOfObjectPassingTest:
+            ^BOOL(id dictionary, NSUInteger idx, BOOL *stop) {
+                return [[dictionary objectForKey: @"fid"] isEqualToString: fid];
+            }];
+}
 
 #pragma mark - UITableViewDelegate and DataSource Methods
 
@@ -386,11 +413,18 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    /*
     LeaderboardTableViewCell *cell = (LeaderboardTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if(cell == nil) {
         cell = [[LeaderboardTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+    */
+    
+    LeaderboardTableViewCell *cell = (LeaderboardTableViewCell *)[tableView
+                              dequeueReusableCellWithIdentifier:CellIdentifier
+                              forIndexPath:indexPath];
     
     // Configure Cell    
     [cell.name setText:[[tableData objectAtIndex:[indexPath row]] objectForKey:@"name"]];

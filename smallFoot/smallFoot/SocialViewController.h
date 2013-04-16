@@ -12,7 +12,8 @@
 @interface SocialViewController : UIViewController<FBLoginViewDelegate, UITableViewDataSource, UITableViewDataSource> {
     NSMutableArray *tableData; // sample leaderboard data
     float fptotal;
-    id<FBGraphUser> userData;
+    bool finishedLoadingFootprint;
+    bool finishedLoadingFacebook;
 }
 
 // UI Controls
@@ -35,6 +36,10 @@
 
 // Footprint Data
 @property (copy, nonatomic) NSString *footprintTotal;
+
+// Facebook Data
+@property (copy, nonatomic) NSString *facebookID;
+@property (copy, nonatomic) NSString *facebookName;
 
 
 // Methods
