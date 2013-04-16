@@ -59,8 +59,16 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     
     [[UITableViewHeaderFooterView appearance] setTintColor:[UIColor darkGrayColor]];
     
-    tableData = [NSMutableArray arrayWithObjects:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", [NSNumber numberWithFloat:1500.00], @"footprintTotal", @"1232310304", @"fid", [NSNumber numberWithInt:1], @"achivements", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", [NSNumber numberWithFloat:2500.00], @"footprintTotal", @"605156012", @"fid", [NSNumber numberWithInt:2], @"achivements", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Winnie Tsai", @"name", [NSNumber numberWithFloat:2544.00], @"footprintTotal", @"1265130262", @"fid", [NSNumber numberWithInt:1], @"achivements", nil], nil];
+    tableData = [NSMutableArray arrayWithObjects:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", [NSNumber numberWithFloat:1500.38], @"footprintTotal", @"1232310304", @"fid", [NSNumber numberWithInt:1], @"achievements", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", [NSNumber numberWithFloat:2500.41], @"footprintTotal", @"605156012", @"fid", [NSNumber numberWithInt:2], @"achievements", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Winnie Tsai", @"name", [NSNumber numberWithFloat:2544.00], @"footprintTotal", @"1265130262", @"fid", [NSNumber numberWithInt:1], @"achievements", nil], nil];
 
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    finishedLoadingFootprint = finishedLoadingFacebook = NO;
+    facebookName = facebookID = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -100,21 +108,13 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
 
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
                             user:(id<FBGraphUser>)user {
-    NSLog(@"fetched user info");
+
     [self checkSessionDefaultAppID];
     
     facebookID = user.id;
     facebookName = user.name;
     
-    int rank = -1;
-    if(fptotal != 0) {
-        if(fptotal < 1500) rank = 1;
-        else if(fptotal < 2500) rank = 2;
-        else rank = 3;
-    }
-    NSString *rankStr;
-    if(rank == -1) rankStr = @"NA";
-    else rankStr = [NSString stringWithFormat:@"%d", rank];
+    NSString *rankStr = [NSString stringWithFormat:@"%d", [self indexOfObjectWithFID:user.id inArray:tableData]];
     
     self.profilePic.profileID = user.id;
     self.nameLabel.text = [NSString stringWithFormat:loggedInMsg, user.name, rankStr, [tableData count]];
@@ -431,9 +431,11 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
                               dequeueReusableCellWithIdentifier:CellIdentifier
                               forIndexPath:indexPath];
     
-    // Configure Cell    
+    // Configure Cell
+    cell.profPic.profileID = nil;
+    
     [cell.name setText:[[tableData objectAtIndex:[indexPath row]] objectForKey:@"name"]];
-    [cell.footprintTotal setText:[NSString stringWithFormat:@"%@", [[tableData objectAtIndex:[indexPath row]] objectForKey:@"footprintTotal"]]];
+    [cell.footprintTotal setText:[NSString stringWithFormat:@"%0.2f", [[[tableData objectAtIndex:[indexPath row]] objectForKey:@"footprintTotal"] floatValue]]];
     [cell.rankLabel setText:[NSString stringWithFormat:@"%d", [indexPath row]+1]];
     [cell.achievementsLabel setText:[NSString stringWithFormat:@"%@ out of 3 achievements", [[tableData objectAtIndex:[indexPath row]] objectForKey:@"achievements"]]];
     
