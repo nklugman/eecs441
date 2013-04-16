@@ -34,6 +34,7 @@ bool hasLaunched = false;
     NSString *social = [[defaults objectForKey:@"social_toggle"] description];
     NSString *news = [[defaults objectForKey:@"news_toggle"] description];
     NSString *bt = [[defaults objectForKey:@"bt_toggle"] description];
+    NSString *offset = [[defaults objectForKey:@"offset_toggle"] description];
     NSString *primary = [[defaults objectForKey:@"primary_tab"] description];
     
     
@@ -41,8 +42,9 @@ bool hasLaunched = false;
                             arrayWithArray:[self viewControllers]];
     
     if(news != nil && [news isEqualToString:@"0"]) [vcs removeObjectAtIndex:6];
-    if(bt != nil && [news isEqualToString:@"0"]) [vcs removeObjectAtIndex:5];
+    if(bt != nil && [bt isEqualToString:@"0"]) [vcs removeObjectAtIndex:5];
     if(social != nil && [social isEqualToString:@"0"]) [vcs removeObjectAtIndex:3];
+    if(social != nil && [offset isEqualToString:@"0"]) [vcs removeObjectAtIndex:2];
     
     if(!hasLaunched)
     {
