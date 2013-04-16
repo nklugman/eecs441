@@ -13,7 +13,7 @@
 
 static NSString *CellIdentifier = @"LeaderboardTableItem";
 
-static NSString *loggedOutMsg = @"Login to Facebook to compete with friends!";
+static NSString *loggedOutMsg = @"Login to compete with friends!";
 static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
 
 @interface SocialViewController ()
@@ -25,6 +25,9 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
 @synthesize loginView;
 @synthesize profilePic;
 @synthesize nameLabel;
+
+@synthesize facebookID;
+@synthesize facebookName;
 
 @synthesize footprintTotal;
 @synthesize footprintTotalLabel;
@@ -40,7 +43,10 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
         loginView.publishPermissions = @[@"publish_actions"];
         loginView.defaultAudience = FBSessionDefaultAudienceOnlyMe;
         
+        numAchievements = 0;
         fptotal = 0;
+        finishedLoadingFacebook = NO;
+        finishedLoadingFootprint = NO;
         
     }
     return self;
@@ -53,8 +59,16 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     
     [[UITableViewHeaderFooterView appearance] setTintColor:[UIColor darkGrayColor]];
     
-    tableData = [NSMutableArray arrayWithObjects:[NSDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", [NSNumber numberWithFloat:1500.00], @"footprintTotal", @"1232310304", @"fid", nil], [NSDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", [NSNumber numberWithFloat:2500.00], @"footprintTotal", @"605156012", @"fid", nil], nil];
+    tableData = [NSMutableArray arrayWithObjects:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"Noah Klugman", @"name", [NSNumber numberWithFloat:1500.38], @"footprintTotal", @"1232310304", @"fid", [NSNumber numberWithInt:1], @"achievements", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Ben Perkins", @"name", [NSNumber numberWithFloat:2500.41], @"footprintTotal", @"605156012", @"fid", [NSNumber numberWithInt:2], @"achievements", nil], [NSMutableDictionary dictionaryWithObjectsAndKeys:@"Winnie Tsai", @"name", [NSNumber numberWithFloat:2544.00], @"footprintTotal", @"1265130262", @"fid", [NSNumber numberWithInt:1], @"achievements", nil], nil];
+
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
     
+    finishedLoadingFootprint = finishedLoadingFacebook = NO;
+    facebookName = facebookID = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -63,7 +77,7 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
     
     [self showCurrentTotals];
     
-    
+    [self addSelfToLeaderboard];
     
     [leaderboardTableView reloadData];
 
@@ -94,31 +108,21 @@ static NSString *loggedInMsg = @"%@ (Rank %@ out of %d)";
 
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
                             user:(id<FBGraphUser>)user {
-    NSLog(@"fetched user info");
+
     [self checkSessionDefaultAppID];
     
-    userData = user;
+    facebookID = user.id;
+    facebookName = user.name;
     
-    int rank = -1;
-    if(fptotal != 0) {
-        if(fptotal < 1500) rank = 1;
-        else if(fptotal < 2500) rank = 2;
-        else rank = 3;
-    }
-    NSString *rankStr;
-    if(rank == -1) rankStr = @"NA";
-    else rankStr = [NSString stringWithFormat:@"%d", rank];
+    NSString *rankStr = [NSString stringWithFormat:@"%d", [self indexOfObjectWithFID:user.id inArray:tableData]];
     
     self.profilePic.profileID = user.id;
-    self.nameLabel.text = [NSString stringWithFormat:loggedInMsg, user.name, rankStr, [tableData count]+1];
+    self.nameLabel.text = [NSString stringWithFormat:loggedInMsg, user.name, rankStr, [tableData count]];
     
     self.publishButton.enabled = YES;
     
-    
-    /*
-    NSLog(@"Facebook id is: %@", user.id);
-    NSLog(@"Facebook access token: %@", [[[FBSession activeSession] accessTokenData] accessToken]);
-    */
+    finishedLoadingFacebook = YES;
+    [self addSelfToLeaderboard];
 }
 
 - (void)loginView:(FBLoginView *)loginView
@@ -314,15 +318,20 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     [_busLabel setText:[NSString stringWithFormat:@"No award - 0.00 miles"]];
     [_smallfootLabel setText:[NSString stringWithFormat:@"No award - 0.00 miles"]];
     
+    numAchievements = 0;
+    
     if([calculator getBikeAward] == 1){
         [_bikeAward setImage:[UIImage imageNamed:@"award_bike_bronze.png"]];
         [_bikeLabel setText:[NSString stringWithFormat:@"Bronze - %0.2f miles", [calculator getBikeMiles]]];
+        numAchievements++;
     }else if([calculator getBikeAward] == 2){
         [_bikeAward setImage:[UIImage imageNamed:@"award_bike_silver.png"]];
         [_bikeLabel setText:[NSString stringWithFormat:@"Silver - %0.2f miles", [calculator getBikeMiles]]];
+        numAchievements++;
     }else if([calculator getBikeAward] == 3){
         [_bikeAward setImage:[UIImage imageNamed:@"award_bike_gold.png"]];
         [_bikeLabel setText:[NSString stringWithFormat:@"Gold - %0.2f miles", [calculator getBikeMiles]]];
+        numAchievements++;
     }else{
         [_bikeAward setImage:[UIImage imageNamed:@"award_bike_empty.png"]];
         [_bikeLabel setText:[NSString stringWithFormat:@"No award - %0.2f miles", [calculator getBikeMiles]]];
@@ -331,12 +340,15 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     if([calculator getBusAward] == 1){
         [_busAward setImage:[UIImage imageNamed:@"award_bus_bronze.png"]];
         [_busLabel setText:[NSString stringWithFormat:@"Bronze - %0.2f miles", [calculator getBusMiles]]];
+        numAchievements++;
     }else if([calculator getBusAward] == 2){
         [_busAward setImage:[UIImage imageNamed:@"award_bus_silver.png"]];
         [_busLabel setText:[NSString stringWithFormat:@"Silver - %0.2f miles", [calculator getBusMiles]]];
+        numAchievements++;
     }else if([calculator getBusAward] == 3){
         [_busAward setImage:[UIImage imageNamed:@"award_bus_gold.png"]];
         [_busLabel setText:[NSString stringWithFormat:@"Gold - %0.2f miles", [calculator getBusMiles]]];
+        numAchievements++;
     }else{
         [_busAward setImage:[UIImage imageNamed:@"award_bus_empty.png"]];
         [_busLabel setText:[NSString stringWithFormat:@"No award - %0.2f miles", [calculator getBusMiles]]];
@@ -345,30 +357,59 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     if([calculator getFootprintAward] == 1){
         [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_bronze.png"]];
         [_smallfootLabel setText:[NSString stringWithFormat:@"Bronze - %0.2f pounds", [calculator getTotalPrint]]];
+        numAchievements++;
     }else if([calculator getFootprintAward] == 2){
         [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_silver.png"]];
         [_smallfootLabel setText:[NSString stringWithFormat:@"Silver - %0.2f pounds", [calculator getTotalPrint]]];
+        numAchievements++;
     }else if([calculator getFootprintAward] == 3){
         [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_gold.png"]];
         [_smallfootLabel setText:[NSString stringWithFormat:@"Gold - %0.2f pounds", [calculator getTotalPrint]]];
+        numAchievements++;
     }else{
         [_smallfootAward setImage:[UIImage imageNamed:@"award_leaf_empty.png"]];
         [_smallfootLabel setText:[NSString stringWithFormat:@"No award - %0.2f pounds", [calculator getTotalPrint]]];
     }
     
+    
+    finishedLoadingFootprint = YES;
 }
 
 - (void)checkSessionDefaultAppID
 {
     if (![FBSession defaultAppID]) {
-        NSLog(@"Need to set defaultAppID");
+        //NSLog(@"Need to set defaultAppID");
         [FBSession setDefaultAppID:@"158795857619338"];
     }
     else {
-        NSLog(@"FBSession defaultAppID: %@", [FBSession defaultAppID]);
+        //NSLog(@"FBSession defaultAppID: %@", [FBSession defaultAppID]);
     }
 }
 
+- (void)addSelfToLeaderboard
+{
+    if(finishedLoadingFootprint && finishedLoadingFacebook) {
+    
+        NSMutableDictionary *selfDict = [tableData objectAtIndex:[self indexOfObjectWithFID:[self facebookID] inArray:tableData]];
+        [selfDict setObject:[NSNumber numberWithFloat:fptotal] forKey:@"footprintTotal"];
+        [selfDict setObject:[NSNumber numberWithInt:numAchievements] forKey:@"achievements"];
+        
+        NSSortDescriptor *aSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"footprintTotal" ascending:YES];
+        [tableData sortUsingDescriptors:[NSArray arrayWithObject:aSortDescriptor]];
+        
+        [leaderboardTableView reloadData];
+        self.nameLabel.text = [NSString stringWithFormat:loggedInMsg, [self facebookName], [NSString stringWithFormat:@"%d", 1+[self indexOfObjectWithFID:[self facebookID] inArray:tableData]], [tableData count]];
+        
+    }
+}
+
+- (NSUInteger)indexOfObjectWithFID: (NSString*)fid inArray: (NSArray*)array
+{
+    return [array indexOfObjectPassingTest:
+            ^BOOL(id dictionary, NSUInteger idx, BOOL *stop) {
+                return [[dictionary objectForKey: @"fid"] isEqualToString: fid];
+            }];
+}
 
 #pragma mark - UITableViewDelegate and DataSource Methods
 
@@ -385,17 +426,18 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
     return NO;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    LeaderboardTableViewCell *cell = (LeaderboardTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {   
+    LeaderboardTableViewCell *cell = (LeaderboardTableViewCell *)[tableView
+                              dequeueReusableCellWithIdentifier:CellIdentifier
+                              forIndexPath:indexPath];
     
-    if(cell == nil) {
-        cell = [[LeaderboardTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+    // Configure Cell
+    cell.profPic.profileID = nil;
     
-    // Configure Cell    
     [cell.name setText:[[tableData objectAtIndex:[indexPath row]] objectForKey:@"name"]];
-    [cell.footprintTotal setText:[NSString stringWithFormat:@"%@", [[tableData objectAtIndex:[indexPath row]] objectForKey:@"footprintTotal"]]];
+    [cell.footprintTotal setText:[NSString stringWithFormat:@"%0.2f", [[[tableData objectAtIndex:[indexPath row]] objectForKey:@"footprintTotal"] floatValue]]];
     [cell.rankLabel setText:[NSString stringWithFormat:@"%d", [indexPath row]+1]];
+    [cell.achievementsLabel setText:[NSString stringWithFormat:@"%@ out of 3 achievements", [[tableData objectAtIndex:[indexPath row]] objectForKey:@"achievements"]]];
     
     cell.profPic.profileID = [[tableData objectAtIndex:[indexPath row]] objectForKey:@"fid"];
     
