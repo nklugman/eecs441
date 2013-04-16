@@ -29,6 +29,8 @@
 		7AEF051D17164B4D00CA6AB2 /* RSSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF051A17164B4C00CA6AB2 /* RSSItem.m */; };
 		7AEF051E17164B4D00CA6AB2 /* RSSLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF051C17164B4D00CA6AB2 /* RSSLoader.m */; };
 		DD062B0616FA1A1A0090C87E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = DD062B0516FA1A1A0090C87E /* Default-Landscape~ipad.png */; };
+		DD1B7A6D171CDC9A000F0A50 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD1B7A6C171CDC9A000F0A50 /* Settings.bundle */; };
+		DD1B7A70171CE423000F0A50 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1B7A6F171CE423000F0A50 /* TabBarViewController.m */; };
 		DD20845C170F3AD90068F5A9 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD20845B170F3AD90068F5A9 /* SocialViewController.m */; };
 		DD20845F170F3AF40068F5A9 /* AutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD20845E170F3AF40068F5A9 /* AutoViewController.m */; };
 		DD2F13A416F77D810084579C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2F13A316F77D810084579C /* ThirdViewController.m */; };
@@ -288,6 +290,9 @@
 		7AEF051B17164B4C00CA6AB2 /* RSSLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSLoader.h; path = ../smallFoot/RSSLoader.h; sourceTree = "<group>"; };
 		7AEF051C17164B4D00CA6AB2 /* RSSLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSLoader.m; sourceTree = "<group>"; };
 		DD062B0516FA1A1A0090C87E /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		DD1B7A6C171CDC9A000F0A50 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		DD1B7A6E171CE423000F0A50 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		DD1B7A6F171CE423000F0A50 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		DD20845A170F3AD90068F5A9 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
 		DD20845B170F3AD90068F5A9 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
 		DD20845D170F3AF40068F5A9 /* AutoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoViewController.h; sourceTree = "<group>"; };
@@ -576,6 +581,7 @@
 				7AEF051C17164B4D00CA6AB2 /* RSSLoader.m */,
 				7AEF05041715E9D000CA6AB2 /* RSSViewController.h */,
 				7AEF05051715E9D000CA6AB2 /* RSSViewController.m */,
+				DD1B7A6C171CDC9A000F0A50 /* Settings.bundle */,
 				7AEF05101715F2F300CA6AB2 /* RSSDetailViewController.h */,
 				7AEF05111715F2F300CA6AB2 /* RSSDetailViewController.m */,
 			);
@@ -879,6 +885,8 @@
 				DDF91DCF16E8FB3300AAE198 /* AppDelegate.m */,
 				DDF91DD716E8FB3300AAE198 /* MainStoryboard_iPhone.storyboard */,
 				DDF91DDA16E8FB3300AAE198 /* MainStoryboard_iPad.storyboard */,
+				DD1B7A6E171CE423000F0A50 /* TabBarViewController.h */,
+				DD1B7A6F171CE423000F0A50 /* TabBarViewController.m */,
 				7A02D659171B4B19005484E0 /* Graph Files */,
 				7A02D657171B4AE1005484E0 /* RSS Files */,
 				7A02D658171B4B08005484E0 /* BLE Files */,
@@ -1201,6 +1209,7 @@
 				DDAE4F2E171475400095646B /* award_bike_empty.png in Resources */,
 				DDAE4F2F171475400095646B /* award_bus_empty.png in Resources */,
 				DDAE4F30171475400095646B /* award_leaf_empty.png in Resources */,
+				DD1B7A6D171CDC9A000F0A50 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1238,6 +1247,7 @@
 				7A02D650171B495B005484E0 /* CPDConstants.m in Sources */,
 				7A02D651171B495B005484E0 /* CPDStockPriceStore.m in Sources */,
 				7853ECCC171B8243003A2634 /* LeaderboardTableViewCell.m in Sources */,
+				DD1B7A70171CE423000F0A50 /* TabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
